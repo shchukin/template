@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import 'variables'; 		/* sass variables like base-color or image dir path	*/
 @import 'mixins'; 			/* sass mixins (kinda functions)					*/
 @import 'normalize';		/* normalize from h5bp 								*/
 @import 'initialization';	/* style init like default font, link colors etc.	*/

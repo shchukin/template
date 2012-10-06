@@ -9,19 +9,6 @@
 
 
 /* ==========================================================================
-   Variables
-   ========================================================================== */
-   
-/* base */
-$base-color: #222;
-
-/* font-weight */
-$normal: 300;
-$bold: 600;
-
-
-
-/* ==========================================================================
    Base styles
    ========================================================================== */
 
@@ -34,7 +21,7 @@ textarea {
 }
 
 body {
-	background: #e3e3e3 url('../images/background.png');
+	background: #e3e3e3 url('$img_path+/background.png');
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
     font-size: 1em;
@@ -93,7 +80,7 @@ img {
 
 
 ul {
-    list-style-image: url('../images/style_li.png');
+    list-style: url($img_path+'style_li.png');
 }
 
 
