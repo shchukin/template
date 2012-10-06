@@ -1,0 +1,129 @@
+@mixin doubleGradient($first, $second) {
+    background-color: $first;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0, $first ), color-stop(1, $second)) !important;
+    background: -webkit-linear-gradient(top, $first, $second) !important;
+    background: -o-linear-gradient(top, $first, $second) !important;
+    background: -moz-linear-gradient(top, $first, $second) !important;
+    background: -ms-linear-gradient(top, $first, $second) !important;
+    background: linear-gradient(top, $first, $second) !important;
+}
+
+@mixin doubleHorizontalGradient($first, $second) {
+    background-color: $first;
+    background: -webkit-gradient( linear, left top, right top, color-stop(0, $first ), color-stop(1, $second)) !important;
+    background: -webkit-linear-gradient(left, $first, $second) !important;
+    background: -o-linear-gradient(left, $first, $second) !important;
+    background: -moz-linear-gradient(left, $first, $second) !important;
+    background: -ms-linear-gradient(left, $first, $second) !important;
+    background: linear-gradient(left, $first, $second) !important;
+}
+
+@mixin quadraCenterGradient($first, $second, $third, $fourth) {
+    background-color: $first;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0, $first ), color-stop(0.5, $second), color-stop(0.51, $third), color-stop(1, $fourth) ) !important;
+    background: -webkit-linear-gradient(top, $first 0%, $second 50%, $third 51%, $fourth) !important;     
+    background: -o-linear-gradient(top, $first 0%, $second 50%, $third 51%, $fourth) !important;     
+    background: -moz-linear-gradient(top, $first 0%, $second 50%, $third 51%, $fourth) !important;     
+    background: -ms-linear-gradient(top, $first 0%, $second 50%, $third 51%, $fourth) !important;     
+    background: linear-gradient(top, $first 0%, $second 50%, $third 51%, $fourth) !important;
+}
+
+@mixin quadraEdgeGradient($first, $second, $third, $fourth) {
+    background-color: $first;
+    background: -webkit-gradient( linear, left top, right top, color-stop(0, $first ), color-stop(0.25, $second), color-stop(0.75, $third), color-stop(1, $fourth) ) !important;
+    background: -webkit-linear-gradient(left, $first 0%, $second 25%, $third 75%, $fourth 100%) !important;     
+    background: -o-linear-gradient(left, $first 0%, $second 25%, $third 75%, $fourth 100%) !important;    
+    background: -moz-linear-gradient(left, $first 0%, $second 25%, $third 75%, $fourth 100%) !important; 
+    background: -ms-linear-gradient(left, $first 0%, $second 25%, $third 75%, $fourth 100%) !important; 
+    background: linear-gradient(left, $first 0%, $second 25%, $third 75%, $fourth 100%) !important; 
+}
+
+@mixin BoxShadow ($string) {
+    -moz-box-shadow: $string;
+    -webkit-box-shadow: $string;
+    box-shadow: $string;
+}
+
+@mixin doubleBoxShadow ($first-string, $second-string) {
+    -moz-box-shadow: $first-string, $second-string;
+    -webkit-box-shadow: $first-string, $second-string;
+    box-shadow: $first-string, $second-string;
+}
+
+@mixin tripleBoxShadow ($first-string, $second-string, $third-string) {
+    -moz-box-shadow: $first-string, $second-string, $third-string;
+    -webkit-box-shadow: $first-string, $second-string, $third-string;
+    box-shadow: $first-string, $second-string, $third-string;
+}
+
+@mixin quadraBoxShadow ($first-string, $second-string, $third-string, $fourth) {
+    -moz-box-shadow: $first-string, $second-string, $third-string, $fourth;
+    -webkit-box-shadow: $first-string, $second-string, $third-string, $fourth;
+    box-shadow: $first-string, $second-string, $third-string, $fourth;
+}
+
+@mixin TextShadow ($string) {
+    -webkit-text-shadow: $string;
+    text-shadow: $string;
+}
+
+@mixin BorderRadius ($string) {
+    -moz-border-radius: $string;
+    -webkit-border-radius: $string;
+    border-radius: $string;
+}
+
+@mixin BorderTopLeftRadius ($string) {
+    -moz-border-top-left-radius: $string;
+    -webkit-border-top-left-radius: $string;
+    border-top-left-radius: $string;
+}
+
+@mixin BorderTopRightRadius ($string) {
+    -moz-border-top-right-radius: $string;
+    -webkit-border-top-right-radius: $string;
+    border-top-right-radius: $string;
+}
+
+@mixin BorderBottomLeftRadius ($string) {
+    -moz-border-bottom-left-radius: $string;
+    -webkit-border-bottom-left-radius: $string;
+    border-bottom-left-radius: $string;
+}
+
+@mixin BorderBottomRightRadius ($string) {
+    -moz-border-bottom-right-radius: $string;
+    -webkit-border-bottom-right-radius: $string;
+    border-bottom-right-radius: $string;
+}
+
+@mixin Transform ($string) {
+    -webkit-transform: $string;
+    -o-transform: $string;
+    -moz-transform: $string;
+    -ms-transform: $string;
+    transform: $string; 
+}
+
+@mixin Transition ($string) {
+    -webkit-transition: $string;
+    -o-transition: $string;
+    -moz-transition: $string;
+    -ms-transition: $string;
+    transition: $string; 
+}
+
+@mixin BackgroundSize ($string) {
+    -webkit-background-size: $string;
+    -o-background-size: $string;
+    -moz-background-size: $string;
+    -ms-background-size: $string;
+    background-size: $string; 
+}
+
+@mixin BoxSizing ($string) {
+    -webkit-box-sizing: $string;
+    -moz-box-sizing: $string;
+    box-sizing: $string; 
+}
+

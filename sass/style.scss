@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@import 'mixins'; 			/* sass mixins (kinda functions)					*/
+@import 'normalize';		/* normalize from h5bp 								*/
+@import 'initialization';	/* style init like default font, link colors etc.	*/
+@import 'fontface';			/* non standart fonts if required 					*/
+@import 'common';			/* common style that occur often  					*/
+@import 'layout';			/* layout style 									*/
+@import 'blocks';			/* block style 										*/
+@import 'helpers';			/* helpers style (partly from h5bp) 				*/
+@import 'print';			/* print style from h5bp 							*/
+
+/* Prefixes
+    l- layout  ( page regions, ex: .l-header or .l-left-column )
+    b- block   ( content blocks placed in region, ex: .b-logo or .b-navigation )
+    c- common  ( for elements that occur often, ex: .c-red-button or .c-shadowed-line )
+    v- visual  ( regular class, most common in use, ex: .v-image-title or .v-phone-index )
+    w- wrapper ( for wrap somthing, ex: .w-copyright-developers or .w-sidebar-center )
+    h- helpers ( when you don't need to wrote unic selector, ex: .h-color-gray or .h-uppercase )
+    p- page    ( to split pages by type ex: body.p-index or body.p-portfolio )
+*/
+
+/*
+	HTML5 Boilerplate: The web's most popular front-end template
+	http://html5boilerplate.com/
+*/

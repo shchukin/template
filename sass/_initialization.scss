@@ -1,0 +1,179 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+   
+/* base */
+$base-color: #222;
+
+/* font-weight */
+$normal: 300;
+$bold: 600;
+
+
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $base-color;
+}
+
+body {
+	background: #e3e3e3 url('../images/background.png');
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+    font-size: 1em;
+    color: $base-color;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+	color: #999;
+	&:hover { color: #aaa; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-weight: $normal;
+    color: $base-color;
+    
+    a {
+        display: block;
+        text-decoration: none;
+        color: $base-color;
+    }
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $base-color;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+
+ul {
+    list-style-image: url('../images/style_li.png');
+}
+
+
+table {
+    width: 100%;
+    color: #7d7d7d;
+}
+    td {
+        background: #f4f4f4;
+        padding: 5px 10px 3px;
+    }
+    
+    tr:nth-child(odd) td { background: #f8f8f8; }
+    
+    thead {
+        color: $base-color;    
+        font-weight: $bold;
+        td { background: #d5e1ee !important; }
+    }
+    
+    
+    
+form {
+
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.v-form-raw {
+   margin: 1em 0;
+}
+
+label {
+	display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+textarea,
+{   
+    background: #f4f4f4;
+    border: 1px solid #cfcfcf;
+    border-top: 1px solid #a0a0a0;
+    padding: 4px;
+    
+    &:hover,
+    &:focus {
+	    border: 1px solid #aaa;
+	    border-top: 1px solid #909090;        
+	    background: #f9f9f9;	    
+    }
+}
+
+textarea {
+	resize: vertical;
+}
+
+select {
+  
+}
+
+input[type="submit"],
+input[type="reset"],
+button 
+{
+    border: none;
+    padding: 3px 10px;
+}
+
+.v-ancients {
+	margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}

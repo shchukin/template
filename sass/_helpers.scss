@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.h-ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.h-ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.h-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.h-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.h-visuallyhidden.focusable:active,
+.h-visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.h-invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.h-clearfix:before,
+.h-clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.h-clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.h-clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+/* Floating
+---------------------------------------- */
+.h-float-left { float: left; }
+.h-float-right { float: right; }
+.h-float-none { float: none; }
+
+
+/* Aligning
+---------------------------------------- */
+.h-align-center { text-align: center; }
+.h-align-left { text-align: left; }
+.h-align-right { text-align: right; }
+.h-align-justify { text-align: justify; }
+
+
+/* Lettering
+---------------------------------------- */
+.h-uppercase { text-transform: uppercase; }
+.h-lowercase { text-transform: lowercase; }
+
+
+/* Color
+---------------------------------------- */
+.h-color-gray { color: #999; }
+
+
+/* Display
+---------------------------------------- */
+.h-display-no { display: none !important; visibility: hidden; }
+.h-inline { display: inline; }
+.h-inline-block { display: inline-block; }
+.h-block { display: block; }
+
+.h-table {            
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+    .h-table-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    
+/* Position
+---------------------------------------- */
+.h-relative {
+    position: relative
+}
+
+.h-absolute {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;   
+}
+
+/* Link decoration
+----------------------------------------- */
+a.h-text-decoration { text-decoration: underline; }
+.h-text-decoration a { text-decoration: underline; }
+
+a.h-text-decoration-no { text-decoration: none; }
+.h-text-decoration-no a { text-decoration: none; }
+
