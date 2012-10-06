@@ -40,7 +40,7 @@ body {
 }
 
 a {
-	color: #999;
+	color: $link-color;
 	&:hover { color: #aaa; }
 }
 
