@@ -23,8 +23,8 @@ textarea {
 body {
 	background: #e3e3e3 url('$img_path+/background.png');
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
-    font-size: 1em;
+	font-size: 1em/*16px*/;
+	font-weight: $normal;
     color: $base-color;
     line-height: 1.4;
 }
