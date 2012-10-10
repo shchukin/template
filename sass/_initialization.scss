@@ -21,11 +21,10 @@ textarea {
 }
 
 body {
-	background: #e3e3e3 url('$img_path+/background.png');
+	background: #e3e3e3 url($img-path+'/background.png');
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-size: 1em/*16px*/;
 	font-weight: $normal;
-    color: $base-color;
     line-height: 1.4;
 }
 
@@ -41,18 +40,21 @@ body {
 
 a {
 	color: $link-color;
-	&:hover { color: #aaa; }
+	&:hover { 
+		text-decoration: none;
+		color: $link-hover-color; 
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
 
     font-weight: $normal;
-    color: $base-color;
+    color: $headings-color;
     
     a {
         display: block;
         text-decoration: none;
-        color: $base-color;
+        color: $headings-color;
     }
 }
 
@@ -80,7 +82,7 @@ img {
 
 
 ul {
-    list-style: url($img_path+'style_li.png');
+    list-style: url($img-path+'style_li.png');
 }
 
 
