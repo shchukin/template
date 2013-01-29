@@ -1,16 +1,15 @@
 # TEAM
 
-    Anton Cypher Shchukin [Russia] -- Marking up -- facebook.com/CypherKun
-
+    Anton Cypher Shchukin -- Frontend developing -- nuqneH.com
+    
 
 # THANKS
 
     h5bp.com
     really guys, tnx to you
 
-
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
-    
+    Normalize.css, jQuery, Modernizr
+    BEM

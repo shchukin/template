@@ -1,10 +1,11 @@
 @charset "utf-8";
 
+@import 'compass/css3';		/* compass framework mixins							*/
 @import 'variables'; 		/* sass variables like base-color or image dir path	*/
 @import 'mixins'; 			/* sass mixins (kinda functions)					*/
+@import 'fontface';			/* non standart fonts if required 					*/
 @import 'normalize';		/* normalize from h5bp 								*/
 @import 'initialization';	/* style init like default font, link colors etc.	*/
-@import 'fontface';			/* non standart fonts if required 					*/
 @import 'common';			/* common style that occur often  					*/
 @import 'layout';			/* layout style 									*/
 @import 'blocks';			/* block style 										*/
