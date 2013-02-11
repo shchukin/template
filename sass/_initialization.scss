@@ -11,10 +11,10 @@ textarea {
 }
 
 body {
-	background: #e3e3e3 url($img-path+'background__page.png');
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: $normal;
-	font-size: $base-fontsize;
+    background: #e3e3e3 url($img-path+'background__page.png');
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: $normal;
+    font-size: $base-fontsize;
     line-height: $base-lineheight;
 }
 
@@ -31,17 +31,17 @@ body {
 
 
 strong, b {
-	font-weight: $bold;
+    font-weight: $bold;
 }
 
 em, i {
-	
+    
 }
 
 
 a {
-	color: $link-color;
-	&:hover { text-decoration: none; }
+    color: $link-color;
+    &:hover { text-decoration: none; }
 }
 
 
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
     font-weight: $normal;
     color: $headings-color;
-    
+
     a {
         text-decoration: none;
         color: $headings-color;
@@ -57,19 +57,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 h2 {
-	
+
 }
 
 h3 {
-	
+
 }
 
 h4 {
-	
+
 }
 
 
@@ -100,88 +100,86 @@ ul {
 
 
 table {
-    
+
 }
 	
 	thead {
         color: $base-color;    
         font-weight: $bold;
     }
-    
-    tbody {
-	    
-    }
-	    
-	    th {
-		    
-	    }
-	    
-	    td {
-	
-	    }
-	    
-	    tr:nth-child(odd) td { 
-	
-	    }
-    
 
-    
-    
-    
+    tbody {
+
+    }
+
+        th {
+
+        }
+
+        td {
+
+        }
+
+        tr:nth-child(odd) td { 
+
+        }
+
+
+
 form {
 
 }
-	
-	fieldset {
-	    border: 0;
-	    margin: 0;
-	    padding: 0;
-	}
-	
-	.c-row {
-		margin: 1em 0;
-	}
-	
-	.c-row_submit {
-		margin-top: 1.5em;
-	}
 
-		label {
-			
-		}
-		
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		input[type="number"],
-		input[type="search"],
-		input[type="tel"],
-		textarea,
-		{   
-		    background: #f4f4f4;
-		    border: 1px solid #cfcfcf;
-		    border-top: 1px solid #a0a0a0;
-		    padding: 4px 5px 5px;
-		    
-		    &:hover,
-		    &:focus {
-		 
-		    }
-		}
+    fieldset {
+        border: 0;
+        margin: 0;
+    padding: 0;
+    }
 
-		textarea {
-			resize: vertical;
-		}
-		
-		select {
-		
-		}
-		
-		input[type="submit"],
-		input[type="reset"],
-		button 
-		{
-		    border: none;
-		    padding: 3px 10px;
-		}
+    .c-row {
+        margin: 1em 0;
+    }
+
+    .c-row_submit {
+        margin-top: 1.5em;
+    }
+
+        label {
+
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        textarea,
+        {
+            background: #f4f4f4;
+            border: 1px solid #cfcfcf;
+            border-top: 1px solid #a0a0a0;
+            padding: 4px 5px 5px;
+
+            &:hover,
+            &:focus {
+
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        select {
+
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        button 
+        {
+            border: none;
+            padding: 3px 10px;
+        }
 
