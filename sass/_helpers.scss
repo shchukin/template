@@ -124,18 +124,8 @@
 .h-lowercase { text-transform: lowercase; }
 
 
-/* Color
----------------------------------------- */
-.h-color-gray { color: #999; }
-
-
 /* Display
 ---------------------------------------- */
-.h-display-no { display: none !important; visibility: hidden; }
-.h-inline { display: inline; }
-.h-inline-block { display: inline-block; }
-.h-block { display: block; }
-
 .h-table {            
     display: table;
     width: 100%;
@@ -153,14 +143,15 @@
     position: relative
 }
 
-.h-absolute {
+.h-absolute-cover {
     display: block;
-    width: 100%;
-    height: 100%;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    top: 0;   
 }
+
 
 /* Link decoration
 ----------------------------------------- */

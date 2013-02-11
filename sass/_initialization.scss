@@ -18,6 +18,7 @@ body {
     line-height: $base-lineheight;
 }
 
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -28,10 +29,21 @@ body {
     text-shadow: none;
 }
 
+
+strong, b {
+	font-weight: $bold;
+}
+
+em, i {
+	
+}
+
+
 a {
 	color: $link-color;
 	&:hover { text-decoration: none; }
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 
@@ -48,11 +60,21 @@ h1 {
 	margin-top: 0;
 }
 
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
 
 
 hr {
@@ -67,6 +89,7 @@ hr {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 
@@ -74,86 +97,91 @@ ul {
     list-style: url($img-path+'style__li.png');
 }
 
-p:first-child { margin-top: 0; }
-p:last-child { margin-bottom: 0; }
+
 
 table {
-    width: 100%;
-    color: #7d7d7d;
+    
 }
-    td {
-        background: #f4f4f4;
-        padding: 5px 10px 3px;
-    }
-    
-    tr:nth-child(odd) td { background: #f8f8f8; }
-    
-    thead {
+	
+	thead {
         color: $base-color;    
         font-weight: $bold;
-        td { background: #d5e1ee !important; }
     }
+    
+    tbody {
+	    
+    }
+	    
+	    th {
+		    
+	    }
+	    
+	    td {
+	
+	    }
+	    
+	    tr:nth-child(odd) td { 
+	
+	    }
+    
+
     
     
     
 form {
 
 }
+	
+	fieldset {
+	    border: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+	
+	.c-row {
+		margin: 1em 0;
+	}
+	
+	.c-row_submit {
+		margin-top: 1.5em;
+	}
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+		label {
+			
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="number"],
+		input[type="search"],
+		input[type="tel"],
+		textarea,
+		{   
+		    background: #f4f4f4;
+		    border: 1px solid #cfcfcf;
+		    border-top: 1px solid #a0a0a0;
+		    padding: 4px 5px 5px;
+		    
+		    &:hover,
+		    &:focus {
+		 
+		    }
+		}
 
-.v-form-raw {
-   margin: 1em 0;
-}
+		textarea {
+			resize: vertical;
+		}
+		
+		select {
+		
+		}
+		
+		input[type="submit"],
+		input[type="reset"],
+		button 
+		{
+		    border: none;
+		    padding: 3px 10px;
+		}
 
-label {
-	display: inline-block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-textarea,
-{   
-    background: #f4f4f4;
-    border: 1px solid #cfcfcf;
-    border-top: 1px solid #a0a0a0;
-    padding: 4px;
-    
-    &:hover,
-    &:focus {
-	    border: 1px solid #aaa;
-	    border-top: 1px solid #909090;        
-	    background: #f9f9f9;	    
-    }
-}
-
-textarea {
-	resize: vertical;
-}
-
-select {
-  
-}
-
-input[type="submit"],
-input[type="reset"],
-button 
-{
-    border: none;
-    padding: 3px 10px;
-}
-
-.v-ancients {
-	margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
