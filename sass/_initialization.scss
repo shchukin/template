@@ -1,3 +1,11 @@
+$base-family:     $f-Helvetica;
+$base-color:      #222;
+$link-color:      #999;
+$headings-color:  #000;
+$base-fontsize:   12px;
+$base-lineheight: 1.416; /*17px*/
+
+
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -12,10 +20,7 @@ textarea {
 
 body {
     background: #e3e3e3 url($img-path+'background__page.png');
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: $normal;
-    font-size: $base-fontsize;
-    line-height: $base-lineheight;
+    font: $normal-weight #{$base-fontsize} / #{$base-lineheight} $base-family;
 }
 
 
@@ -31,7 +36,7 @@ body {
 
 
 strong, b {
-    font-weight: $bold;
+    font-weight: $bold-weight;
 }
 
 em, i {
@@ -47,7 +52,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 
-    font-weight: $normal;
+    font-weight: $normal-weight;
     color: $headings-color;
 
     a {
@@ -105,7 +110,7 @@ table {
 	
 	thead {
         color: $base-color;    
-        font-weight: $bold;
+        font-weight: $bold-weight;
     }
 
     tbody {

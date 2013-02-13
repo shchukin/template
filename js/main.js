@@ -2,6 +2,6 @@
  * Placeholder fix init
  */
 
-$(document).ready(fuction(){
+$(document).ready(function(){
     $('.no-placeholder input[placeholder], .no-placeholder textarea[placeholder]').placeholder();    
 });

@@ -1,25 +1,24 @@
 @charset "utf-8";
 
+$img-path:       "../images/";
+$img-path-fixes: "../images/fixes/";
+$font-path:      "../fonts/";
+
 @import 'compass/css3';      /* compass framework mixins for great justice        */
-@import 'variables';         /* sass variables like base-color or image dir path  */
-@import 'mixins';            /* app mixins (current project only)                 */
-@import 'fontface';          /* non standart fonts if required                    */
+@import 'mixins';            /* app mixins                                        */
+@import 'fonts';             /* font-face and font-family                         */
 @import 'normalize';         /* normalize from h5bp                               */
 @import 'initialization';    /* style init like default font, link colors etc.    */
-@import 'common';            /* common style that occur often                     */
-@import 'layout';            /* layout style                                      */
-@import 'blocks';            /* block style                                       */
+@import 'blocks__global';    /* global blocks style                               */
 @import 'helpers';           /* helpers style (partly from h5bp)                  */
 @import 'print';             /* print style from h5bp                             */
 
-/* Prefixes
- *  l- layout  ( page regions, ex: .l-header or .l-left-column )
- *  b- block   ( content blocks placed in regions, ex: .b-logo or .b-nav )
- *  c- common  ( for elements that occur often, ex: .c-red-button or .c-shadowed-line )
- *  v- visual  ( regular class, most common in use, ex: .v-image-title or .v-phone-index )
- *  w- wrapper ( for wrap somthing, ex: .w-copyright-developers or .w-sidebar-center )
- *  h- helpers ( when you don't need to wrote unic selector, ex: .h-color-gray or .h-uppercase )
- *  p- page    ( to split pages by type ex: body.p-index or body.p-portfolio )
+
+/*  
+ *  b- block    | independent unit
+ *  e- element  | child of block
+ *  m- modifier | modifier of block or element
+ *  h- helpers  | extra things like clearfix
  */
 
 /*
