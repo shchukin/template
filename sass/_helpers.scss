@@ -1,73 +1,3 @@
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.h-ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.h-ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.h-hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.h-visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.h-visuallyhidden.focusable:active,
-.h-visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.h-invisible {
-    visibility: hidden;
-}
-
 /*
  * Clearfix: contain floats
  *
@@ -80,13 +10,13 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-.h-clearfix:before,
-.h-clearfix:after {
+.clearfix:before,
+.clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.h-clearfix:after {
+.clearfix:after {
     clear: both;
 }
 
@@ -95,6 +25,6 @@
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.h-clearfix {
+.clearfix {
     *zoom: 1;
 }

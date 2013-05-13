@@ -24,9 +24,9 @@
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+/*
+ * Don't show links for images, or javascript/internal links
+ */
 
     .ir a:after,
     a[href^="javascript:"]:after,
