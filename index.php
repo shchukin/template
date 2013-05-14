@@ -1,5 +1,6 @@
+<?php include 'functions.php'; ?>
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html class="<?php echo getOS();?> <?php echo getBrowser(); ?> no-js" lang="ru">
     <head>
 
         <meta charset="utf-8">
@@ -9,7 +10,7 @@
         <!-- Uncomment in case of responsive design and delete tag above
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         -->
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">  
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -21,7 +22,7 @@
         <!--[if lt IE 8]>
             <div class="ancients">
                 Вы используете устаревший браузер.
-                Для корректного функционирования этого сайта и большинства других 
+                Для корректного функционирования этого сайта и большинства других
                 Вам необходимо <a href="http://abetterbrowser.org/ru">обновить ваш браузер</a>.
             </div>
         <![endif]-->
