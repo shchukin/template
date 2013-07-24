@@ -1,0 +1,28 @@
+$icon-size: 16px;
+
+.icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: $icon-size;
+    height: $icon-size;
+    top: -1px; // for better vertical aligning
+    background: url( $img-path + 'icon_' + $icon-size  + '.png' ) no-repeat;
+}
+
+.icon_star      { background-position: #{-($icon-size*0)} #{-($icon-size*0)}; }
+.icon_magnifier { background-position: #{-($icon-size*1)} #{-($icon-size*0)}; }
+
+
+// _large
+
+$icon-size: 24px;
+
+.icon_large {
+    width: $icon-size;
+    height: $icon-size;
+    background-image: url( $img-path + 'icon_' + $icon-size  + '.png' );
+}
+
+.icon_large.icon_star      { background-position: #{-($icon-size*0)} #{-($icon-size*0)}; }
+.icon_large.icon_magnifier { background-position: #{-($icon-size*1)} #{-($icon-size*0)}; }

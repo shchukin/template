@@ -1,0 +1,29 @@
+//http://www.w3.org/TR/CSS2/sample.html
+//http://html5doctor.com/html-5-reset-stylesheet/
+
+p, ul, ol, dl, menu, hr,
+h1, h2, h3, h4, h5, h6,
+blockquote, fieldset {
+    margin: 0;
+}
+
+ul, ol, menu, hr {
+    padding: 0;
+}
+
+input, button {
+    border: none;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+th {
+    font-weight: normal;
+}
+
+th {
+    text-align: left;
+}

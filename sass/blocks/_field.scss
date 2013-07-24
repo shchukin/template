@@ -1,0 +1,43 @@
+$field-height: 24px;
+$ie8-padding: 4px;
+
+.field {
+    display: inline-block;
+    vertical-align: middle;
+    height: $field-height - 2px; //cause borders
+    width: 90px;
+    padding: 0 9px;
+    border: 1px solid #c3c3c3;
+    @include border-radius(2px);
+    font-size: 12px;
+    color: #333;
+
+    .ie8 & {
+        padding-top: $ie8-padding;
+        height: $field-height - 2 - $ie8-padding;
+    }
+}
+
+.field::-webkit-input-placeholder {
+    font-style: italic;
+    color: #888;
+}
+.field:-moz-placeholder {
+    font-style: italic;
+    color: #888;
+}
+.field::-moz-placeholder {
+    font-style: italic;
+    color: #888;
+}
+.field:-ms-input-placeholder {
+    font-style: italic;
+    color: #888;
+}
+
+
+// _large
+
+.field_large {
+    width: 200px;
+}

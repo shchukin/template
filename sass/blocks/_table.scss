@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    color: #7d7d7d;
+//  border-collapse: separate; // to separate cells by free space (but here goes extra pixel between thead and tbody - can be removed by removing this tags)
+//  border-spacing: 1px;       // to separate cells by free space (but here goes extra pixel between thead and tbody - can be removed by removing this tags)
+
+
+    td, th {
+        padding: 5px 10px 3px;
+        border: 1px solid #fff;
+    }
+
+    th {
+        background: #d5e1ee;
+        text-align: center;
+        color: #333;
+    }
+
+    td {
+        background: #f4f4f4;
+    }
+
+    tr:nth-child(odd) td {
+        background: #f8f8f8;
+    }
+
+}

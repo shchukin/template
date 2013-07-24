@@ -1,9 +1,8 @@
 $base-family:     $f-Helvetica;
 $base-color:      #222;
 $link-color:      #999;
-$headings-color:  #000;
 $base-fontsize:   12px;
-$base-lineheight: 1.416; /*17px*/
+$base-lineheight: 1.5; /*18px*/
 
 
 /* ==========================================================================
@@ -20,7 +19,7 @@ textarea {
 
 body {
     background: #e3e3e3 url($img-path+'background.png');
-    font: $normal-weight #{$base-fontsize} / #{$base-lineheight} $base-family;
+    font: #{$base-fontsize} / #{$base-lineheight} $base-family;
 }
 
 
@@ -35,57 +34,9 @@ body {
 }
 
 
-strong, b {
-    font-weight: $bold-weight;
-}
-
-em, i {
-    
-}
-
-
 a {
     color: $link-color;
     &:hover { text-decoration: none; }
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-
-    font-weight: $normal-weight;
-    color: $headings-color;
-
-    a {
-        text-decoration: none;
-        color: $headings-color;
-    }
-}
-
-h1 {
-    margin-top: 0;
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid $base-color;
-    margin: 1em 0;
-    padding: 0;
 }
 
 
@@ -94,94 +45,8 @@ img {
     max-width: 100%;
 }
 
-
-ul {
-
+textarea {
+    resize: vertical;
 }
 
-
-
-table {
-
-}
-	
-	thead {
-        color: $base-color;    
-        font-weight: $bold-weight;
-    }
-
-    tbody {
-
-    }
-
-        th {
-
-        }
-
-        td {
-
-        }
-
-        tr:nth-child(odd) td { 
-
-        }
-
-
-
-form {
-
-}
-
-    fieldset {
-        border: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    .c-row {
-        margin: 1em 0;
-    }
-
-    .c-row_submit {
-        margin-top: 1.5em;
-    }
-
-        label {
-
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="number"],
-        input[type="search"],
-        input[type="tel"],
-        textarea,
-        {
-            background: #f4f4f4;
-            border: 1px solid #cfcfcf;
-            border-top: 1px solid #a0a0a0;
-            padding: 4px 5px 5px;
-
-            &:hover,
-            &:focus {
-
-            }
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        select {
-
-        }
-
-        input[type="submit"],
-        input[type="reset"],
-        button 
-        {
-            border: none;
-            padding: 3px 10px;
-        }
 
