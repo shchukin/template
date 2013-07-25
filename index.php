@@ -107,6 +107,9 @@
                                         <!--<input class="field field_large" type="text" placeholder="field_large">-->
                                         <div class="button button_large">button_large</div>
 
+                                        <div class="video">
+                                            <iframe class="video__iframe" src="//www.youtube.com/embed/P3xKbPooKAo" frameborder="0" allowfullscreen></iframe>
+                                        </div>
 
                                         <table class="table">
                                             <thead>

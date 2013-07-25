@@ -14,7 +14,7 @@ $button-height: 24px;
     @include border-radius(4px);
     @include box-shadow(inset 0 0 0 1px rgba(255,255,255, .25));
     cursor: pointer;
-    font-size: $button-height / 2;
+    font-size: $button-height * 0.5;
     color: #fff;
 
     &:hover {
