@@ -7,11 +7,11 @@ blockquote, fieldset {
     margin: 0;
 }
 
-ul, ol, menu, hr {
+ul, ol, menu, hr, fieldset {
     padding: 0;
 }
 
-input, button {
+input, button, fieldset {
     border: none;
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6,
 th {
-    font-weight: normal;
+    font-weight: inherit;
 }
 
 
