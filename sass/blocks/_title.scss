@@ -1,6 +1,9 @@
 .title {
+    display: block; //in case of <a>
+    text-decoration: none;
     font-size: 18px;
-    color: #000;
+    color: $heading-color;
+    a { text-decoration: none; }
 }
 
 .title_large {
