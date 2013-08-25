@@ -41,3 +41,21 @@ $ie8-padding: 4px;
 .field_large {
     width: 200px;
 }
+
+
+// placeholder styling
+
+.field::-webkit-input-placeholder {font-style: normal; color: #b3b3b3; }
+.field:-moz-placeholder { font-style: normal; color: #b3b3b3; }
+.field::-moz-placeholder { font-style: normal; color: #b3b3b3; }
+.field:-ms-input-placeholder { font-style: normal; color: #b3b3b3; }
+
+.field:hover::-webkit-input-placeholder { color: #7e7e7e; }
+.field:hover:-moz-placeholder { color: #7e7e7e; }
+.field:hover::-moz-placeholder { color: #7e7e7e; }
+.field:hover:-ms-input-placeholder { color: #7e7e7e; }
+
+.field:focus::-webkit-input-placeholder { color: #7e7e7e; @include transition(none); }
+.field:focus:-moz-placeholder { color: #7e7e7e; @include transition(none); }
+.field:focus::-moz-placeholder { color: #7e7e7e; @include transition(none); }
+.field:focus:-ms-input-placeholder { color: #7e7e7e; @include transition(none); }
