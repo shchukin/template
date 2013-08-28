@@ -4,7 +4,6 @@
     <head>
 
         <meta charset="utf-8">
-        <title></title>
 
         <meta name="viewport" content="width=device-width">
         <!-- Uncomment in case of responsive design and delete tag above
@@ -14,6 +13,32 @@
 
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <title>[%title%]</title>
+        <meta name="description"     content="[%description%]">
+
+        <!-- schema.org (google plus) -->
+        <meta itemprop="url"         content="[%url%]">
+        <meta itemprop="image"       content="[%img%]">
+        <meta itemprop="name"        content="[%title%]">
+        <meta itemprop="description" content="[%description%]">
+
+        <!-- ogp.me (facebook & vkontakte) -->
+        <meta property="og:type"        content="article">
+        <meta property="og:url"         content="[%url%]">
+        <meta property="og:image"       content="[%img%]">
+        <meta property="og:title"       content="[%title%]">
+        <meta property="og:description" content="[%description%]">
+        <meta property="fb:app_id"      content="[%app-id%]">
+
+        <!-- twitter -->
+        <meta name="twitter:card"        content="summary">
+        <meta name="twitter:url"         content="[%url%]">
+        <meta name="twitter:image"       content="[%img%]">
+        <meta name="twitter:title"       content="[%title%]">
+        <meta name="twitter:description" content="[%description%]">
+        <meta name="twitter:site"        content="@user">
+        <meta name="twitter:creator"     content="@user">
 
     </head>
 
