@@ -6,7 +6,7 @@
     }
 
     ul, ol {
-        padding: 0 0 0 1.2em;
+        padding: 0 0 0 1.5em;
         &:first-child { margin-top: 0; }
     }
 
@@ -38,6 +38,7 @@
 
     h2 {
         font-size: 1.5em;
+        line-height: 1;
         margin: 0.83em 0 0;
         color: $heading-color;
         &:first-child { margin-top: 0; }
@@ -45,6 +46,7 @@
 
     h3 {
         font-size: 1.17em;
+        line-height: 1.1;
         margin: 1em 0 0;
         color: $heading-color;
         &:first-child { margin-top: 0; }
@@ -52,6 +54,7 @@
 
     h4 {
         font-size: 1em;
+        line-height: 1.2;
         margin: 1.33em 0 0;
         color: $heading-color;
         &:first-child { margin-top: 0; }

@@ -8,7 +8,7 @@ ul, ol, menu, hr, fieldset {
     padding: 0;
 }
 
-input, button, fieldset {
+input, button, fieldset, textarea {
     border: none;
 }
 
@@ -29,3 +29,8 @@ th {
 th {
     text-align: left;
 }
+
+::-webkit-input-placeholder { font-style: normal; }
+:-moz-placeholder { font-style: normal; }
+::-moz-placeholder { font-style: normal; }
+:-ms-input-placeholder { font-style: normal; }
