@@ -18,7 +18,12 @@ $ie8-padding: 4px;
     }
 }
 
-
+textarea.field {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 60px;
+    resize: vertical;
+}
 
 
 // placeholder styling

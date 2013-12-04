@@ -25,6 +25,25 @@ th {
     font-weight: inherit;
 }
 
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+button,
+input,
+select,
+textarea,
+a {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
 
 th {
     text-align: left;

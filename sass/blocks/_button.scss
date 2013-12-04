@@ -3,6 +3,7 @@ $button-height: 24px;
 .button {
     text-decoration: none;
     @include box-sizing(content-box); //case of submit or something
+    white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
     height:      $button-height - 2px;       // -2px cause borders

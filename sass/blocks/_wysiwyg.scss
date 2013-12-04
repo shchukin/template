@@ -29,11 +29,17 @@
         height: auto;
     }
 
+    a {
+        color: $link-color;
+        text-decoration: underline;
+        &:hover { text-decoration: none; }
+    }
+
     hr {
         display: block;
         height: 1px;
         border: 0;
-        border-top: 1px solid $base-color;
+        border-top: 1px solid;
     }
 
     h2 {

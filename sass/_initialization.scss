@@ -6,21 +6,10 @@ $link-color:      #999;
 $base-fontsize:   12px;
 $base-lineheight: 18px;
 
-
-html,
-button,
-input,
-select,
-textarea {
-    font-family: $base-family;
-    color: $base-color;
-}
-
-body {
+html {
     background: #e3e3e3 url($img-path+'background.png');
     font: #{$base-fontsize} / #{$base-lineheight} $base-family;
 }
-
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -31,15 +20,3 @@ body {
     background: #b3d4fc;
     text-shadow: none;
 }
-
-
-a {
-    color: $link-color;
-    &:hover { text-decoration: none; }
-}
-
-textarea {
-    resize: vertical;
-}
-
-
