@@ -8,7 +8,7 @@ ul, ol, menu, hr, fieldset {
     padding: 0;
 }
 
-input, button, fieldset, textarea {
+input, button, fieldset, textarea, hr {
     border: none;
 }
 
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6,
-th {
+th, input {
     font-weight: inherit;
 }
 
@@ -45,11 +45,19 @@ a {
     text-decoration: none;
 }
 
+thead,
+tbody {
+    vertical-align: inherit;
+}
+
 th {
-    text-align: left;
+    text-align: inherit;
+}
+
+table {
+    width: 100%;
 }
 
 ::-webkit-input-placeholder { font-style: normal; }
-:-moz-placeholder { font-style: normal; }
 ::-moz-placeholder { font-style: normal; }
 :-ms-input-placeholder { font-style: normal; }

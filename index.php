@@ -12,7 +12,7 @@
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
         <title>[%title%]</title>
         <meta name="description"     content="[%description%]">
@@ -131,57 +131,58 @@
                                     <h1 class="title title_large">Page title</h1>
                                 </div>
                                 <div class="content__body">
+
+                                    <i class="icon"></i>
+
+                                    <i class="icon icon_star"></i>
+                                    <i class="icon icon_magnifier"></i>
+
+                                    <i class="icon icon_large icon_star"></i>
+                                    <i class="icon icon_large icon_magnifier"></i>
+
+                                    <div class="button">div button</div>
+                                    <span class="button">span button</span>
+                                    <a class="button" href="#">a button</a>
+                                    <input type="submit" class="button" value="input button">
+                                    <button class="button">button button</button>
+                                    <input class="field" type="text" placeholder="field">
+                                    <input class="field field_wide" type="text" placeholder="field_wide">
+                                    <input class="field field_narrow" type="text" placeholder="field_narrow">
+                                    <div class="button button_large">button_large</div>
+
+                                    <div class="video">
+                                        <iframe class="video__iframe" src="//www.youtube.com/embed/P3xKbPooKAo" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Название столбца</th><th>Название столбца</th><th>Название столбца</th><th>Название столбца</th><th>Название столбца</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                     <div class="wysiwyg">
-
-                                        <i class="icon"></i>
-
-                                        <i class="icon icon_star"></i>
-                                        <i class="icon icon_magnifier"></i>
-
-                                        <i class="icon icon_large icon_star"></i>
-                                        <i class="icon icon_large icon_magnifier"></i>
-
-                                        <div class="button">div button</div>
-                                        <span class="button">span button</span>
-                                        <a class="button" href="#">a button</a>
-                                        <input type="submit" class="button" value="input button">
-                                        <button class="button">button button</button>
-                                        <input class="field" type="text" placeholder="field">
-                                        <input class="field field_wide" type="text" placeholder="field_wide">
-                                        <input class="field field_narrow" type="text" placeholder="field_narrow">
-                                        <div class="button button_large">button_large</div>
-
-                                        <div class="video">
-                                            <iframe class="video__iframe" src="//www.youtube.com/embed/P3xKbPooKAo" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Название столбца</th><th>Название столбца</th><th>Название столбца</th><th>Название столбца</th><th>Название столбца</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td><td>Текст ячейки</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
 
                                         <h2>H2 header H2</h2>
                                         <h3>H3 header H3</h3>
