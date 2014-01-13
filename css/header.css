@@ -1,0 +1,9 @@
+.header {
+    height: 200px;
+    position: relative;
+}
+    .header__logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }

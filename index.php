@@ -11,7 +11,7 @@
         -->
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/_style.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
         <title>[%title%]</title>

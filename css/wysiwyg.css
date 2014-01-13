@@ -1,0 +1,79 @@
+.wysiwyg p,
+.wysiwyg ul,
+.wysiwyg ol,
+.wysiwyg hr,
+.wysiwyg blockquote {
+    margin: 1em 0 0;
+}
+
+.wysiwyg p:first-child,
+.wysiwyg ul:first-child,
+.wysiwyg ol:first-child,
+.wysiwyg hr:first-child,
+.wysiwyg blockquote:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg ul,
+.wysiwyg ol {
+    padding-left: 1.5em;
+}
+
+.wysiwyg ul {
+    list-style: disc;
+}
+
+.wysiwyg ol {
+    list-style: decimal;
+}
+
+.wysiwyg blockquote {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.wysiwyg img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+.wysiwyg a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.wysiwyg a:hover,
+.wysiwyg a:focus {
+    text-decoration: none;
+}
+
+
+.wysiwyg hr {
+    height: 0;
+    border-top: 1px solid;
+}
+
+.wysiwyg h2 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0.83em 0 0;
+}
+
+.wysiwyg h3 {
+    font-size: 1.17em;
+    line-height: 1.1;
+    margin: 1em 0 0;
+}
+
+.wysiwyg h4 {
+    font-size: 1em;
+    line-height: 1.2;
+    margin: 1.33em 0 0;
+}
+
+.wysiwyg h2:first-child,
+.wysiwyg h3:first-child,
+.wysiwyg h4:first-child {
+    margin-top: 0;
+}

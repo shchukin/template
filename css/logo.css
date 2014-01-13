@@ -1,0 +1,7 @@
+.logo {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    background: url(../images/sprite.png) no-repeat 0 0;
+}

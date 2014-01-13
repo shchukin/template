@@ -1,0 +1,14 @@
+.content {
+
+}
+    .content__title {
+
+    }
+
+    .content__body {
+        margin: 20px 0 0;
+    }
+
+    .content__body:first-child {
+        margin-top: 0;
+    }

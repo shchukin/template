@@ -1,0 +1,15 @@
+.body {
+
+}
+    .body__sidebar {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+        margin: 0 20px 0 0;
+    }
+
+    .body__content {
+        display: inline-block;
+        vertical-align: top;
+        width: 740px;
+    }
