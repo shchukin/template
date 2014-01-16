@@ -1,13 +1,17 @@
 .icon {
-    position: relative;
     display: inline-block;
-    vertical-align: middle;
-    top: -1px;
+    vertical-align: top;
     background: url(../images/sprite.png) no-repeat;
 }
 
-.icon_some-icon-title {
-    width: 16px;
-    height: 16px;
-    background-position: -100px -100px;
+.icon_bitcoin {
+    width: 33px;
+    height: 33px;
+    background-position: 0 -72px;
+}
+
+.icon_house {
+    width: 13px;
+    height: 10px;
+    background-position: -33px -72px;
 }
