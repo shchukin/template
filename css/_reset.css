@@ -58,6 +58,10 @@ table {
     width: 100%;
 }
 
+label {
+    cursor: pointer;
+}
+
 ::-webkit-input-placeholder { font-style: normal; }
 ::-moz-placeholder { font-style: normal; }
 :-ms-input-placeholder { font-style: normal; }

@@ -6,33 +6,21 @@
 @import url(link.css);
 @import url(time.css);
 @import url(icon.css);
+@import url(button.css);
+@import url(field.css);
 @import url(title.css);
 @import url(table.css);
 @import url(video.css);
 @import url(col.css);
 @import url(row.css);
 @import url(wysiwyg.css);
-
-
+@import url(clearfix.css);
+@import url(ancients.css);
 @import url(logo.css);
 @import url(nav.css);
 @import url(copyright.css);
 @import url(breadcrumbs.css);
 @import url(pagination.css);
-
-
-
-
-Доделать:
-@import url(button.css);
-@import url(field.css);
-
-
-
-Проверить:
-
-@import url(clearfix.css);
-@import url(ancients.css);
 @import url(sidebar.css);
 @import url(content.css);
 @import url(header.css);
