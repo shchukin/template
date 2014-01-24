@@ -8,6 +8,7 @@
         display: inline-block;
         vertical-align: top;
         width: auto;
+		text-align: left;
         padding: 10px 20px;
     }
 

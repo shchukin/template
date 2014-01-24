@@ -4,7 +4,7 @@ blockquote, fieldset {
     margin: 0;
 }
 
-ul, ol, menu, hr, fieldset {
+ul, ol, menu, hr, fieldset, td, th {
     padding: 0;
 }
 
