@@ -50,6 +50,10 @@ tbody {
     vertical-align: inherit;
 }
 
+iframe {
+    vertical-align: top;
+}
+
 th {
     text-align: inherit;
 }
