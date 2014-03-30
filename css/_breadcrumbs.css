@@ -1,0 +1,13 @@
+.breadcrumbs {
+    margin: 0 -4px;
+    cursor: default;
+}
+    .breadcrumbs__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 4px;
+    }
+
+        .breadcrumbs__item__link {
+            color: #999;
+        }
