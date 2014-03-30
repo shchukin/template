@@ -22,17 +22,14 @@
     .table__body {
 
     }
-        .table__body {
+        .table__body__row {
 
         }
-            .table__body__row {
-
+            .table__body__row__cell {
+                padding: 5px 10px 3px;
+                border: 1px solid #fff;
             }
-                .table__body__row__cell {
-                    padding: 5px 10px 3px;
-                    border: 1px solid #fff;
-                }
 
-            .table__body__row:nth-child(odd) {
-                background: #f4f4f4;
-            }
+        .table__body__row:nth-child(odd) {
+            background: #f4f4f4;
+        }
