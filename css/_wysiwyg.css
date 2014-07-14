@@ -2,7 +2,9 @@
 .wysiwyg ul,
 .wysiwyg ol,
 .wysiwyg hr,
-.wysiwyg blockquote {
+.wysiwyg blockquote,
+.wysiwyg .left-image,
+.wysiwyg .right-image {
     margin: 1em 0 0;
 }
 
@@ -10,7 +12,22 @@
 .wysiwyg ul:first-child,
 .wysiwyg ol:first-child,
 .wysiwyg hr:first-child,
-.wysiwyg blockquote:first-child {
+.wysiwyg blockquote:first-child,
+.wysiwyg .left-image:first-child,
+.wysiwyg .right-image:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg .left-image:first-child + p,
+.wysiwyg .left-image:first-child + ul,
+.wysiwyg .left-image:first-child + ol,
+.wysiwyg .left-image:first-child + hr,
+.wysiwyg .left-image:first-child + blockquote,
+.wysiwyg .right-image:first-child + p,
+.wysiwyg .right-image:first-child + ul,
+.wysiwyg .right-image:first-child + ol,
+.wysiwyg .right-image:first-child + hr,
+.wysiwyg .right-image:first-child + blockquote {
     margin-top: 0;
 }
 
@@ -33,7 +50,6 @@
 }
 
 .wysiwyg img {
-    vertical-align: top;
     max-width: 100%;
     height: auto;
 }
@@ -43,8 +59,7 @@
     text-decoration: underline;
 }
 
-.wysiwyg a:hover,
-.wysiwyg a:focus {
+.wysiwyg a:hover {
     text-decoration: none;
 }
 
@@ -76,4 +91,20 @@
 .wysiwyg h3:first-child,
 .wysiwyg h4:first-child {
     margin-top: 0;
+}
+
+
+.wysiwyg .left-image {
+    float: left;
+    margin-right: 34px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 9px
+}
+.wysiwyg .right-image {
+    float: right;
+    margin-left: 34px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 9px
 }
