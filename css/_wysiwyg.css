@@ -1,3 +1,13 @@
+.wysiwyg:before,
+.wysiwyg:after {
+    content: " ";
+    display: table;
+}
+
+.wysiwyg:after {
+    clear: both;
+}
+
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,

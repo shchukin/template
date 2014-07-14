@@ -51,7 +51,8 @@ tbody {
 }
 
 iframe,
-img {
+img,
+table {
     vertical-align: top;
 }
 
