@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
     <head>
 
         <meta charset="utf-8">
@@ -9,16 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         -->
         <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-
-        <title></title>
+        <title>Index</title>
 
     </head>
 
     <body>
-        <!--[if lt IE 9]>
+        <!--[if IE]>
             <div class="ancients">
                 Вы используете устаревший браузер.
                 Для корректного функционирования этого сайта и большинства других
@@ -383,9 +380,13 @@
 
 
         <!-- Scripts -->
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script>
+            $(function() {
+                $('input, textarea').placeholder();
+            });
+        </script>
         <!--/Scripts -->
 
 

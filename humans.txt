@@ -6,10 +6,9 @@
 # THANKS
 
     h5bp.com
-    really guys, tnx to you
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery
     BEM
