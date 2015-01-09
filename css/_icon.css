@@ -1,17 +1,3 @@
 .icon {
-    display: inline-block;
-    vertical-align: top;
-    background: url(../images/sprite.png) no-repeat;
-}
 
-.icon_bitcoin {
-    width: 33px;
-    height: 33px;
-    background-position: 0 -72px;
-}
-
-.icon_house {
-    width: 13px;
-    height: 10px;
-    background-position: -33px -72px;
 }

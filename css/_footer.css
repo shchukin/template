@@ -5,5 +5,11 @@
     .footer__copyright {
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 30px;
+    }
+
+    .footer__developer {
+        position: absolute;
+        right: 0;
+        top: 30px;
     }

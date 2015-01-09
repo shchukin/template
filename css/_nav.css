@@ -2,7 +2,12 @@
 
 }
     .nav__item {
+        display: inline-block;
+        margin: 0 0 0 50px;
+    }
 
+    .nav__item:first-child {
+        margin-left: 0;
     }
         .nav__item__link {
 

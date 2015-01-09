@@ -1,9 +1,9 @@
 .header {
-    height: 200px;
+    height: 100px;
     position: relative;
 }
     .header__logo {
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 0;
+        top: 50px;
     }

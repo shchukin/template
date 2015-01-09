@@ -5,6 +5,10 @@ input[type="search"] {
             box-sizing: border-box;
 }
 
+* {
+    vertical-align: top;
+}
+
 
 ul, ol, menu {
     margin: 0;
@@ -36,19 +40,19 @@ h1, h2, h3, h4, h5, h6 {
 iframe,
 img,
 video {
-    vertical-align: top;
+    /*vertical-align: top;*/
 }
 
 
 table {
-    vertical-align: top;
+    /*vertical-align: top;*/
     width: 100%;
 }
 
-thead,
-tbody {
-    vertical-align: inherit;
-}
+/*thead,*/
+/*tbody {*/
+    /*vertical-align: inherit;*/
+/*}*/
 
 th {
     font-weight: inherit;
@@ -62,6 +66,7 @@ td {
 
 
 a,
+i,
 span,
 label {
     display: block;
@@ -81,7 +86,7 @@ button,
 select,
 input,
 textarea {
-    vertical-align: top;
+    /*vertical-align: top;*/
     font-weight: inherit;
     font-family: inherit;
     color: inherit;
@@ -123,3 +128,15 @@ textarea {
 ::-webkit-input-placeholder { font-style: normal; }
 ::-moz-placeholder          { font-style: normal; }
 :-ms-input-placeholder      { font-style: normal; }
+
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}

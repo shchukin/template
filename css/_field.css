@@ -1,13 +1,6 @@
 .field {
 
 }
-
-    .field__label {
-        margin: 0 0 6px;
-        padding: 0 10px;
-        font-size: 13px;
-    }
-
     .field__input {
         outline: none;
         height: 26px;
@@ -39,7 +32,3 @@
     .field__input:focus::-moz-placeholder          { color: #7e7e7e; }
     .field__input:focus:-ms-input-placeholder      { color: #7e7e7e; }
     .field__input.placeholder:focus                { color: #7e7e7e; }
-
-    .field__note {
-        margin: 6px 0 0;
-    }

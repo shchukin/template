@@ -64,8 +64,18 @@
     height: auto;
 }
 
-.wysiwyg a {
+.wysiwyg a,
+.wysiwyg i,
+.wysiwyg span {
     display: inline;
+}
+
+.wysiwyg a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.wysiwyg a {
     color: #999;
     text-decoration: underline;
 }
