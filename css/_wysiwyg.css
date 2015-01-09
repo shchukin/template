@@ -65,6 +65,7 @@
 }
 
 .wysiwyg a {
+    display: inline;
     color: #999;
     text-decoration: underline;
 }

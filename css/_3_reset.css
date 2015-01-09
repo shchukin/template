@@ -4,7 +4,9 @@ blockquote, fieldset {
     margin: 0;
 }
 
-ul, ol, menu, hr, fieldset, td, th {
+ul, ol, menu,
+hr, fieldset,
+td, th {
     padding: 0;
 }
 
@@ -52,7 +54,12 @@ tbody {
 
 iframe,
 img,
-table {
+video,
+table,
+input,
+button,
+select,
+textarea {
     vertical-align: top;
 }
 
@@ -62,6 +69,27 @@ th {
 
 table {
     width: 100%;
+}
+
+a {
+    display: block;
+}
+
+
+
+button,
+[type="reset"],
+[type="button"],
+[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: none;
+    text-align: inherit;
+}
+
+textarea {
+    resize: vertical;
 }
 
 label[for] {
