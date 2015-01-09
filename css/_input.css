@@ -1,7 +1,12 @@
-.field {
+.input {
 
 }
-    .field__input {
+    .input__label {
+        display: inline-block;
+        margin: 0 0 8px;
+    }
+
+    .input__area {
         outline: none;
         height: 26px;
         padding: 0 9px;
@@ -12,7 +17,7 @@
         color: #333;
     }
 
-    textarea.field__input {
+    textarea.input__area {
         padding-top: 6px;
         padding-bottom: 6px;
         height: 60px;
