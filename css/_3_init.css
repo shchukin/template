@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after,
+input[type="search"] {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+html {
+    min-width: 1000px;
+    height: 100%;
+    background: #e3e3e3;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+/*
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+*/
+}
+    body {
+        height: 100%;
+    }
