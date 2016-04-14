@@ -1,6 +1,6 @@
-@import url(_1_fonts.css);
-@import url(_2_normalize.css);
-@import url(_3_init.css);
+@import url(fonts.css);
+@import url(../vendors/normalize/normalize.css);
+@import url(init.css);
 
 @import url(_article.css);
 @import url(_body.css);
