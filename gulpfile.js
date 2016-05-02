@@ -105,7 +105,7 @@ gulp.task('styles', function() {
   ];
 
   gulp.src([
-    'resources/vendor/normalize/normalize.css',
+    'resources/vendors/normalize/normalize.css',
     'resources/styles/fonts.css',
     'resources/styles/keyframes.css',
     'resources/styles/init.css',
