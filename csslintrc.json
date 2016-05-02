@@ -1,8 +1,9 @@
 {
   "empty-rules": false,
-  "box-sizing": false,
-  "box-model" : false,
+  "adjoining-classes": false,
   "universal-selector": false,
   "qualified-headings": false,
-  "fallback-colors": false
+  "fallback-colors": false,
+  "box-sizing": false,
+  "box-model" : false
 }
