@@ -112,8 +112,6 @@ gulp.task('styles', function() {
     '!resources/styles/style.css',
     'resources/styles/**/*.css'
   ])
-      .pipe(csslint('csslintrc.json'))
-      .pipe(csslint.reporter())
       .pipe(concat('style.css'))
       .pipe(postcss(processors))
       .pipe(autoprefixer({
