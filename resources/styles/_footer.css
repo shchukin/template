@@ -1,15 +1,27 @@
 .footer {
-    height: 100px;
-    position: relative;
+    border-top: 1px solid #ccc;
 }
-    .footer__copyright {
-        position: absolute;
-        left: 0;
-        top: 30px;
+    .footer__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
     }
+        .footer__info {
 
-    .footer__developer {
-        position: absolute;
-        right: 0;
-        top: 30px;
-    }
+        }
+            .footer__copyright {
+
+            }
+
+            .footer__contacts {
+                margin: 10px 0 0;
+            }
+
+        .footer__social {
+
+        }
+
+
+        .footer__developer {
+
+        }

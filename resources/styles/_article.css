@@ -4,20 +4,31 @@
     .article__head {
 
     }
-        .article__head__title {
+        .article__title {
 
         }
 
-        .article__head__note {
-            margin: 5px 0 0;
+        .article__note {
+            display: block;
+            margin: 10px 0 0;
+            color: #ccc;
         }
 
-        .article__head__preview {
-            margin: 5px 0 0;
+        .article__preview {
+            margin: 10px 0 0;
+            vertical-align: top;
         }
 
     .article__body {
         margin: 50px 0 0;
+    }
+
+    .article__gallery {
+        margin: 30px 0 0;
+    }
+
+    .article__additional {
+        margin: 30px 0 0;
     }
 
     .article__foot {

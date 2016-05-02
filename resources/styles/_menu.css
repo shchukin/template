@@ -1,0 +1,19 @@
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .menu__item {
+        margin: 10px 0 0;
+    }
+
+    .menu__item:first-child {
+        margin-top: 0;
+    }
+
+        .menu__link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background: rgba(255,0,0,.2);
+        }

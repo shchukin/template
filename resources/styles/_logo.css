@@ -1,5 +1,8 @@
 .logo {
     display: block;
     width: 208px;
-    height: 72px;
+    height: 80px;
+    line-height: 72px;
+    text-align: center;
+    background: rgba(255,255,255, .5);
 }

@@ -1,13 +1,17 @@
 .input {
 
 }
+
+.input_widget_area {
+
+}
+
     .input__label {
         display: inline-block;
         margin: 0 0 8px;
     }
 
-    .input__area {
-        outline: none;
+    .input__control {
         height: 26px;
         padding: 0 9px;
         background: #fff;
@@ -17,23 +21,21 @@
         color: #333;
     }
 
-    textarea.input__area {
+    .input__control::-webkit-input-placeholder { font-style: normal; opacity: 1; color: #b3b3b3; }
+    .input__control::-moz-placeholder          { font-style: normal; opacity: 1; color: #b3b3b3; }
+    .input__control:-ms-input-placeholder      { font-style: normal; opacity: 1; color: #b3b3b3; }
+
+    .input__control:hover::-webkit-input-placeholder { color: #7e7e7e; }
+    .input__control:hover::-moz-placeholder          { color: #7e7e7e; }
+    .input__control:hover:-ms-input-placeholder      { color: #7e7e7e; }
+
+    .input__control:focus::-webkit-input-placeholder { color: #7e7e7e; }
+    .input__control:focus::-moz-placeholder          { color: #7e7e7e; }
+    .input__control:focus:-ms-input-placeholder      { color: #7e7e7e; }
+
+
+    .input_widget_area .input__control {
         padding-top: 6px;
         padding-bottom: 6px;
         height: 60px;
     }
-
-    .field__input::-webkit-input-placeholder { color: #b3b3b3; }
-    .field__input::-moz-placeholder          { color: #b3b3b3; }
-    .field__input:-ms-input-placeholder      { color: #b3b3b3; }
-    .field__input.placeholder                { color: #b3b3b3; }
-
-    .field__input:hover::-webkit-input-placeholder { color: #7e7e7e; }
-    .field__input:hover::-moz-placeholder          { color: #7e7e7e; }
-    .field__input:hover:-ms-input-placeholder      { color: #7e7e7e; }
-    .field__input.placeholder:hover                { color: #7e7e7e; }
-
-    .field__input:focus::-webkit-input-placeholder { color: #7e7e7e; }
-    .field__input:focus::-moz-placeholder          { color: #7e7e7e; }
-    .field__input:focus:-ms-input-placeholder      { color: #7e7e7e; }
-    .field__input.placeholder:focus                { color: #7e7e7e; }

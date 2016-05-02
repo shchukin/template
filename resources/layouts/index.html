@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en-US">
     <head>
 
         <meta charset="utf-8">
@@ -34,28 +34,21 @@
 
         <div class="page">
 
-
-            <div class="page__header">
-                <div class="region">
-                    <header class="header">
-
-                        <div class="header__logo">
-
-                            <a class="logo" href="#">I am a Logo</a>
-
-                        </div>
-
-                    </header>
-
+            <header class="header page__header">
+                <div class="container header__wrap">
+                    <a class="logo header__logo" href="#">I am a Logo</a>
+                    <form class="search header__search">
+                        <input class="search__field" type="search">
+                        <button class="search__submit" type="submit">Search!</button>
+                    </form>
                 </div>
-            </div>
+            </header>
 
 
+            <nav class="nav page__nav">
+                <div class="container nav__wrap">
 
-            <nav class="page__nav">
-                <div class="region">
-
-                    <ul class="nav">
+                    <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__item__link" href="#">Index</a>
                         </li><!--
@@ -71,294 +64,342 @@
             </nav>
 
 
+            <div class="main page__body">
+                <div class="container main__wrap">
 
-            <div class="page__body">
-                <div class="region">
-                    <div class="body">
-
-
-                        <div class="body__sidebar">
-                            <div class="sidebar">
-                                <div class="sidebar__section">
-                                    I am Sidebar Section
-                                </div>
-                                <div class="sidebar__section">
-                                    I am Sidebar Section
-                                </div>
-                            </div>
-                        </div><!--
-
-
-                     --><div class="body__content">
-                            <div class="content">
-
-                                <div class="content__head">
-                                    <nav class="content__head__breadcrumbs">
-                                        <ul class="breadcrumbs">
-                                            <li class="breadcrumbs__item">
-                                                <a class="breadcrumbs__item__link" href="#">Index</a>
-                                            </li><!--
-                                         --><li class="breadcrumbs__item">
-                                                <a class="breadcrumbs__item__link" href="#">News</a>
-                                            </li><!--
-                                         --><li class="breadcrumbs__item">
-                                                Article
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-
-                                <div class="content__body">
-                                    <div class="content__body__section">
-
-                                        <!-- unique part of a page starts here -->
-
-                                        <article class="article">
-                                            <div class="article__head">
-                                                <div class="article__head__title">
-                                                    <h1 class="title title_larger">Article title</h1>
-                                                </div>
-                                                <div class="article__head__note">
-                                                    <time datetime="2014-12-31T19:59+04:00">Dec 31, 2014 at 23:59</time>
-                                                </div>
-                                                <div class="article__head__preview">
-                                                    I am a Featured Image
-                                                </div>
-                                            </div>
-                                            <div class="article__body">
-                                                <div class="wysiwyg">
-                                                    <h2>H2 header H2</h2>
-                                                    <h3>H3 header H3</h3>
-                                                    <h4>H4 header H4</h4>
-                                                    <p><strong>Lorem ipsum dolor sit amet, strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong </strong> Donec odio purus, semper nec rhoncus sed, ultricies non sem. Cras ante nisi, imperdiet a pulvinar vitae, dignissim. Pellentesque habitant morbi <a href="#">a href link a href link a href link a href link a href link a href link a href link </a>. Donec odio purus, semper nec rhoncus sed, ultricies non sem. Cras ante nisi, imperdiet a pulvinar vitae, dignissim. <em>em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em </em>Vivamus sit amet sapien nulla. Nunc orci enim, dictum id faucibus sed, ullamcorper nec mauris. Aenean quam dolor, consequat non rutrum aliquam, viverra vel odio. Fusce volutpat nisl at quam pulvinar et semper quam pharetra. Donec malesuada consectetur ultrices. Aenean sem dui, imperdiet quis euismod a, luctus et libero.</p>
-                                                    <blockquote>blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote Morbi feugiat tellus vel justo pharetra vel hendrerit tortor congue. Vivamus dui leo, porttitor eget ultricies non, tincidunt nec leo. In hac habitasse platea dictumst. Pellentesque mattis sagittis iaculis. Pellentesque lacinia neque in tortor viverra volutpat suscipit tortor placerat. Suspendisse potenti. Nulla purus tortor, hendrerit sit amet tristique ut, lacinia at nibh. Vivamus vehicula lacus id est viverra eget euismod lorem blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eu lacus diam, et consequat urna. Curabitur neque magna, tempus ac tristique vel, ultrices sollicitudin tellus. Pellentesque nisl mi, ullamcorper eget feugiat vitae, sodales ac tellus. Nulla venenatis dolor in eros elementum a fringilla tellus dictum. Sed lacus tellus, sollicitudin et cursus vel, mollis at est.</blockquote>
-                                                    <p>Nullam ac lectus ut elit adipiscing lacinia quis nec nisl. Cras lacinia orci a nunc tempus nec consectetur ante mattis. Integer eu diam nulla, nec elementum magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec hendrerit lacinia hendrerit. Vivamus nec sapien eu turpis tincidunt rhoncus sed in quam. Suspendisse potenti. Ut pretium, sapien non feugiat molestie, arcu tellus porttitor purus, vehicula fringilla enim magna sed risus. Donec varius viverra mauris quis porta. Proin auctor gravida consequat. Quisque vel mi quis neque suscipit blandit fringilla ut quam. Aliquam ultricies pharetra velit, sed venenatis nunc pretium eget. Pellentesque urna odio, feugiat vel facilisis at, fermentum at nibh. Suspendisse potenti. Sed ut elit euismod arcu lobortis feugiat in a ligula. Donec faucibus nunc eu orci auctor vulputate.</p>
-                                                    <hr>
-                                                    <ul>
-                                                        <li>Nunc dapibus tristique nibh. Proin ullamcorper tortor id odio porta ornare. Cras euismod nunc non nisi dignissim eu consectetur orci pharetra. Pellentesque sit amet leo ac tellus placerat luctus ac blandit ipsum.</li>
-                                                        <li>Sed in ipsum nibh, varius molestie sapien. Suspendisse potenti. Nulla lacinia justo at lectus pellentesque non placerat mauris tincidunt. In non convallis nisi. Fusce gravida leo sed nulla imperdiet faucibus.</li>
-                                                        <li>Sed auctor ullamcorper consequat. Aliquam erat volutpat. Cras nisi ipsum, consequat ut adipiscing quis, dignissim sed eros. In hac habitasse platea dictumst. Donec sit amet leo at elit egestas laoreet at dapibus diam.</li>
-                                                        <li>Phasellus in tortor sapien, non feugiat urna. Mauris ut pellentesque erat. Donec lacinia adipiscing quam, faucibus aliquam velit hendrerit in. Etiam pulvinar magna sed tortor malesuada et imperdiet justo auctor.</li>
-                                                    </ul>
-                                                    <ol>
-                                                        <li>Nunc dapibus tristique nibh. Proin ullamcorper tortor id odio porta ornare. Cras euismod nunc non nisi dignissim eu consectetur orci pharetra. Pellentesque sit amet leo ac tellus placerat luctus ac blandit ipsum.</li>
-                                                        <li>Sed in ipsum nibh, varius molestie sapien. Suspendisse potenti. Nulla lacinia justo at lectus pellentesque non placerat mauris tincidunt. In non convallis nisi. Fusce gravida leo sed nulla imperdiet faucibus.</li>
-                                                        <li>Sed auctor ullamcorper consequat. Aliquam erat volutpat. Cras nisi ipsum, consequat ut adipiscing quis, dignissim sed eros. In hac habitasse platea dictumst. Donec sit amet leo at elit egestas laoreet at dapibus diam.</li>
-                                                        <li>Phasellus in tortor sapien, non feugiat urna. Mauris ut pellentesque erat. Donec lacinia adipiscing quam, faucibus aliquam velit hendrerit in. Etiam pulvinar magna sed tortor malesuada et imperdiet justo auctor.</li>
-                                                    </ol>
-                                                    <img src="../content/product.jpg" width="300" height="300" alt="">
-                                                </div>
-
-
-
-                                                <table class="table">
-                                                    <thead class="table__head">
-                                                    <tr class="table__head__row">
-                                                        <td class="table__head__row__cell">Заголовок</td>
-                                                        <td class="table__head__row__cell">Заголовок</td>
-                                                        <td class="table__head__row__cell">Заголовок</td>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="table__body">
-                                                    <tr class="table__body__row">
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                    </tr>
-                                                    <tr class="table__body__row">
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                    </tr>
-                                                    <tr class="table__body__row">
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                        <td class="table__body__row__cell">Ячейка</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-
-
-                                                <!--<div class="video">-->
-                                                    <!--<iframe class="video__iframe" src="//www.youtube.com/embed/P3xKbPooKAo" frameborder="0" allowfullscreen></iframe>-->
-                                                <!--</div>-->
-
-
-                                            </div>
-                                            <div class="article__foot">
-                                                We are Share and Like Buttons
-                                            </div>
-                                        </article>
-
-                                        <!-- unique part of a page ends here -->
-
-                                    </div>
-
-                                    <div class="content__body__section">
-                                        I am Related content or maybe somebody else
-                                    </div>
-
-                                    <div class="content__body__section">
-                                        I am additional content form
-                                        <form class="form">
-                                            <div class="form__row">
-                                                <div class="input">
-                                                    <label class="input__label" for="temp-a">Label</label>
-                                                    <input class="input__area" type="text" placeholder="Input field" id="temp-a">
-                                                </div>
-                                            </div>
-                                            <div class="form__row">
-                                                <div class="input">
-                                                    <label class="input__label" for="temp-b">Label</label>
-                                                    <textarea class="input__area" placeholder="Textarea field" id="temp-b"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form__row">
-                                                <input class="button" type="submit" value="Button">
-                                            </div>
-
-                                        </form>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-
+                    <section class="sidebar main__sidebar">
+                        <div class="sidebar__section">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Category 1</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Category 2</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Category 3</a>
+                                </li>
+                            </ul>
                         </div>
+                        <div class="sidebar__section">
+                            <a class="info" href="#">
+                                <img class="info__image" src="../temp/info.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sidebar__section">
+                            <ul class="tiles tiles_width_100pct tiles_gap_10x0px">
+                                <li class="tiles__item">
+                                    <a class="file file_kind_doc" href="#">Annual report</a>
+                                </li>
+                                <li class="tiles__item">
+                                    <a class="file file_kind_pdf" href="#">Applicant CV</a>
+                                </li>
+                                <li class="tiles__item">
+                                    <a class="file file_kind_xls" href="#">Price list</a>
+                                </li>
+                            </ul>
+                            <a class="file_kind_doc" href="#"></a>
+                        </div>
+                    </section>
 
+                    <main class="content main__content">
 
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="page__extra">
-
-                    <div class="jcarousel jcarousel_skeleton">
-
-                        <div class="jcarousel__viewport">
-                            <ul class="jcarousel__viewport__list">
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
+                        <div class="content__head">
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Index</a>
                                 </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">News</a>
                                 </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
-                                </li>
-                                <li class="jcarousel__viewport__list__item">
-                                    <div style="width: 177px; height: 177px; background: linear-gradient(to right, red, blue);"></div>
+                                <li class="breadcrumbs__item">
+                                    Article
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="jcarousel__pagination"></div>
+                        <div class="content__body">
 
-                        <a class="jcarousel__control jcarousel__control_prev" href="#">
-                            <i class="jcarousel__control__icon">←</i>
-                        </a>
-                        <a class="jcarousel__control jcarousel__control_next" href="#">
-                            <i class="jcarousel__control__icon">→</i>
-                        </a>
+                            <!-- unique part of a page starts here -->
 
-                    </div>
+                            <article class="article">
 
-            </div>
+                                <header class="article__head">
+                                    <h1 class="title title_font_larger title_uppercase article__title">Article title</h1>
+                                    <time class="article__note" datetime="2014-12-31T19:59+04:00">Dec 31, 2014 at 23:59</time>
+                                    <img class="article__preview" src="../temp/nature.jpg" width="660" height="439" alt="">
+                                </header>
 
+                                <div class="article__body wysiwyg">
+                                    <h2>H2 header H2</h2>
+                                    <h3>H3 header H3</h3>
+                                    <h4>H4 header H4</h4>
+                                    <p><strong>Lorem ipsum dolor sit amet, strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong strong </strong> Donec odio purus, semper nec rhoncus sed, ultricies non sem. Cras ante nisi, imperdiet a pulvinar vitae, dignissim. Pellentesque habitant morbi <a href="#">a href link a href link a href link a href link a href link a href link a href link </a>. Donec odio purus, semper nec rhoncus sed, ultricies non sem. Cras ante nisi, imperdiet a pulvinar vitae, dignissim. <em>em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em em </em>Vivamus sit amet sapien nulla. Nunc orci enim, dictum id faucibus sed, ullamcorper nec mauris. Aenean quam dolor, consequat non rutrum aliquam, viverra vel odio. Fusce volutpat nisl at quam pulvinar et semper quam pharetra. Donec malesuada consectetur ultrices. Aenean sem dui, imperdiet quis euismod a, luctus et libero.</p>
+                                    <blockquote>blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote blockquote Morbi feugiat tellus vel justo pharetra vel hendrerit tortor congue. Vivamus dui leo, porttitor eget ultricies non, tincidunt nec leo. In hac habitasse platea dictumst. Pellentesque mattis sagittis iaculis. Pellentesque lacinia neque in tortor viverra volutpat suscipit tortor placerat. Suspendisse potenti. Nulla purus tortor, hendrerit sit amet tristique ut, lacinia at nibh. Vivamus vehicula lacus id est viverra eget euismod lorem blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eu lacus diam, et consequat urna. Curabitur neque magna, tempus ac tristique vel, ultrices sollicitudin tellus. Pellentesque nisl mi, ullamcorper eget feugiat vitae, sodales ac tellus. Nulla venenatis dolor in eros elementum a fringilla tellus dictum. Sed lacus tellus, sollicitudin et cursus vel, mollis at est.</blockquote>
+                                    <p>Nullam ac lectus ut elit adipiscing lacinia quis nec nisl. Cras lacinia orci a nunc tempus nec consectetur ante mattis. Integer eu diam nulla, nec elementum magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec hendrerit lacinia hendrerit. Vivamus nec sapien eu turpis tincidunt rhoncus sed in quam. Suspendisse potenti. Ut pretium, sapien non feugiat molestie, arcu tellus porttitor purus, vehicula fringilla enim magna sed risus. Donec varius viverra mauris quis porta. Proin auctor gravida consequat. Quisque vel mi quis neque suscipit blandit fringilla ut quam. Aliquam ultricies pharetra velit, sed venenatis nunc pretium eget. Pellentesque urna odio, feugiat vel facilisis at, fermentum at nibh. Suspendisse potenti. Sed ut elit euismod arcu lobortis feugiat in a ligula. Donec faucibus nunc eu orci auctor vulputate.</p>
+                                    <hr>
+                                    <ul>
+                                        <li>Nunc dapibus tristique nibh. Proin ullamcorper tortor id odio porta ornare. Cras euismod nunc non nisi dignissim eu consectetur orci pharetra. Pellentesque sit amet leo ac tellus placerat luctus ac blandit ipsum.</li>
+                                        <li>Sed in ipsum nibh, varius molestie sapien. Suspendisse potenti. Nulla lacinia justo at lectus pellentesque non placerat mauris tincidunt. In non convallis nisi. Fusce gravida leo sed nulla imperdiet faucibus.</li>
+                                        <li>Sed auctor ullamcorper consequat. Aliquam erat volutpat. Cras nisi ipsum, consequat ut adipiscing quis, dignissim sed eros. In hac habitasse platea dictumst. Donec sit amet leo at elit egestas laoreet at dapibus diam.</li>
+                                        <li>Phasellus in tortor sapien, non feugiat urna. Mauris ut pellentesque erat. Donec lacinia adipiscing quam, faucibus aliquam velit hendrerit in. Etiam pulvinar magna sed tortor malesuada et imperdiet justo auctor.</li>
+                                    </ul>
+                                    <ol>
+                                        <li>Nunc dapibus tristique nibh. Proin ullamcorper tortor id odio porta ornare. Cras euismod nunc non nisi dignissim eu consectetur orci pharetra. Pellentesque sit amet leo ac tellus placerat luctus ac blandit ipsum.</li>
+                                        <li>Sed in ipsum nibh, varius molestie sapien. Suspendisse potenti. Nulla lacinia justo at lectus pellentesque non placerat mauris tincidunt. In non convallis nisi. Fusce gravida leo sed nulla imperdiet faucibus.</li>
+                                        <li>Sed auctor ullamcorper consequat. Aliquam erat volutpat. Cras nisi ipsum, consequat ut adipiscing quis, dignissim sed eros. In hac habitasse platea dictumst. Donec sit amet leo at elit egestas laoreet at dapibus diam.</li>
+                                        <li>Phasellus in tortor sapien, non feugiat urna. Mauris ut pellentesque erat. Donec lacinia adipiscing quam, faucibus aliquam velit hendrerit in. Etiam pulvinar magna sed tortor malesuada et imperdiet justo auctor.</li>
+                                    </ol>
+                                    <figure>
+                                        <img src="../temp/space.jpg" alt="">
+                                        <figcaption>Space: the final frontier!</figcaption>
+                                    </figure>
+                                </div>
 
+                                <div class="article__gallery">
 
-            <div class="page__footer">
-                <div class="region">
-                    <footer class="footer">
-                        <div class="footer__copyright">
-                            © 2525
+                                    <div class="video">
+                                        <iframe class="video__control" src="//www.youtube.com/embed/P3xKbPooKAo" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+
+                                <div class="article__additional">
+
+                                    <table class="table">
+                                        <thead class="table__section table__section_part_head">
+                                            <tr class="table__row">
+                                                <th class="table__cell">Title</th>
+                                                <th class="table__cell">Title</th>
+                                                <th class="table__cell">Title</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__section table__section_part_body">
+                                            <tr class="table__row">
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                                <td class="table__cell">Cell</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot class="table__section table__section_part_foot">
+                                            <tr class="table__row">
+                                                <td class="table__cell" colspan="3">Footer</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                </div>
+
+                                <footer class="article__foot">
+                                    Share and like
+                                </footer>
+
+                            </article>
+
+                            <!-- unique part of a page ends here -->
+
                         </div>
-                        <div class="footer__developer">
-                            <a class="link" href="#">Developed by Cypher</a>
+
+                        <div class="content__foot">
+
+                            <form class="form">
+                                <div class="form__field">
+                                    <div class="input">
+                                        <label class="input__label" for="temp-a">Label</label>
+                                        <input class="input__control" type="text" placeholder="Input field" id="temp-a">
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <div class="input input_widget_area">
+                                        <label class="input__label" for="temp-b">Label</label>
+                                        <textarea class="input__control" placeholder="Textarea field" id="temp-b"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__field">
+                                    <button class="button" type="submit">Button</button>
+                                </div>
+
+                            </form>
+
                         </div>
 
-                    </footer>
+                    </main>
+
                 </div>
             </div>
 
+            <section class="related page__related">
+                <div class="container related__wrap">
+                    <h2 class="title related__title">Related</h2>
+                    <div class="related__content">
+                        <ul class="tiles tiles_width_25pct tiles_gap_20px">
+                            <li class="tiles__item">
+                                <article class="item-preview">
+                                    <a class="item-preview__stage" href="#">
+                                        <img class="item-preview__image" src="../temp/dualshock1.jpg" alt="">
+                                    </a>
+                                    <h2 class="item-preview__title">
+                                        <a class="item-preview__link" href="#">Dualshock 1</a>
+                                    </h2>
+                                    <div class="item-preview__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor nisi, rhoncus ac magna vitae, ornare blandit nibh.
+                                    </div>
+                                    <div class="item-preview__price">
+                                        $100500
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="tiles__item">
+                                <article class="item-preview">
+                                    <a class="item-preview__stage" href="#">
+                                        <img class="item-preview__image" src="../temp/dualshock2.jpg" alt="">
+                                    </a>
+                                    <h2 class="item-preview__title">
+                                        <a class="item-preview__link" href="#">Dualshock 2</a>
+                                    </h2>
+                                    <div class="item-preview__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor nisi, rhoncus ac magna vitae, ornare blandit nibh.
+                                    </div>
+                                    <div class="item-preview__price">
+                                        $100500
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="tiles__item">
+                                <article class="item-preview">
+                                    <a class="item-preview__stage" href="#">
+                                        <img class="item-preview__image" src="../temp/dualshock3.jpg" alt="">
+                                    </a>
+                                    <h2 class="item-preview__title">
+                                        <a class="item-preview__link" href="#">Dualshock 3</a>
+                                    </h2>
+                                    <div class="item-preview__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor nisi, rhoncus ac magna vitae, ornare blandit nibh.
+                                    </div>
+                                    <div class="item-preview__price">
+                                        $100500
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="tiles__item">
+                                <article class="item-preview">
+                                    <a class="item-preview__stage" href="#">
+                                        <img class="item-preview__image" src="../temp/dualshock4.jpg" alt="">
+                                    </a>
+                                    <h2 class="item-preview__title">
+                                        <a class="item-preview__link" href="#">Dualshock 4</a>
+                                    </h2>
+                                    <div class="item-preview__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor nisi, rhoncus ac magna vitae, ornare blandit nibh.
+                                    </div>
+                                    <div class="item-preview__price">
+                                        $100500
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="related__navigation">
+                        <ul class="pagination">
+                            <li class="pagination__item">
+                                <a class="pagination__link pagination__link_direction_prev" href="#">&lt;</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link pagination__link_current" href="#">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <span class="pagination__link pagination__link_suspend">…</span>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">100500</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link pagination__link_direction_next" href="#">&gt;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
+
+            <section class="partners page__partners">
+                <div class="container partners__wrap">
+                    <h2 class="title partners__title">Partners</h2>
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__image" src="../content/partner_acer.jpg" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="../content/partner_asus.jpg" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="../content/partner_htc.jpg" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="../content/partner_lenovo.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <footer class="footer page__footer">
+                <div class="container footer__wrap">
+                    <div class="footer__info">
+                        <div class="footer__copyright">
+                            © 2525
+                        </div>
+                        <div class="footer__contacts">
+                            <a class="link link_fake" href="tel:+12345678910">+1 (234) 567-89-10</a>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <ul class="tiles tiles_gap_0x10px">
+                            <li class="tiles__item">
+                                <a class="net net_id_facebook social__link" href="#">Facebook</a>
+                            </li>
+                            <li class="tiles__item">
+                                <a class="net net_id_foursquare social__link" href="#">Foursquare</a>
+                            </li>
+                            <li class="tiles__item">
+                                <a class="net net_id_vkontakte social__link" href="#">VK</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__developer">
+                        <a class="link" href="http://nuqneh.com">Developed by Cypher</a>
+                    </div>
+                </div>
+            </footer>
 
         </div>
 
 
 
-
-
         <script src="../vendors/jquery/jquery-2.2.3.min.js"></script>
-        <script src="../scripts/temp.js"></script>
+        <script src="../scripts/app.js"></script>
 
 
     </body>

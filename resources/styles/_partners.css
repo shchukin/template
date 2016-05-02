@@ -1,0 +1,29 @@
+.partners {
+
+}
+    .partners__wrap {
+
+    }
+        .partners__title {
+
+        }
+
+        .partners__list {
+            margin: 10px 0 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+            .partners__item {
+                margin: 0 0 0 20px;
+                flex: 0 1 auto;
+            }
+
+            .partners__item:first-child {
+                margin-left: 0;
+            }
+                .partners__image {
+                    vertical-align: top;
+                    width: 100%;
+                    height: auto;
+                }

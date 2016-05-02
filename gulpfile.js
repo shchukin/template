@@ -3,8 +3,12 @@ var gulp         = require('gulp');
 var concat       = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS     = require('gulp-clean-css');
+var base64       = require('gulp-base64');
+var size         = require('gulp-size');
 
-
+var postcss      = require('gulp-postcss');
+var sprites      = require('postcss-sprites').default;
+var csslint      = require('gulp-csslint');
 
 // Clean up public folder
 // It is separated task which is not inluded in pipeline
@@ -12,6 +16,15 @@ var cleanCSS     = require('gulp-clean-css');
 
 gulp.task('clean', function() {
   del('public/*');
+});
+
+
+// Temp: copy
+
+gulp.task('temp', function() {
+  gulp.src('resources/temp/**/*')
+      .pipe(gulp.dest('public/temp/'))
+  ;
 });
 
 
@@ -24,11 +37,11 @@ gulp.task('content', function() {
 });
 
 
-// Vendors: copy
+// Images: copy
 
-gulp.task('vendors', function() {
-  gulp.src('resources/vendors/**/*')
-      .pipe(gulp.dest('public/vendors/'))
+gulp.task('images', function() {
+  gulp.src('resources/images/**/*')
+      .pipe(gulp.dest('public/images/'))
   ;
 });
 
@@ -51,11 +64,11 @@ gulp.task('layouts', function() {
 });
 
 
-// Images: copy
+// Vendors: copy
 
-gulp.task('images', function() {
-  gulp.src('resources/images/**/*')
-      .pipe(gulp.dest('public/images/'))
+gulp.task('vendors', function() {
+  gulp.src('resources/vendors/**/*')
+      .pipe(gulp.dest('public/vendors/'))
   ;
 });
 
@@ -72,27 +85,53 @@ gulp.task('scripts', function() {
 // Styles: concat, add prefixes, compress, copy
 
 gulp.task('styles', function() {
+
+  var spritesOptions = {
+    stylesheetPath: 'public/styles',
+    spritePath: 'public/sprites',
+    filterBy: function(image) {
+      // Allow files from /sprites/ only
+      if (!/\/sprites\//.test(image.url)) {
+        return Promise.reject();
+      }
+      return Promise.resolve();
+    }
+  };
+
+  var processors = [
+    sprites(spritesOptions)
+  ];
+
   gulp.src([
+    'resources/vendor/normalize/normalize.css',
     'resources/styles/fonts.css',
-    'resources/vendors/normalize/normalize.css',
+    'resources/styles/keyframes.css',
     'resources/styles/init.css',
     '!resources/styles/style.css',
     'resources/styles/**/*.css'
   ])
+      .pipe(csslint('csslintrc.json'))
+      .pipe(csslint.reporter())
       .pipe(concat('style.css'))
+      .pipe(postcss(processors))
       .pipe(autoprefixer({
         browsers: 'last 2 versions',
         cascade: false
+      }))
+      .pipe(base64({
+        // Allow files from /vectors/ only
+        exclude: ['/sprite/', '/images/']
       }))
       .pipe(cleanCSS({
         advanced: false,
         keepSpecialComments: 0
       }))
       .pipe(gulp.dest('public/styles/'))
+      .pipe(size())
   ;
 });
 
-gulp.task('default', ['content', 'vendors', 'markups', 'layouts', 'images', 'scripts', 'styles']);
+gulp.task('default', ['temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'styles']);
 
 
 

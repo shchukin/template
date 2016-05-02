@@ -1,14 +1,23 @@
 .nav {
 
 }
-    .nav__item {
-        display: inline-block;
-        margin: 0 0 0 50px;
+    .nav__wrap {
+        border-bottom: 1px solid #CCCCCC;
+        padding: 20px 0;
     }
-
-    .nav__item:first-child {
-        margin-left: 0;
-    }
-        .nav__item__link {
-
+        .nav__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
         }
+            .nav__item {
+                margin: 0 0 0 50px;
+            }
+
+            .nav__item:first-child {
+                margin-left: 0;
+            }
+                .nav__link {
+
+                }

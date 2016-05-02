@@ -7,3 +7,12 @@
 .link:hover {
     text-decoration: none;
 }
+
+.link_palette_danger {
+    color: #FF0000;
+}
+
+.link_fake {
+    text-decoration: none;
+    color: inherit;
+}

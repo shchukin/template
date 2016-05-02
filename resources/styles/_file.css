@@ -1,0 +1,34 @@
+.file {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 10px 58px;
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    color: #999999;
+}
+
+.file_kind_doc {
+
+}
+
+.file_kind_pdf {
+
+}
+
+.file_kind_xls {
+
+}
+    .file:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+    }
+        .file_kind_doc:before { background-image: url(../sprites/file_kind_doc.png); }
+        .file_kind_pdf:before { background-image: url(../sprites/file_kind_pdf.png); }
+        .file_kind_xls:before { background-image: url(../sprites/file_kind_xls.png); }

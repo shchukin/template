@@ -1,0 +1,15 @@
+.net {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .net_id_facebook   { background-image: url(../vectors/net_id_facebook.svg); }
+    .net_id_foursquare { background-image: url(../vectors/net_id_foursquare.svg); }
+    .net_id_vkontakte  { background-image: url(../vectors/net_id_vkontakte.svg); }

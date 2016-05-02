@@ -1,35 +1,38 @@
 .table {
+    width: 100%;
     background: #eee;
+    border-collapse: collapse;
 /*
-    border-collapse: separate; // to separate cells by free space (but here goes extra pixel between thead and tbody - can be removed by removing this tags)
-    border-spacing: 1px;       // to separate cells by free space (but here goes extra pixel between thead and tbody - can be removed by removing this tags)
+    border-collapse: separate;
+    border-spacing: 1px;
 */
 }
+    .table__section {
 
-    .table__head {
+    }
+
+    .table__section_part_head {
         background: #d5e1ee;
     }
-        .table__head__row {
+
+    .table__section_part_body {
+
+    }
+
+    .table__section_part_foot {
+        background: #d5e1ee;
+    }
+        .table__row {
 
         }
-            .table__head__row__cell {
+
+        .table__section_part_body .table__row:nth-child(odd) {
+            background: #f4f4f4;
+        }
+            .table__cell {
                 padding: 5px 10px 3px;
                 border: 1px solid #fff;
                 text-align: center;
             }
 
 
-    .table__body {
-
-    }
-        .table__body__row {
-
-        }
-            .table__body__row__cell {
-                padding: 5px 10px 3px;
-                border: 1px solid #fff;
-            }
-
-        .table__body__row:nth-child(odd) {
-            background: #f4f4f4;
-        }
