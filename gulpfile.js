@@ -1,17 +1,19 @@
 var del          = require('del');
+
 var gulp         = require('gulp');
+var csslint      = require('gulp-csslint');
 var concat       = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
-var cleanCSS     = require('gulp-clean-css');
 var base64       = require('gulp-base64');
+var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 
 var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
-var csslint      = require('gulp-csslint');
+
 
 // Clean up public folder
-// It is separated task which is not inluded in pipeline
+// It is separated task which is not included in default task
 // Run it as a "gulp clean" before "gulp"
 
 gulp.task('clean', function() {
