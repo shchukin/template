@@ -133,7 +133,22 @@ gulp.task('styles', function() {
   ;
 });
 
-gulp.task('default', ['temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'styles']);
+
+// lint
+
+gulp.task('lint', function() {
+
+  gulp.src([
+    '!resources/styles/style.css',
+    'resources/styles/**/*.css'
+  ])
+      .pipe(csslint('csslintrc.json'))
+      .pipe(csslint.reporter())
+      .pipe(concat('style.css')) // random action just because css lint doesn't work in last row
+  ;
+});
+
+gulp.task('default', ['temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'styles', 'lint']);
 
 
 

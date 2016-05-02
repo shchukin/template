@@ -1,11 +1,8 @@
 {
-  "box-sizing": false,
-  "box-model": false,
   "empty-rules": false,
-  "fallback-colors": false,
-  "ids": true,
-  "qualified-headings": false,
+  "box-sizing": false,
+  "box-model" : false,
   "universal-selector": false,
-  "unqualified-attributes": false,
-  "compatible-vendor-prefixes" : false
+  "qualified-headings": false,
+  "fallback-colors": false
 }
