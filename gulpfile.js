@@ -2,7 +2,6 @@ var del          = require('del');
 
 var gulp         = require('gulp');
 var csslint      = require('gulp-csslint');
-var concat       = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var base64       = require('gulp-base64');
 var cleanCSS     = require('gulp-clean-css');
@@ -105,14 +104,12 @@ gulp.task('styles', function() {
   ];
 
   gulp.src([
-    'resources/vendors/normalize/normalize.css',
-    'resources/styles/fonts.css',
-    'resources/styles/keyframes.css',
-    'resources/styles/init.css',
-    '!resources/styles/style.css',
-    'resources/styles/**/*.css'
+    'resources/styles/style.css'
   ])
-      .pipe(concat('style.css'))
+      .pipe(cleanCSS({
+        advanced: false,
+        keepSpecialComments: 0
+      }))
       .pipe(postcss(processors))
       .pipe(autoprefixer({
         browsers: 'last 2 versions',
@@ -121,10 +118,6 @@ gulp.task('styles', function() {
       .pipe(base64({
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/']
-      }))
-      .pipe(cleanCSS({
-        advanced: false,
-        keepSpecialComments: 0
       }))
       .pipe(gulp.dest('public/styles/'))
       .pipe(size())
@@ -142,7 +135,7 @@ gulp.task('lint', function() {
   ])
       .pipe(csslint('csslintrc.json'))
       .pipe(csslint.reporter())
-      .pipe(concat('style.css')) // random action just because css lint doesn't work in last row
+      .pipe(csslint.reporter()) // random action just because css lint doesn't work in last row
   ;
 });
 
