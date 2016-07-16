@@ -6,24 +6,22 @@ var autoprefixer = require('gulp-autoprefixer');
 var base64       = require('gulp-base64');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
-
+var run          = require('run-sequence');
 var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
 
 
 // Clean up public folder
-// It is separated task which is not included in default task
-// Run it as a "gulp clean" before "gulp"
 
 gulp.task('clean', function() {
-  del('public/*');
+  return del('public/*');
 });
 
 
 // Temp: copy
 
 gulp.task('temp', function() {
-  gulp.src('resources/temp/**/*')
+  return gulp.src('resources/temp/**/*')
       .pipe(gulp.dest('public/temp/'))
   ;
 });
@@ -32,7 +30,7 @@ gulp.task('temp', function() {
 // Content: copy
 
 gulp.task('content', function() {
-  gulp.src('resources/content/**/*')
+  return gulp.src('resources/content/**/*')
       .pipe(gulp.dest('public/content/'))
   ;
 });
@@ -41,7 +39,7 @@ gulp.task('content', function() {
 // Images: copy
 
 gulp.task('images', function() {
-  gulp.src('resources/images/**/*')
+  return gulp.src('resources/images/**/*')
       .pipe(gulp.dest('public/images/'))
   ;
 });
@@ -50,7 +48,7 @@ gulp.task('images', function() {
 // Markups: copy
 
 gulp.task('markups', function() {
-  gulp.src('resources/markups/**/*')
+  return gulp.src('resources/markups/**/*')
       .pipe(gulp.dest('public/markups/'))
   ;
 });
@@ -59,7 +57,7 @@ gulp.task('markups', function() {
 // Layouts: copy
 
 gulp.task('layouts', function() {
-  gulp.src('resources/layouts/**/*')
+  return gulp.src('resources/layouts/**/*')
       .pipe(gulp.dest('public/layouts/'))
   ;
 });
@@ -68,7 +66,7 @@ gulp.task('layouts', function() {
 // Vendors: copy
 
 gulp.task('vendors', function() {
-  gulp.src('resources/vendors/**/*')
+  return gulp.src('resources/vendors/**/*')
       .pipe(gulp.dest('public/vendors/'))
   ;
 });
@@ -77,7 +75,7 @@ gulp.task('vendors', function() {
 // Scripts: copy
 
 gulp.task('scripts', function() {
-  gulp.src('resources/scripts/**/*')
+  return gulp.src('resources/scripts/**/*')
       .pipe(gulp.dest('public/scripts/'))
   ;
 });
@@ -103,7 +101,7 @@ gulp.task('styles', function() {
     sprites(spritesOptions)
   ];
 
-  gulp.src([
+  return gulp.src([
     'resources/styles/style.css'
   ])
       .pipe(cleanCSS({
@@ -129,7 +127,7 @@ gulp.task('styles', function() {
 
 gulp.task('lint', function() {
 
-  gulp.src([
+  return gulp.src([
     '!resources/styles/style.css',
     'resources/styles/**/*.css'
   ])
@@ -139,9 +137,10 @@ gulp.task('lint', function() {
   ;
 });
 
-gulp.task('default', ['temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'styles', 'lint']);
 
-
+gulp.task('default', function (fn) {
+  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'styles', 'lint', fn);
+});
 
 
 
