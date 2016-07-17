@@ -1,12 +1,13 @@
 var del          = require('del');
+var run          = require('run-sequence');
 
 var gulp         = require('gulp');
+var plumber      = require('gulp-plumber');
 var csslint      = require('gulp-csslint');
 var autoprefixer = require('gulp-autoprefixer');
 var base64       = require('gulp-base64');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
-var run          = require('run-sequence');
 var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
 
@@ -22,6 +23,7 @@ gulp.task('clean', function() {
 
 gulp.task('temp', function() {
   return gulp.src('resources/temp/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/temp/'))
   ;
 });
@@ -31,6 +33,7 @@ gulp.task('temp', function() {
 
 gulp.task('content', function() {
   return gulp.src('resources/content/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/content/'))
   ;
 });
@@ -40,6 +43,7 @@ gulp.task('content', function() {
 
 gulp.task('images', function() {
   return gulp.src('resources/images/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/images/'))
   ;
 });
@@ -49,6 +53,7 @@ gulp.task('images', function() {
 
 gulp.task('markups', function() {
   return gulp.src('resources/markups/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/markups/'))
   ;
 });
@@ -58,6 +63,7 @@ gulp.task('markups', function() {
 
 gulp.task('layouts', function() {
   return gulp.src('resources/layouts/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/layouts/'))
   ;
 });
@@ -67,6 +73,7 @@ gulp.task('layouts', function() {
 
 gulp.task('vendors', function() {
   return gulp.src('resources/vendors/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/vendors/'))
   ;
 });
@@ -76,6 +83,7 @@ gulp.task('vendors', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('resources/scripts/**/*')
+      .pipe(plumber())
       .pipe(gulp.dest('public/scripts/'))
   ;
 });
@@ -104,6 +112,7 @@ gulp.task('styles', function() {
   return gulp.src([
     'resources/styles/style.css'
   ])
+      .pipe(plumber())
       .pipe(cleanCSS({
         advanced: false,
         keepSpecialComments: 0
@@ -131,6 +140,7 @@ gulp.task('lint', function() {
     '!resources/styles/style.css',
     'resources/styles/**/*.css'
   ])
+      .pipe(plumber())
       .pipe(csslint('csslintrc.json'))
       .pipe(csslint.reporter())
       .pipe(csslint.reporter()) // random action just because css lint doesn't work in last row
