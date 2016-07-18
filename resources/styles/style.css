@@ -1,9 +1,7 @@
 @import url(../vendors/normalize/normalize.css);
-@import url(fonts.css);
-@import url(keyframes.css);
-@import url(init.css);
 
 @import url(_clearfix.css);
+@import url(_body.css);
 @import url(_page.css);
 @import url(_container.css);
 @import url(_header.css);

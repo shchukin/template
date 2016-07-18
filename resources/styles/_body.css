@@ -1,0 +1,13 @@
+html {
+
+}
+    body {
+        background: #f5f2ed url(../images/background.jpg) repeat center top;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        /*
+        font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        font-family: Verdana, Geneva, sans-serif;
+        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        */
+    }
