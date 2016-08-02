@@ -12,19 +12,19 @@ var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
 
 
-// Clean up public folder
+// Clean up production folder
 
 gulp.task('clean', function() {
-  return del('public/*');
+  return del('production/*');
 });
 
 
 // Temp: copy
 
 gulp.task('temp', function() {
-  return gulp.src('resources/temp/**/*')
+  return gulp.src('development/temp/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/temp/'))
+      .pipe(gulp.dest('production/temp/'))
   ;
 });
 
@@ -32,9 +32,9 @@ gulp.task('temp', function() {
 // Content: copy
 
 gulp.task('content', function() {
-  return gulp.src('resources/content/**/*')
+  return gulp.src('development/content/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/content/'))
+      .pipe(gulp.dest('production/content/'))
   ;
 });
 
@@ -42,9 +42,9 @@ gulp.task('content', function() {
 // Images: copy
 
 gulp.task('images', function() {
-  return gulp.src('resources/images/**/*')
+  return gulp.src('development/images/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/images/'))
+      .pipe(gulp.dest('production/images/'))
   ;
 });
 
@@ -52,9 +52,9 @@ gulp.task('images', function() {
 // Markups: copy
 
 gulp.task('markups', function() {
-  return gulp.src('resources/markups/**/*')
+  return gulp.src('development/markups/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/markups/'))
+      .pipe(gulp.dest('production/markups/'))
   ;
 });
 
@@ -62,9 +62,9 @@ gulp.task('markups', function() {
 // Layouts: copy
 
 gulp.task('layouts', function() {
-  return gulp.src('resources/layouts/**/*')
+  return gulp.src('development/layouts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/layouts/'))
+      .pipe(gulp.dest('production/layouts/'))
   ;
 });
 
@@ -72,9 +72,9 @@ gulp.task('layouts', function() {
 // Vendors: copy
 
 gulp.task('vendors', function() {
-  return gulp.src('resources/vendors/**/*')
+  return gulp.src('development/vendors/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/vendors/'))
+      .pipe(gulp.dest('production/vendors/'))
   ;
 });
 
@@ -82,9 +82,9 @@ gulp.task('vendors', function() {
 // Scripts: copy
 
 gulp.task('scripts', function() {
-  return gulp.src('resources/scripts/**/*')
+  return gulp.src('development/scripts/**/*')
       .pipe(plumber())
-      .pipe(gulp.dest('public/scripts/'))
+      .pipe(gulp.dest('production/scripts/'))
   ;
 });
 
@@ -94,8 +94,8 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
 
   var spritesOptions = {
-    stylesheetPath: 'public/styles',
-    spritePath: 'public/sprites',
+    stylesheetPath: 'production/styles',
+    spritePath: 'production/sprites',
     filterBy: function(image) {
       // Allow files from /sprites/ only
       if (!/\/sprites\//.test(image.url)) {
@@ -110,7 +110,7 @@ gulp.task('styles', function() {
   ];
 
   return gulp.src([
-    'resources/styles/style.css'
+    'development/styles/style.css'
   ])
       .pipe(plumber())
       .pipe(cleanCSS({
@@ -126,7 +126,7 @@ gulp.task('styles', function() {
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/']
       }))
-      .pipe(gulp.dest('public/styles/'))
+      .pipe(gulp.dest('production/styles/'))
       .pipe(size())
   ;
 });
@@ -137,8 +137,8 @@ gulp.task('styles', function() {
 gulp.task('lint', function() {
 
   return gulp.src([
-    '!resources/styles/style.css',
-    'resources/styles/**/*.css'
+    '!development/styles/style.css',
+    'development/styles/**/*.css'
   ])
       .pipe(plumber())
       .pipe(csslint('csslintrc.json'))
