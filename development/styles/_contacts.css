@@ -1,0 +1,10 @@
+.contacts {
+
+}
+    .contacts__item {
+        margin-top: 10px;
+    }
+
+    .contacts__item:first-child {
+        margin-top: 0;
+    }

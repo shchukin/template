@@ -96,6 +96,7 @@ gulp.task('styles', function() {
   var spritesOptions = {
     stylesheetPath: 'production/styles',
     spritePath: 'production/sprites',
+    retina: 'true',
     filterBy: function(image) {
       // Allow files from /sprites/ only
       if (!/\/sprites\//.test(image.url)) {

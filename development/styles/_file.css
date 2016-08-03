@@ -28,7 +28,17 @@
         width: 48px;
         height: 48px;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
         .file_kind_doc:before { background-image: url(../sprites/file_kind_doc.png); }
         .file_kind_pdf:before { background-image: url(../sprites/file_kind_pdf.png); }
         .file_kind_xls:before { background-image: url(../sprites/file_kind_xls.png); }
+
+
+        @media 
+        (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) { 
+            .file_kind_doc:before { background-image: url(../sprites/file_kind_doc@2x.png); }
+            .file_kind_pdf:before { background-image: url(../sprites/file_kind_pdf@2x.png); }
+            .file_kind_xls:before { background-image: url(../sprites/file_kind_xls@2x.png); }
+        }

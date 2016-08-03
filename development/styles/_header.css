@@ -17,3 +17,9 @@
             left: 300px;
             top: 40px
         }
+
+        .header__channels {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }

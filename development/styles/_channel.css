@@ -1,0 +1,35 @@
+.channel {
+    position: relative;
+    padding-left: 30px;
+}
+
+.channel_via_phone {
+
+}
+
+.channel_via_email {
+
+}
+    .channel:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .channel_via_phone:before {
+        margin-left: 2px;
+        width: 15px;
+        height: 20px;
+        background-image: url(../sprites/channel_via_phone.png);
+    }
+
+    .channel_via_email:before {
+        margin-top: -1px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../sprites/channel_via_email.png);
+    }
