@@ -38,13 +38,8 @@
                         <input class="search__field" type="search">
                         <button class="search__submit" type="submit">Search!</button>
                     </form>
-                    <div class="header__channels contacts">
-                        <div class="contacts__item">
-                            <a class="channel channel_via_phone link link_fake" href="tel:+12345678910">+1 (234) 567-89-10</a>
-                        </div>
-                        <div class="contacts__item">
-                            <a class="channel channel_via_email link" href="mailto:info@example.org">info@example.org</a>
-                        </div>
+                    <div class="header__user">
+                        <a class="magnific-popup" href="#login">Login</a>
                     </div>
                 </div>
             </header>
@@ -376,8 +371,13 @@
                         <div class="footer__copyright">
                             © 2525
                         </div>
-                        <div class="footer__contacts">
-                            <a class="link link_fake" href="tel:+12345678910">+1 (234) 567-89-10</a>
+                        <div class="footer__contacts contacts">
+                            <div class="contacts__item">
+                                <a class="channel channel_via_phone link link_fake" href="tel:+12345678910">+1 (234) 567-89-10</a>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="channel channel_via_email link" href="mailto:info@example.org">info@example.org</a>
+                            </div>
                         </div>
                     </div>
                     <div class="footer__social">
@@ -408,9 +408,23 @@
         </div>
 
 
+        <div class="window mfp-hide" id="login">
+
+            <div class="window__heading title">
+                Hello, Magnific Popup!
+            </div>
+
+            <div class="window__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis at nunc eget porta.
+            </div>
+
+            <button class="window__close magnific-close" type="button">x</button>
+        </div>
+
 
         <script src="../vendors/jquery/jquery-3.1.0.min.js"></script>
         <script src="../vendors/svg4everybody/dist/svg4everybody.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../scripts/app.js"></script>
 
 

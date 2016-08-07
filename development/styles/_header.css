@@ -18,8 +18,8 @@
             top: 40px
         }
 
-        .header__channels {
+        .header__user {
             position: absolute;
             right: 0;
-            top: 20px;
+            top: 36px;
         }

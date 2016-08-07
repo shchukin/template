@@ -1,4 +1,5 @@
 @import url(../vendors/normalize/normalize.css);
+@import url(../vendors/magnific-popup/dist/magnific-popup.css);
 
 @import url(_clearfix.css);
 @import url(_body.css);
@@ -33,4 +34,5 @@
 @import url(_browserupgrade.css);
 @import url(_table.css);
 @import url(_video.css);
+@import url(_window.css);
 @import url(_wysiwyg.css);
