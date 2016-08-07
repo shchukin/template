@@ -1,0 +1,63 @@
+.is-countdown {
+
+}
+
+.countdown-rtl {
+    direction: rtl;
+}
+
+.countdown {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.countdown_skin_board {
+
+}
+
+    .countdown_skin_board .countdown__container {
+        display: flex;
+    }
+        .countdown_skin_board .countdown__section {
+            margin-left: 40px;
+        }
+
+        .countdown_skin_board .countdown__section:first-child {
+            margin-left: 0;
+        }
+            .countdown_skin_board .countdown__value {
+                display: flex;
+            }
+                .countdown_skin_board .countdown__digit {
+                    display: block;
+                    width: 52px;
+                    height: 88px;
+                    margin-left: 5px;
+                    padding: 1px 1px 4px;
+                    background-image: url(../vectors/countdown_skin_board__digit.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 100%;
+                    font-weight: 300;
+                    font-size: 50px;
+                    line-height: 83px;
+                    color: #000;
+                    text-align: center;
+                    letter-spacing: .01em;
+                }
+
+
+                .countdown_skin_board .countdown__digit:first-child {
+                    margin-left: 0;
+                }
+
+            .countdown_skin_board .countdown__label {
+                display: block;
+                margin-top: 11px;
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(0,0,0,.5);
+                text-align: center;
+                text-transform: lowercase;
+                letter-spacing: .01em;
+            }

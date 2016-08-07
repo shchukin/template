@@ -1,8 +1,10 @@
 @import url(../vendors/normalize/normalize.css);
 @import url(../vendors/magnific-popup/dist/magnific-popup.css);
 
+@import url(_arrivals.css);
 @import url(_clearfix.css);
 @import url(_body.css);
+@import url(_countdown.css);
 @import url(_page.css);
 @import url(_container.css);
 @import url(_header.css);

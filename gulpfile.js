@@ -5,13 +5,11 @@ var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
 var csslint      = require('gulp-csslint');
 var autoprefixer = require('gulp-autoprefixer');
-// var base64       = require('gulp-base64');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
-
 var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
-
+var base64       = require('gulp-base64');
 var svgstore     = require('gulp-svgstore');
 var svgmin       = require('gulp-svgmin');
 var change       = require('gulp-change');
@@ -217,10 +215,10 @@ gulp.task('styles', function() {
         browsers: 'last 2 versions',
         cascade: false
       }))
-      // .pipe(base64({
-      //   // Allow files from /vectors/ only
-      //   exclude: ['/sprite/', '/images/']
-      // }))
+      .pipe(base64({
+        // Allow files from /vectors/ only
+        exclude: ['/sprite/', '/images/', '/symbols/']
+      }))
       .pipe(gulp.dest('production/styles/'))
       .pipe(size())
   ;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="52px" height="88px" viewBox="0 0 52 88" enable-background="new 0 0 52 88" xml:space="preserve">
+<g opacity="0.2">
+	<path fill="#010202" d="M46.926,88H5.552c-2.798,0-5.074-2.294-5.074-5.113V8.125c0-2.82,2.276-5.116,5.074-5.116h41.374
+		C49.723,3.01,52,5.304,52,8.125v74.76C52,85.706,49.725,88,46.926,88z M5.552,3.797c-2.368,0-4.294,1.941-4.294,4.329v74.761
+		c0,2.387,1.926,4.326,4.294,4.326h41.374c2.367,0,4.293-1.939,4.293-4.326V8.125c0-2.387-1.927-4.329-4.293-4.329H5.552V3.797z"/>
+</g>
+<g>
+	<path fill="#C2C1C1" d="M46.682,86.428H5.308c-2.798,0-5.074-2.295-5.074-5.117V6.551c0-2.82,2.276-5.115,5.074-5.115h41.374
+		c2.799,0,5.074,2.294,5.074,5.115v74.759C51.756,84.133,49.479,86.428,46.682,86.428z M5.308,2.224
+		c-2.368,0-4.294,1.941-4.294,4.327v74.759c0,2.387,1.926,4.33,4.294,4.33h41.374c2.369,0,4.293-1.943,4.293-4.33V6.551
+		c0-2.386-1.926-4.327-4.293-4.327H5.308L5.308,2.224z"/>
+</g>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1400.6299" y1="3639.5" x2="-1400.6299" y2="3557.2979" gradientTransform="matrix(1 0 0 1 1426.3901 -3556.8008)">
+	<stop  offset="0.2095" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.5257" style="stop-color:#CFCFCF"/>
+	<stop  offset="0.7787" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M5.073,0.497h41.375c2.586,0,4.684,2.114,4.684,4.722v72.759c0,2.606-2.098,4.721-4.684,4.721H5.073
+	c-2.586,0-4.684-2.113-4.684-4.721V5.218C0.39,2.611,2.487,0.497,5.073,0.497z"/>
+<path fill="none" stroke="#9E9E9E" stroke-miterlimit="10" d="M50.74,78.762c0,2.854-2.311,5.164-5.164,5.164H5.642
+	c-2.853,0-5.164-2.311-5.164-5.164V5.661c0-2.852,2.312-5.164,5.164-5.164h39.934c2.854,0,5.164,2.312,5.164,5.164V78.762z"/>
+<line fill="none" stroke="#9E9E9E" stroke-miterlimit="10" x1="1" y1="40.833" x2="50.74" y2="40.833"/>
+</svg>
