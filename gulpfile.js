@@ -255,7 +255,7 @@ gulp.task('styles', function() {
   var processors = [
     sprites(spritesOptions),
     cssnext({
-      'customProperties': true
+        'browsers': 'last 2 versions' // for autoprefixer and features list
     })
   ];
 
