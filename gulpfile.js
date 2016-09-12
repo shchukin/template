@@ -3,7 +3,7 @@ var run          = require('run-sequence');
 
 var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
-var csslint      = require('gulp-csslint');
+var stylelint    = require('gulp-stylelint');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 var postcss      = require('gulp-postcss');
@@ -284,18 +284,20 @@ gulp.task('lint', function() {
 
   return gulp.src([
     '!development/styles/style.css',
-    '!development/styles/_root.css',
     'development/styles/**/*.css'
   ])
       .pipe(plumber())
-      .pipe(csslint('csslintrc.json'))
-      .pipe(csslint.reporter())
+      .pipe(stylelint({
+          reporters: [
+              {formatter: 'string', console: true}
+          ]
+      }))
   ;
 });
 
 
 gulp.task('default', function (fn) {
-  run('lint', 'clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', fn);
+  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 

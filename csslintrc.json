@@ -1,9 +1,0 @@
-{
-  "empty-rules": false,
-  "adjoining-classes": false,
-  "universal-selector": false,
-  "qualified-headings": false,
-  "fallback-colors": false,
-  "box-sizing": false,
-  "box-model" : false
-}
