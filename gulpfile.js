@@ -16,6 +16,56 @@ var change       = require('gulp-change');
 
 
 
+function addSourcesTimestamp(content) {
+    var source = content.split('\n');
+    var outputLine = '';
+    var result = '';
+
+    var timestamp = Math.round(new Date().getTime() / 1000);
+
+
+    source.forEach(function (line) {
+
+        if( line.indexOf('rel="stylesheet"') !== -1 ) {
+            outputLine = line.replace('.css"', '.css?' + timestamp + '"');
+            result += outputLine + '\n';
+        }
+        else if ( line.indexOf('<script') !== -1 && line.indexOf('src="') !== -1 && line.indexOf('vendors/') === -1) {
+            outputLine = line.replace('.js"', '.js?' + timestamp + '"');
+            result += outputLine + '\n';
+        }
+        else {
+            result += line + '\n';
+        }
+
+    });
+
+    return result;
+}
+
+function uncommentGoogleFonts(content) {
+    var source = content.split('\n');
+    var outputLine = '';
+    var result = '';
+
+    source.forEach(function (line) {
+
+        if( line.indexOf('google') !== -1 && line.indexOf('google') !== -1 ) {
+            outputLine = line;
+            outputLine = outputLine.replace('<!--', '');
+            outputLine = outputLine.replace('-->', '');
+            result += outputLine + '\n';
+        }
+        else {
+            result += line + '\n';
+        }
+
+    });
+
+    return result;
+}
+
+
 function symbolsImgToSpriteSvg(content) {
 
     var source = content.split('\n');
@@ -134,6 +184,8 @@ gulp.task('markups', function() {
   return gulp.src('development/markups/**/*')
       .pipe(plumber())
       .pipe(change(symbolsImgToSpriteSvg))
+      .pipe(change(uncommentGoogleFonts))
+      .pipe(change(addSourcesTimestamp))
       .pipe(gulp.dest('production/markups/'))
   ;
 });
@@ -145,6 +197,8 @@ gulp.task('layouts', function() {
   return gulp.src('development/layouts/**/*')
       .pipe(plumber())
       .pipe(change(symbolsImgToSpriteSvg))
+      .pipe(change(uncommentGoogleFonts))
+      .pipe(change(addSourcesTimestamp))
       .pipe(gulp.dest('production/layouts/'))
   ;
 });
