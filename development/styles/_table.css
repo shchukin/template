@@ -1,6 +1,6 @@
 .table {
     width: 100%;
-    background: #eee;
+    background: #EEEEEE;
     border-collapse: collapse;
 /*
     border-collapse: separate;
@@ -12,7 +12,7 @@
     }
 
     .table__section_part_head {
-        background: #d5e1ee;
+        background: #D5E1EE;
     }
 
     .table__section_part_body {
@@ -20,19 +20,17 @@
     }
 
     .table__section_part_foot {
-        background: #d5e1ee;
+        background: #D5E1EE;
     }
         .table__row {
 
         }
 
         .table__section_part_body .table__row:nth-child(odd) {
-            background: #f4f4f4;
+            background: #F4F4F4;
         }
             .table__cell {
                 padding: 5px 10px 3px;
-                border: 1px solid #fff;
+                border: 1px solid #FFFFFF;
                 text-align: center;
             }
-
-

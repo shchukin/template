@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #CCCCCC;
     position: relative;
 }
     .header__wrap {
@@ -15,7 +15,7 @@
         .header__search {
             position: absolute;
             left: 300px;
-            top: 40px
+            top: 40px;
         }
 
         .header__user {

@@ -14,7 +14,7 @@
         margin-left: 0;
     }
 
-    .breadcrumbs__item:before {
+    .breadcrumbs__item::before {
         content: '/';
         position: absolute;
         right: 100%;
@@ -22,10 +22,10 @@
         margin: 0 8px 0 0;
     }
 
-    .breadcrumbs__item:first-child:before {
+    .breadcrumbs__item:first-child::before {
         display: none;
     }
 
         .breadcrumbs__link {
-            color: #999;
+            color: #999999;
         }

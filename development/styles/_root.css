@@ -1,5 +1,3 @@
-/*csslint RBRACE: false*/
-
 :root {
     --color_default_primary:    #000000;
     --color_default_secondary:  #222222;
@@ -67,5 +65,4 @@
 
     --font_size_smallest-text: 12px;
     --font_line_smallest-text: 16px;
-    
 }
