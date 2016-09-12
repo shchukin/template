@@ -4,7 +4,6 @@ var run          = require('run-sequence');
 var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
 var csslint      = require('gulp-csslint');
-var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 var postcss      = require('gulp-postcss');
@@ -269,10 +268,6 @@ gulp.task('styles', function() {
         keepSpecialComments: 0
       }))
       .pipe(postcss(processors))
-      .pipe(autoprefixer({
-        browsers: 'last 2 versions',
-        cascade: false
-      }))
       .pipe(base64({
         // Allow files from /vectors/ only
         exclude: ['/sprite/', '/images/', '/symbols/']
