@@ -290,13 +290,12 @@ gulp.task('lint', function() {
       .pipe(plumber())
       .pipe(csslint('csslintrc.json'))
       .pipe(csslint.reporter())
-      .pipe(csslint.reporter()) // random action just because css lint doesn't work in last row
   ;
 });
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('lint', 'clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', fn);
 });
 
 
