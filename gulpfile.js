@@ -9,6 +9,7 @@ var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 var postcss      = require('gulp-postcss');
 var sprites      = require('postcss-sprites').default;
+var cssnext      = require('postcss-cssnext');
 var base64       = require('gulp-base64');
 var svgstore     = require('gulp-svgstore');
 var svgmin       = require('gulp-svgmin');
@@ -253,7 +254,10 @@ gulp.task('styles', function() {
   };
 
   var processors = [
-    sprites(spritesOptions)
+    sprites(spritesOptions),
+    cssnext({
+      'customProperties': true
+    })
   ];
 
   return gulp.src([
@@ -285,6 +289,7 @@ gulp.task('lint', function() {
 
   return gulp.src([
     '!development/styles/style.css',
+    '!development/styles/_root.css',
     'development/styles/**/*.css'
   ])
       .pipe(plumber())
