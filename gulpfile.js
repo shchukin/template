@@ -289,7 +289,7 @@ gulp.task('lint', function() {
       .pipe(plumber())
       .pipe(stylelint({
           reporters: [
-              {formatter: 'verbose', console: true}
+              {formatter: 'string', console: true}
           ]
       }))
   ;
