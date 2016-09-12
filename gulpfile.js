@@ -50,7 +50,7 @@ function uncommentGoogleFonts(content) {
 
     source.forEach(function (line) {
 
-        if( line.indexOf('google') !== -1 && line.indexOf('google') !== -1 ) {
+        if( line.indexOf('google') !== -1 && line.indexOf('fonts') !== -1 ) {
             outputLine = line;
             outputLine = outputLine.replace('<!--', '');
             outputLine = outputLine.replace('-->', '');
