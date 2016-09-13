@@ -1,6 +1,6 @@
 .body {
     background: #F5F2ED url("../images/background.jpg") repeat center top;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font_family_primary);
 
     /*font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
     /*font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Tahoma", sans-serif;*/
