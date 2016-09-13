@@ -20,7 +20,7 @@
 
 }
     .file::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -30,6 +30,6 @@
         background-repeat: no-repeat;
     }
 
-    .file_kind_doc::before { background-image: url(../sprites/file_kind_doc.png); }
-    .file_kind_pdf::before { background-image: url(../sprites/file_kind_pdf.png); }
-    .file_kind_xls::before { background-image: url(../sprites/file_kind_xls.png); }
+    .file_kind_doc::before { background-image: url("../sprites/file_kind_doc.png"); }
+    .file_kind_pdf::before { background-image: url("../sprites/file_kind_pdf.png"); }
+    .file_kind_xls::before { background-image: url("../sprites/file_kind_xls.png"); }

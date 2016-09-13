@@ -34,7 +34,7 @@
                     height: 88px;
                     margin-left: 5px;
                     padding: 1px 1px 4px;
-                    background-image: url(../vectors/countdown_skin_board__digit.svg);
+                    background-image: url("../vectors/countdown_skin_board__digit.svg");
                     background-repeat: no-repeat;
                     background-position: center center;
                     font-weight: 300;

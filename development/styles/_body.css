@@ -1,5 +1,5 @@
 .body {
-    background: #F5F2ED url(../images/background.jpg) repeat center top;
+    background: #F5F2ED url("../images/background.jpg") repeat center top;
     font-family: "Open Sans", sans-serif;
 
     /*font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
