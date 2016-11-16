@@ -1,39 +1,44 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
-    --color_default_primary:    #000000;
-    --color_default_secondary:  #222222;
-    --color_default_additional: #333333;
+    --color_text_primary:      #000000;
+    --color_text_secondary:    #222222;
+    --color_text_tertiary:     #333333;
 
-    --color_muted_primary:      #999999;
-    --color_muted_secondary:    #AAAAAA;
-    --color_muted_additional:   #BBBBBB;
+    --color_muted_primary:     #999999;
+    --color_muted_secondary:   #AAAAAA;
+    --color_muted_tertiary:    #BBBBBB;
 
-    --color_link_primary:       #1A0DAB;
-    --color_link_secondary:     #2B1EBC;
-    --color_link_additional:    #3C2FCD;
+    --color_link_primary:      #1A0DAB;
+    --color_link_secondary:    #2B1EBC;
+    --color_link_tertiary:     #3C2FCD;
 
-    --color_info_primary:       #0000FF;
-    --color_info_secondary:     #2222FF;
-    --color_info_additional:    #3333FF;
+    --color_action_primary:    #0000FF;
+    --color_action_secondary:  #0000DD;
+    --color_action_tertiary:   #0000CC;
 
-    --color_warning_primary:    #FFFF00;
-    --color_warning_secondary:  #FFFF22;
-    --color_warning_additional: #FFFF33;
+    --color_neutral_primary:   #FFFFFF;
+    --color_neutral_secondary: #EEEEEE;
+    --color_neutral_tertiary:  #DDDDDD;
 
-    --color_danger_primary:     #FF0000;
-    --color_danger_secondary:   #FF2222;
-    --color_danger_additional:  #FF3333;
+    --color_danger_primary:    #FF0000;
+    --color_danger_secondary:  #FF2222;
+    --color_danger_tertiary:   #FF3333;
 
-    --color_success_primary:    #00FF00;
-    --color_success_secondary:  #22FF22;
-    --color_success_additional: #33FF33;
+    --color_warning_primary:   #FFFF00;
+    --color_warning_secondary: #FFFF22;
+    --color_warning_tertiary:  #FFFF33;
+
+    --color_success_primary:   #00FF00;
+    --color_success_secondary: #22FF22;
+    --color_success_tertiary:  #33FF33;
 
 
-    --font_family_primary:  "Open Sans", sans-serif;
-    --font_family_secondary: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    --font_family_default: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font_family_heading: Georgia, Times, "Times New Roman", serif;
 
-    --font_weigh_normal: 300;
-    --font_weigh_bold:   400;
+
+    --font_weight_default: 300;
+    --font_weight_strong:  400;
 
 
     --font_size_largest-title:  40px;

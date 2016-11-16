@@ -15,16 +15,16 @@
         height: 26px;
         padding: 0 9px;
         background: #FFFFFF;
-        border: 1px solid var(--color_default_secondary);
+        border: 1px solid var(--color_text_secondary);
         border-radius: 2px;
         font-size: 12px;
-        color: var(--color_default_primary);
+        color: var(--color_text_primary);
     }
 
     /* stylelint-disable block-opening-brace-space-before */
-    .input__control::-webkit-input-placeholder { font-style: normal; opacity: 1; color: #B3B3B3; }
-    .input__control::-moz-placeholder          { font-style: normal; opacity: 1; color: #B3B3B3; }
-    .input__control:-ms-input-placeholder      { font-style: normal; opacity: 1; color: #B3B3B3; }
+    .input__control::-webkit-input-placeholder       { font-style: normal; opacity: 1; color: #B3B3B3; }
+    .input__control::-moz-placeholder                { font-style: normal; opacity: 1; color: #B3B3B3; }
+    .input__control:-ms-input-placeholder            { font-style: normal; opacity: 1; color: #B3B3B3; }
 
     .input__control:hover::-webkit-input-placeholder { color: #7E7E7E; }
     .input__control:hover::-moz-placeholder          { color: #7E7E7E; }
