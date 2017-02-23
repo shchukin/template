@@ -1,17 +1,12 @@
 .input {
 
 }
-
-.input_widget_area {
-
-}
-
     .input__label {
         display: inline-block;
         margin: 0 0 8px;
     }
 
-    .input__control {
+    .input__widget {
         height: 26px;
         padding: 0 9px;
         background: #FFFFFF;
@@ -24,20 +19,24 @@
     }
 
     /* stylelint-disable block-opening-brace-space-before */
-    .input__control::-webkit-input-placeholder       { font-style: normal; color: #B3B3B3; }
-    .input__control::-moz-placeholder                { font-style: normal; color: #B3B3B3; opacity: 1; }
-    .input__control:-ms-input-placeholder            { font-style: normal; color: #B3B3B3; }
+    .input__widget::-webkit-input-placeholder       { font-style: normal; color: #B3B3B3; }
+    .input__widget::-moz-placeholder                { font-style: normal; color: #B3B3B3; opacity: 1; }
+    .input__widget:-ms-input-placeholder            { font-style: normal; color: #B3B3B3; }
 
-    .input__control:hover::-webkit-input-placeholder { color: #7E7E7E; }
-    .input__control:hover::-moz-placeholder          { color: #7E7E7E; }
-    .input__control:hover:-ms-input-placeholder      { color: #7E7E7E; }
+    .input__widget:hover::-webkit-input-placeholder { color: #7E7E7E; }
+    .input__widget:hover::-moz-placeholder          { color: #7E7E7E; }
+    .input__widget:hover:-ms-input-placeholder      { color: #7E7E7E; }
 
-    .input__control:focus::-webkit-input-placeholder { color: #7E7E7E; }
-    .input__control:focus::-moz-placeholder          { color: #7E7E7E; }
-    .input__control:focus:-ms-input-placeholder      { color: #7E7E7E; }
+    .input__widget:focus::-webkit-input-placeholder { color: #7E7E7E; }
+    .input__widget:focus::-moz-placeholder          { color: #7E7E7E; }
+    .input__widget:focus:-ms-input-placeholder      { color: #7E7E7E; }
     /* stylelint-enable */
 
-    .input_widget_area .input__control {
+
+.input_type_area {
+
+}
+    .input_type_area .input__widget {
         padding-top: 6px;
         padding-bottom: 6px;
         height: 60px;
