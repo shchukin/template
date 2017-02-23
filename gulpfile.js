@@ -204,10 +204,14 @@ gulp.task('layouts', function() {
 });
 
 
-// Vendors: copy
+// Vendors: copy but exclude normalize
 
 gulp.task('vendors', function() {
-  return gulp.src('development/vendors/**/*')
+  return gulp.src([
+      '!development/vendors/normalize/**/*',
+      '!development/vendors/normalize/',
+      'development/vendors/**/*'
+  ])
       .pipe(plumber())
       .pipe(gulp.dest('production/vendors/'))
   ;
