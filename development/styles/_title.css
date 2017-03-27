@@ -1,14 +1,17 @@
 .title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: inherit;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.title_importance_higher {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.title_importance_lower {
     font-size: 18px;
-    line-height: 20px;
-}
-
-.title_font_larger {
-    font-size: 24px;
     line-height: 24px;
-}
-
-.title_uppercase {
-    text-transform: uppercase;
 }

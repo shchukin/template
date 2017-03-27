@@ -1,16 +1,26 @@
 .link {
     display: inline;
-    text-decoration: underline;
+    vertical-align: baseline;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
     color: #999999;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .link:hover {
     text-decoration: none;
 }
 
+
 .link_palette_danger {
     color: #FF0000;
 }
+
 
 .link_fake {
     text-decoration: none;
