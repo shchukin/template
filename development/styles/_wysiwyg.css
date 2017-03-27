@@ -1,3 +1,7 @@
+.wysiwyg {
+
+}
+
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,
@@ -65,18 +69,21 @@
 }
 
 .wysiwyg h2 {
+    font-weight: var(--font_weight_strong);
     font-size: 1.5em;
     line-height: 1;
     margin: 0.83em 0 0;
 }
 
 .wysiwyg h3 {
+    font-weight: var(--font_weight_strong);
     font-size: 1.17em;
     line-height: 1.1;
     margin: 1em 0 0;
 }
 
 .wysiwyg h4 {
+    font-weight: var(--font_weight_strong);
     font-size: 1em;
     line-height: 1.2;
     margin: 1.33em 0 0;
@@ -86,4 +93,10 @@
 .wysiwyg h3:first-child,
 .wysiwyg h4:first-child {
     margin-top: 0;
+}
+
+
+.wysiwyg b,
+.wysiwyg strong {
+    font-weight: var(--font_weight_strong);
 }

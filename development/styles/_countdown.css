@@ -8,7 +8,7 @@
 
 .countdown {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: top;
 }
 
 .countdown_skin_board {
@@ -37,14 +37,11 @@
                     background-image: url("../vectors/countdown_skin_board__digit.svg");
                     background-repeat: no-repeat;
                     background-position: center center;
-                    font-weight: 300;
                     font-size: 50px;
                     line-height: 83px;
                     color: #000000;
                     text-align: center;
-                    letter-spacing: 0.01em;
                 }
-
 
                 .countdown_skin_board .countdown__digit:first-child {
                     margin-left: 0;
@@ -55,8 +52,7 @@
                 margin-top: 11px;
                 font-size: 15px;
                 line-height: 18px;
-                color: rgba(0, 0, 0, 0.5);
+                color: #999999;
                 text-align: center;
                 text-transform: lowercase;
-                letter-spacing: 0.01em;
             }

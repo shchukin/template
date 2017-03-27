@@ -1,14 +1,14 @@
 .content {
 
 }
-    .content__head {
+    .content__path {
 
     }
 
     .content__body {
-        margin: 50px 0 0;
+        margin-top: 20px;
     }
 
-    .content__foot {
-        margin: 50px 0 0;
+    .content__addition {
+        margin-top: 60px;
     }

@@ -1,12 +1,12 @@
 .header {
+    background-color: #FFFFFF;
     border-bottom: 1px solid #CCCCCC;
-    position: relative;
 }
     .header__wrap {
         height: 100px;
         position: relative;
     }
-        .header__logo {
+        .header__emblem {
             position: absolute;
             left: 0;
             top: 10px;

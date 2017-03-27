@@ -1,10 +1,22 @@
 .form {
 
 }
-    .form__field {
-        margin: 20px 0 0;
+    .form__heading {
+
     }
 
-    .form__field:first-child {
-        margin-top: 0;
+    .form__body {
+        margin-top: 20px;
+    }
+        .form__field {
+            margin-top: 14px;
+        }
+
+        .form__field:first-child {
+            margin-top: 0;
+        }
+
+    .form__submit {
+        width: 100px;
+        margin-top: 30px;
     }

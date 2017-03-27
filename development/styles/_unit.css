@@ -1,0 +1,27 @@
+.unit {
+
+}
+    .unit__preview {
+        display: block;
+        margin-bottom: 10px;
+    }
+        .unit__image {
+            vertical-align: top;
+            width: 100%;
+            height: auto;
+        }
+
+    .unit__heading {
+
+    }
+        .unit__link {
+
+        }
+
+    .unit__description {
+        margin-top: 10px;
+    }
+
+    .unit__price {
+        margin-top: 10px;
+    }

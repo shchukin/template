@@ -1,41 +1,42 @@
 .pagination {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: flex;
 }
-    .pagination__item {
-        margin: 0 0 0 4px;
+    .pagination__link {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 4px;
+        margin-left: 4px;
+        min-width: 40px;
+        padding: 10px 6px;
+        background-color: rgba(255, 0, 0, 0.2);
+        font-size: 12px;
+        line-height: 20px;
+        color: #333333;
+        text-decoration: none;
+        text-align: center;
     }
 
-    .pagination__item:first-child {
+    .pagination__link:first-child {
         margin-left: 0;
     }
 
-        .pagination__link {
-            display: block;
-            text-decoration: none;
-            background: rgba(255, 0, 0, 0.2);
-            padding: 0 5px;
-            min-width: 40px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-        }
+    .pagination__link:last-child {
+        margin-right: 0;
+    }
 
-        .pagination__link_current {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+    .pagination__link_current {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
 
-        .pagination__link_suspend {
-            color: #000000;
-            cursor: default;
-        }
+    .pagination__link_suspend {
+        background-color: transparent;
+        color: #000000;
+        cursor: default;
+    }
 
-        .pagination__link_direction_prev {
-
-        }
-
-        .pagination__link_direction_next {
-
-        }
+    .pagination__link_direction_prev {
+        margin-right: 12px;
+    }
+    .pagination__link_direction_next {
+        margin-left: 12px;
+    }

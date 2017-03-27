@@ -27,7 +27,7 @@
      * Magnific popup init
      */
 
-    $('.magnific-popup').magnificPopup({
+    $('.mfp-handler').magnificPopup({
         type: 'inline',
         showCloseBtn: false
     });

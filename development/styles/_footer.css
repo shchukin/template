@@ -1,10 +1,13 @@
 .footer {
     border-top: 1px solid #CCCCCC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
 }
     .footer__wrap {
         display: flex;
         justify-content: space-between;
-        padding: 40px 0;
+        align-items: center;
     }
         .footer__info {
 

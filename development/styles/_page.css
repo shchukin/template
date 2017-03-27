@@ -1,33 +1,31 @@
 .page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
-    .page__header {
+    .page__head {
 
     }
 
-    .page__nav {
-        margin: 40px 0 0;
+    .page__navigation {
+
     }
 
     .page__body {
-        margin: 40px 0 0;
-        flex-grow: 1;
+        margin-top: 40px;
     }
 
-    .page__related {
-        margin: 80px 0 0;
+    .page__additional-items {
+        margin-top: 80px;
     }
 
-    .page__partners {
-        margin: 80px 0 0;
+    .page__new-items {
+        margin-top: 80px;
     }
 
-    .arrivals {
-        margin: 80px 0 0;
+    .page__companies {
+        margin-top: 80px;
     }
+
 
     .page__footer {
-        margin: 80px 0 0;
+        margin-top: 80px;
     }

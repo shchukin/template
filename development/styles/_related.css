@@ -4,15 +4,14 @@
     .related__wrap {
 
     }
-
-        .related__title {
+        .related__heading {
 
         }
 
         .related__content {
-            margin: 10px 0 0;
+            margin-top: 10px;
         }
 
         .related__navigation {
-            margin: 20px 0 0;
+            margin-top: 20px;
         }

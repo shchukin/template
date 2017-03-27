@@ -1,23 +1,15 @@
 .nav {
-
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #CCCCCC;
 }
     .nav__wrap {
-        border-bottom: 1px solid #CCCCCC;
-        padding: 20px 0;
+
     }
         .nav__list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
+            margin-left: -20px;
             display: flex;
         }
-            .nav__item {
-                margin: 0 0 0 50px;
+            .nav__link {
+                display: block;
+                padding: 20px;
             }
-
-            .nav__item:first-child {
-                margin-left: 0;
-            }
-                .nav__link {
-
-                }
