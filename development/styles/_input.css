@@ -7,14 +7,15 @@
     }
 
     .input__widget {
-        height: 26px;
-        padding: 0 9px;
+        height: 40px;
+        padding: 10px 14px;
         background: #FFFFFF;
         border: 1px solid var(--color_text_secondary);
         box-shadow: none; /* reset iOS default border-radius */
         border-radius: 0; /* reset iOS default border-radius */
         font-family: inherit;
         font-size: 12px;
+        line-height: 18px;
         color: var(--color_text_primary);
     }
 
