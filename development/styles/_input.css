@@ -38,7 +38,9 @@
 
 }
     .input_type_area .input__widget {
+        vertical-align: top;
         padding-top: 6px;
         padding-bottom: 6px;
         height: 60px;
+        resize: vertical;
     }
