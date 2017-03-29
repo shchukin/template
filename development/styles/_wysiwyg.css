@@ -3,6 +3,7 @@
     line-height: var(--font_line_default-text);
 }
 
+/* stylelint-disable function-parentheses-space-inside */
 .wysiwyg p,
 .wysiwyg ul,
 .wysiwyg ol,
@@ -12,6 +13,7 @@
     margin-top: calc( var(--font_line_default-text) * 1.5 );
     margin-bottom: calc( var(--font_line_default-text) * 1.5 );
 }
+/* stylelint-enable */
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
@@ -92,7 +94,7 @@
 
 .wysiwyg h2 {
     font-weight: var(--font_weight_strong);
-    font-size: var( --font_size_default-title);
+    font-size: var(--font_size_default-title);
     line-height: var(--font_line_default-title);
     margin-top: var(--font_line_default-title);
     margin-bottom: var(--font_line_default-title);
@@ -100,7 +102,7 @@
 
 .wysiwyg h3 {
     font-weight: var(--font_weight_strong);
-    font-size: var( --font_size_smaller-title);
+    font-size: var(--font_size_smaller-title);
     line-height: var(--font_line_smaller-title);
     margin-top: var(--font_line_smaller-title);
     margin-bottom: var(--font_line_smaller-title);
@@ -108,7 +110,7 @@
 
 .wysiwyg h4 {
     font-weight: var(--font_weight_strong);
-    font-size: var( --font_size_smallest-title);
+    font-size: var(--font_size_smallest-title);
     line-height: var(--font_line_smallest-title);
     margin-top: var(--font_line_smallest-title);
     margin-bottom: var(--font_line_smallest-title);
