@@ -70,6 +70,11 @@
     margin-right: 40px;
 }
 
+.wysiwyg hr {
+    height: 0;
+    border-top: 1px solid;
+}
+
 .wysiwyg img {
     vertical-align: top;
 }
@@ -83,11 +88,6 @@
         text-align: center;
     }
 
-
-.wysiwyg hr {
-    height: 0;
-    border-top: 1px solid;
-}
 
 
 .wysiwyg h2 {
