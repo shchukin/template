@@ -17,6 +17,7 @@
         .article__preview {
             margin-top: 14px;
             vertical-align: top;
+            background-color: #CCCCCC;
         }
 
     .article__content {
