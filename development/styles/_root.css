@@ -33,7 +33,7 @@
     --color_success_tertiary:  #33FF33;
 
 
-    --font_family_default: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font_family_default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font_family_heading: Georgia, Times, "Times New Roman", serif;
 
 

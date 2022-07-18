@@ -1,5 +1,8 @@
 // outline.js
-// based on http://www.paciellogroup.com/blog/2012/04/how-to-remove-css-outlines-in-an-accessible-manner/
+// based on            http://www.paciellogroup.com/blog/2012/04/how-to-remove-css-outlines-in-an-accessible-manner/
+// original:           https://github.com/lindsayevans/outline.js
+// this one is a fork: https://github.com/shchukin/outline.js
+
 (function(d){
 
 	var style_element = d.createElement('STYLE'),
@@ -22,11 +25,13 @@
 
 	// Using mousedown instead of mouseover, so that previously focused elements don't lose focus ring on mouse move
 	add_event_listener('mousedown', function(){
-		set_css(':focus{outline:0}::-moz-focus-inner{border:0;}');
+		set_css('*{outline:0!important;}::-moz-focus-inner{border:0;}');
 	});
 
-	add_event_listener('keydown', function(){
-		set_css('');
-	});
+    add_event_listener('keydown', function(){
+        if (event.keyCode !== 27) { /* Esc */
+            set_css('');
+        }
+    });
 
 })(document);
