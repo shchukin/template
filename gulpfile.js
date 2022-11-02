@@ -206,9 +206,9 @@ gulp.task('layouts', function() {
 
 gulp.task('vendors', function() {
   return gulp.src([
+      'development/vendors/**/*',
+      '!development/vendors/normalize',
       '!development/vendors/normalize/**/*',
-      '!development/vendors/normalize/',
-      'development/vendors/**/*'
   ])
       .pipe(plumber())
       .pipe(gulp.dest('production/vendors/'))
