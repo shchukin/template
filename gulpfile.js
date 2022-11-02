@@ -1,13 +1,11 @@
 var del          = require('del');
-var run          = require('run-sequence');
-
+var run          = require('gulp4-run-sequence');
 var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
 var stylelint    = require('gulp-stylelint');
 var cleanCSS     = require('gulp-clean-css');
 var size         = require('gulp-size');
 var postcss      = require('gulp-postcss');
-var sprites      = require('postcss-sprites').default;
 var cssnext      = require('postcss-cssnext');
 var base64       = require('gulp-base64');
 var svgstore     = require('gulp-svgstore');
@@ -243,21 +241,7 @@ gulp.task('symbols', function() {
 
 gulp.task('styles', function() {
 
-  var spritesOptions = {
-    stylesheetPath: 'production/styles',
-    spritePath: 'production/sprites',
-    retina: 'true',
-    filterBy: function(image) {
-      // Allow files from /sprites/ only
-      if (!/\/sprites\//.test(image.url)) {
-        return Promise.reject();
-      }
-      return Promise.resolve();
-    }
-  };
-
   var processors = [
-    sprites(spritesOptions),
     cssnext({
         'browsers': 'last 5 versions' // for autoprefixer and features list
     })
