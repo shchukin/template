@@ -1,12 +1,6 @@
 .input {
 
 }
-    .input__label {
-        display: inline-block;
-        vertical-align: top;
-        margin-bottom: 4px;
-    }
-
     .input__widget {
         width: 100%;
         height: 40px;
@@ -32,17 +26,9 @@
     }
 
     /* stylelint-disable block-opening-brace-space-before */
-    .input__widget::-webkit-input-placeholder       { font-style: normal; color: #B3B3B3; }
-    .input__widget::-moz-placeholder                { font-style: normal; color: #B3B3B3; opacity: 1; }
-    .input__widget:-ms-input-placeholder            { font-style: normal; color: #B3B3B3; }
-
-    .input__widget:hover::-webkit-input-placeholder { color: #7E7E7E; }
-    .input__widget:hover::-moz-placeholder          { color: #7E7E7E; }
-    .input__widget:hover:-ms-input-placeholder      { color: #7E7E7E; }
-
-    .input__widget:focus::-webkit-input-placeholder { color: #7E7E7E; }
-    .input__widget:focus::-moz-placeholder          { color: #7E7E7E; }
-    .input__widget:focus:-ms-input-placeholder      { color: #7E7E7E; }
+    .input__widget::-webkit-input-placeholder { font-style: normal; color: #B3B3B3; }
+    .input__widget::-moz-placeholder          { font-style: normal; color: #B3B3B3; opacity: 1; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; color: #B3B3B3; }
     /* stylelint-enable */
 
 

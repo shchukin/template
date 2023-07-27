@@ -1,6 +1,0 @@
-.tag {
-    text-decoration: none;
-}
-    .tag::before {
-        content: "#";
-    }
