@@ -134,19 +134,19 @@ function symbolsImgToSpriteSvg(content) {
 }
 
 
-// Clean up production folder
+// Clean up build folder
 
 gulp.task('clean', function () {
-    return del('production/*');
+    return del('build/*');
 });
 
 
 // Temp: copy
 
 gulp.task('temp', function () {
-    return gulp.src('development/temp/**/*')
+    return gulp.src('src/temp/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('production/temp/'))
+        .pipe(gulp.dest('build/temp/'))
         ;
 });
 
@@ -154,9 +154,9 @@ gulp.task('temp', function () {
 // Content: copy
 
 gulp.task('content', function () {
-    return gulp.src('development/content/**/*')
+    return gulp.src('src/content/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('production/content/'))
+        .pipe(gulp.dest('build/content/'))
         ;
 });
 
@@ -164,9 +164,9 @@ gulp.task('content', function () {
 // Images: copy
 
 gulp.task('images', function () {
-    return gulp.src('development/images/**/*')
+    return gulp.src('src/images/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('production/images/'))
+        .pipe(gulp.dest('build/images/'))
         ;
 });
 
@@ -174,12 +174,12 @@ gulp.task('images', function () {
 // Markups: copy and change symbols <img> to sprite <svg>
 
 gulp.task('markups', function () {
-    return gulp.src('development/markups/**/*')
+    return gulp.src('src/markups/**/*')
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
-        .pipe(gulp.dest('production/markups/'))
+        .pipe(gulp.dest('build/markups/'))
         ;
 });
 
@@ -187,12 +187,12 @@ gulp.task('markups', function () {
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function () {
-    return gulp.src('development/layouts/**/*')
+    return gulp.src('src/layouts/**/*')
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
-        .pipe(gulp.dest('production/layouts/'))
+        .pipe(gulp.dest('build/layouts/'))
         ;
 });
 
@@ -201,12 +201,12 @@ gulp.task('layouts', function () {
 
 gulp.task('vendors', function () {
     return gulp.src([
-        'development/vendors/**/*',
-        '!development/vendors/normalize',
-        '!development/vendors/normalize/**/*',
+        'src/vendors/**/*',
+        '!src/vendors/normalize',
+        '!src/vendors/normalize/**/*',
     ])
         .pipe(plumber())
-        .pipe(gulp.dest('production/vendors/'))
+        .pipe(gulp.dest('build/vendors/'))
         ;
 });
 
@@ -214,9 +214,9 @@ gulp.task('vendors', function () {
 // Scripts: copy
 
 gulp.task('scripts', function () {
-    return gulp.src('development/scripts/**/*')
+    return gulp.src('src/scripts/**/*')
         .pipe(plumber())
-        .pipe(gulp.dest('production/scripts/'))
+        .pipe(gulp.dest('build/scripts/'))
         ;
 });
 
@@ -224,11 +224,11 @@ gulp.task('scripts', function () {
 // Symbols
 
 gulp.task('symbols', function () {
-    return gulp.src('development/symbols/*.svg')
+    return gulp.src('src/symbols/*.svg')
         .pipe(plumber())
         .pipe(svgmin())
         .pipe(svgstore())
-        .pipe(gulp.dest('production/symbols/'));
+        .pipe(gulp.dest('build/symbols/'));
 });
 
 
@@ -241,7 +241,7 @@ gulp.task('styles', function () {
     ];
 
     return gulp.src([
-        'development/styles/style.css'
+        'src/styles/style.css'
     ])
         .pipe(plumber())
         .pipe(cleanCSS({
@@ -253,7 +253,7 @@ gulp.task('styles', function () {
             // Allow files from /vectors/ only
             exclude: ['/sprite/', '/images/', '/symbols/']
         }))
-        .pipe(gulp.dest('production/styles/'))
+        .pipe(gulp.dest('build/styles/'))
         .pipe(size())
         ;
 });
@@ -264,8 +264,8 @@ gulp.task('styles', function () {
 gulp.task('lint', function () {
 
     return gulp.src([
-        '!development/styles/style.css',
-        'development/styles/**/*.css'
+        '!src/styles/style.css',
+        'src/styles/**/*.css'
     ])
         .pipe(plumber())
         .pipe(stylelint({
