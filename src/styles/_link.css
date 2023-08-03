@@ -1,28 +1,58 @@
 .link {
     display: inline;
     vertical-align: baseline;
-    padding: 0;
+    padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
     background-color: transparent;
     border: none;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    color: #999999;
+    color: #1B73E8;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
     cursor: pointer;
+    transition: text-decoration-color var(--transition-hover);
 }
 
 .link:hover {
-    text-decoration: none;
+    text-decoration-color: transparent;
+}
+
+.link:active {
+    color: #777777;
+    transition: none;
 }
 
 
-.link_palette_danger {
-    color: #FF0000;
+
+
+.link--text-alike {
+    color: inherit;
 }
 
 
-.link_fake {
+
+
+.link--no-hover,
+.link--no-hover:hover,
+.link--no-hover:active {
     text-decoration: none;
     color: inherit;
 }
+
+
+
+
+
+
+.link--fake,
+.link--fake:hover,
+.link--fake:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+}
+
+
+
