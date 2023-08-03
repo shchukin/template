@@ -1,13 +1,5 @@
 (function($) {
 
-
-    /*
-     * Svg for everybody init
-     */
-
-    svg4everybody();
-
-
     /*
      * Magnific popup init
      */
