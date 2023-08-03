@@ -10,7 +10,6 @@
 
 
     $('.input--expandable .input__widget').each(function () {
-
         $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
     }).on('input', function () {
         console.log(this.scrollHeight)
