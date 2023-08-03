@@ -8,4 +8,13 @@
         }
     });
 
+
+    $('.input--expandable .input__widget').each(function () {
+        this.setAttribute('style', 'height:' + (this.scrollHeight + 2) + 'px;');
+    }).on('input', function () {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight + 2) + 'px';
+    });
+
+
 })(jQuery);

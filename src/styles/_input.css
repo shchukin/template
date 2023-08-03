@@ -40,8 +40,8 @@
 }
     .input--area .input__widget {
         height: auto; /* user rows="" attribute to set a default height */
-        min-height: 50px; /* equal to one row */
-        max-height: 400px;
+        min-height: 50px; /* 1 row */
+        max-height: 266px; /* 10 rows */
         resize: vertical;
     }
 
