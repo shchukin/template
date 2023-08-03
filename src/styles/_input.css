@@ -50,6 +50,12 @@
 
 }
     .input--select .input__widget {
+        appearance: none;
+        padding-right: 48px;
+        background-image: url("../vectors/select.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right 16px center;
         cursor: pointer;
     }
 
@@ -66,8 +72,6 @@
     }
 
 
-
-
 .input--placeholder-is-chosen {
 
 }
@@ -75,18 +79,3 @@
         color: var(--placeholder-text-color);
     }
 
-@supports (appearance: none) {
-
-    .input--select .input__widget {
-        appearance: none;
-        padding-right: 48px;
-        background-image: url("../vectors/select.svg");
-        background-size: 16px 16px;
-        background-repeat: no-repeat;
-        background-position: right 16px center;
-    }
-
-/*    .firefox .input--select .input__widget {*/
-/*        border-left-width: 15px;*/
-/*    }*/
-}
