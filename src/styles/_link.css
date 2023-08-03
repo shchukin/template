@@ -1,4 +1,5 @@
-.link {
+.link,
+.wysiwyg a {
     display: inline;
     vertical-align: baseline;
     padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
@@ -15,23 +16,21 @@
     transition: text-decoration-color var(--transition-hover);
 }
 
-.link:hover {
+.link:hover,
+.wysiwyg a:hover {
     text-decoration-color: transparent;
 }
 
-.link:active {
+.link:active,
+.wysiwyg a:active {
     color: #777777;
     transition: none;
 }
 
 
-
-
 .link--text-alike {
     color: inherit;
 }
-
-
 
 
 .link--no-hover,
@@ -40,10 +39,6 @@
     text-decoration: none;
     color: inherit;
 }
-
-
-
-
 
 
 .link--fake,
