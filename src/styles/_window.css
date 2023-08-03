@@ -10,26 +10,24 @@
         position: absolute;
         right: 10px !important;
         top: 10px !important;
-        text-indent: 100%;
+        width: 44px;
+        height: 44px;
+        text-indent: 200%;
         white-space: nowrap;
         overflow: hidden !important;
         opacity: 1;
     }
         .window__close::after {
-            content: "×";
+            content: "";
             position: absolute;
             left: 0;
             top: 0;
             right: 0;
             bottom: 0;
-            text-indent: 0;
-            color: #333333;
+            margin: auto;
+            background-image: url("../vectors/cross.svg");
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
-        .window__close:hover::after {
-            color: #666666;
-        }
-
-        .window__close:active::after {
-            color: #000000;
-        }
