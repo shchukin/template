@@ -1,20 +1,5 @@
 (function($) {
 
-    /*
-     * Browser detect
-     */
-
-    function getBrowser() {
-        if ( navigator.userAgent.indexOf( 'WebKit'  ) + 1 ) {
-            $('html').addClass('webkit');
-        }
-        if ( navigator.userAgent.indexOf( 'Firefox' ) + 1 ) {
-            $('html').addClass('moz');
-        }
-    }
-
-    getBrowser();
-
 
     /*
      * Svg for everybody init
