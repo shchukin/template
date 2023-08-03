@@ -6,6 +6,9 @@
     --transition-hover: 0.1s ease;
     --transition-show: 1.2s var(--ease-out-quint);
     --container-padding: 40px;
+    --input-border: #B3B3B3;
+    --input-border-hover: #7E7E7E;
+    --placeholder-text-color: #999999;
 }
 
 @media (350px < width < 599px) {
