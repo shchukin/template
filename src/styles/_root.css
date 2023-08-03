@@ -13,12 +13,12 @@
 
 @media (350px <= width < 600px) {
     :root {
-        --container-padding: 20px;
+        --container-padding: 24px;
     }
 }
 
 @media (width < 350px) {
     :root {
-        --container-padding: 15px;
+        --container-padding: 16px;
     }
 }
