@@ -11,7 +11,7 @@
         outline: none;
         border-radius: 3px;
         font-family: inherit;
-        font-size: 16px;
+        font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
         line-height: 24px;
         color: #000000;
         transition: background-color var(--transition-hover),
