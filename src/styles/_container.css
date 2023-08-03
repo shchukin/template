@@ -6,7 +6,7 @@
     margin-right: auto;
 }
 
-@media (width < 599px) {
+@media (width < 600px) {
     .container {
         width: auto;
     }

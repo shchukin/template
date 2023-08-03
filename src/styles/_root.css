@@ -11,13 +11,13 @@
     --placeholder-text-color: #999999;
 }
 
-@media (350px < width < 599px) {
+@media (350px <= width < 600px) {
     :root {
         --container-padding: 20px;
     }
 }
 
-@media (width < 349px) {
+@media (width < 350px) {
     :root {
         --container-padding: 15px;
     }
