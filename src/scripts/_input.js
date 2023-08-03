@@ -10,10 +10,12 @@
 
 
     $('.input--expandable .input__widget').each(function () {
-        this.setAttribute('style', 'height:' + (this.scrollHeight + 2) + 'px;');
+
+        $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
     }).on('input', function () {
-        this.style.height = 'auto';
-        this.style.height = (this.scrollHeight + 2) + 'px';
+        console.log(this.scrollHeight)
+        $(this).css('height', 'auto');
+        $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
     });
 
 
