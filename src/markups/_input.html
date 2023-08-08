@@ -74,7 +74,8 @@
             <br>
             <br>
             <br>
-            <h2>With <a href="_label.html">.label</a></h2>
+            <h2>With <a href="_label.html">.label</a> and <a href="_hint.html">.hint</a></h2>
+            <br>
 
             <label class="label" for="bp24napi">
                 First name
@@ -84,18 +85,11 @@
                 <input class="input__widget" type="text" id="bp24napi">
             </div>
 
-
-            <br>
-            <br>
-            <br>
-            <h2>With <a href="_hint.html">.hint</a></h2>
-
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="First name">
-            </div>
             <div class="hint">
                 Can’t be changed later
             </div>
+
+
 
 
             <br>
@@ -106,7 +100,7 @@
             <div class="input input--error">
                 <input class="input__widget" type="text" placeholder="First name">
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 This field is required
             </div>
 
@@ -122,7 +116,7 @@
                     <option>Zimbabwe</option>
                 </select>
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 This field is required
             </div>
 
@@ -131,7 +125,7 @@
             <div class="input input--error">
                 <input class="input__widget" type="email" placeholder="Email" value="example@foobar.">
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 Email is not valid
             </div>
 
@@ -140,20 +134,20 @@
             <div class="input input--error">
                 <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 Password is too short
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 Password must contain a special character
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
             </div>
-            <div class="hint danger">
+            <div class="hint hint--output">
                 New password is similar to previous password
             </div>
 
-            
+
 
 
 

@@ -5,6 +5,10 @@
     color: #545454;
 }
 
+.hint--output {
+    color: var(--red);
+}
+
 .hint + .hint {
     padding-top: 3px;
 }
