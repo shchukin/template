@@ -15,4 +15,9 @@
         $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
     });
 
+    $('.input__widget').on('focus', function () {
+        $(this).parents('.input').removeClass('input--error');
+        $(this).parents('.input').nextUntil('br').remove();
+    });
+
 })(jQuery);

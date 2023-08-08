@@ -9,6 +9,7 @@
     --input-border: #B3B3B3;
     --input-border-hover: #7E7E7E;
     --placeholder-text-color: #999999;
+    --red: #FF0033;
 }
 
 @media (350px <= width < 600px) {

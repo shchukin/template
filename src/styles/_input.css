@@ -79,3 +79,19 @@
         color: var(--placeholder-text-color);
     }
 
+
+.input--error {
+
+}
+    .input--error .input__widget {
+        color: var(--red);
+        border-color: var(--red);
+    }
+
+    .input--error .input__widget::placeholder {
+        color: var(--red);
+    }
+
+    .input--error.input--select .input__widget {
+        background-image: url("../vectors/select-error.svg");
+    }
