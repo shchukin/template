@@ -51,7 +51,7 @@
 
             <div class="input input--select input--placeholder-is-chosen">
                 <select class="input__widget">
-                    <option value="placeholder">Country</option>
+                    <option value="placeholder" selected>Country</option>
                     <option>Afghanistan</option>
                     <option>Albania</option>
                     <option>Algeria</option>
@@ -108,7 +108,7 @@
 
             <div class="input input--select input--placeholder-is-chosen input--error">
                 <select class="input__widget">
-                    <option value="placeholder">Country</option>
+                    <option value="placeholder" selected>Country</option>
                     <option>Afghanistan</option>
                     <option>Albania</option>
                     <option>Algeria</option>
@@ -123,7 +123,7 @@
             <br>
 
             <div class="input input--error">
-                <input class="input__widget" type="email" placeholder="Email" value="example@foobar.">
+                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
             </div>
             <div class="hint hint--output">
                 Email is not valid
@@ -146,6 +146,45 @@
             <div class="hint hint--output">
                 New password is similar to previous password
             </div>
+
+
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>:disabled</h2>
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="License" disabled>
+            </div>
+            <div class="hint">
+                Please choose contract type first
+            </div>
+
+            <br>
+
+            <div class="input input--select input--placeholder-is-chosen">
+                <select class="input__widget" disabled>
+                    <option value="placeholder" selected>City</option>
+                </select>
+            </div>
+            <div class="hint">
+                Please select country first
+            </div>
+
+            <br>
+
+            <div class="input">
+                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.org" disabled>
+            </div>
+            <div class="hint">
+                Email can’t be changed
+            </div>
+
 
 
 

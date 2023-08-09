@@ -95,3 +95,25 @@
     .input--error.input--select .input__widget {
         background-image: url("../vectors/select-error.svg");
     }
+
+
+
+/* disabled */
+.input__widget:disabled,
+.input__widget:disabled:hover,
+.input__widget:disabled:focus {
+    opacity: 1;
+    border-color: var(--input-border);
+    background-color: #F6F6F6;
+    box-shadow: none;
+    color: var(--disabled-color);
+    cursor: default;
+}
+
+.input__widget:disabled::placeholder {
+    color: var(--disabled-color);
+}
+
+.input--placeholder-is-chosen .input__widget:disabled {
+    color: var(--disabled-color);
+}
