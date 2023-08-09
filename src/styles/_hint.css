@@ -1,5 +1,5 @@
 .hint {
-    padding-top: 8px;
+    padding-top: 6px;
     font-size: 14px;
     line-height: 20px;
     color: #7E7E7E;
@@ -10,5 +10,5 @@
 }
 
 .hint + .hint {
-    padding-top: 3px;
+    padding-top: 4px;
 }
