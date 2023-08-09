@@ -104,7 +104,11 @@ select.input__widget:hover {
 select.input__widget:focus {
     box-shadow: none;
     border-color: var(--input-border); /* same as original, not hover input */
-    outline: auto; /* for keyboard navigation take it back */
+}
+
+
+select.input__widget:focus {
+    outline: 2px solid var(--input-border-hover);
 }
 
 /* Error */
