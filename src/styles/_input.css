@@ -41,7 +41,7 @@
 }
     .input--password .input__widget:not(:placeholder-shown) {
         font-family: "Tahoma", sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
 

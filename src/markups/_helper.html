@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.label</title>
+        <title>.helper</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
@@ -16,34 +16,28 @@
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
-            <h1>.label</h1>
+            <h1>.helper</h1>
             <p>
-                Typically used with components such as <a href="_input.html">.input</a>:
+                A simple line of helping text. It has the top padding set, and it meant
+                to be used with components such as <a href="_input.html">.input</a>:
             </p>
 
 
-            <label class="label" for="ooygvb8t">
-                First name
-            </label>
-
             <div class="input">
-                <input class="input__widget" type="text" id="ooygvb8t">
+                <input class="input__widget" type="text" placeholder="First name">
             </div>
+            <div class="helper">
+                Can’t be changed later
+            </div>
+
 
 
             <br>
             <p>
-                Notice that label is placed before input (not inside). It makes label component universal.
-            </p>
-            <p>
-                So it can be used with any other element. If we deal with something that isn’t form element, we probably don’t need to use the
-                <b><i>&lt;label&gt;</i></b> tag with the <b><i>for</i></b> attribute. Just a normal <b><i>&lt;div&gt;</i></b> will do:
+                Notice that helper is placed after input (not inside). It makes helper component universal.
+                So it can be used with any other element:
             </p>
 
-
-            <div class="label">
-                File manager
-            </div>
 
             <!-- temp -->
             <div style="display: flex; align-items: center; justify-content: center; height: 200px; background-color: purple; color: white;">
@@ -51,21 +45,33 @@
             </div>
             <!--/temp -->
 
-            <br>
-            <br>
-            <p>
-                Notice <b><i>display: table</i></b> is used instead of expected <b><i>display: inline-block</i></b>. It is necessary
-                for the cases when label used with another inline-block to prevent them being on the same line:
-            </p>
-
-            <div class="label">
-                CV upload
+            <div class="helper">
+                Changes will be saved automatically
             </div>
 
-            <button class="button" type="button">
-                Choose file
-            </button>
+            <br>
+            <br>
+            <br>
+            <h2>.helper--output</h2>
+            <p>
+                Can be used for outputting error message. A few in a row is also possible:
+            </p>
 
+            <div class="input input--password input--error">
+                <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
+            </div>
+            <div class="helper helper--output">
+                Password is too short
+            </div>
+            <div class="helper helper--output">
+                Password must contain a special character
+            </div>
+            <div class="helper helper--output">
+                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+            </div>
+            <div class="helper helper--output">
+                New password is similar to previous password
+            </div>
 
 
             <br>
