@@ -34,12 +34,46 @@
         transition: none;
     }
 
+    .input__widget[type="password"]:not(:placeholder-shown) {
+        font-family: "Tahoma", sans-serif;
+        letter-spacing: 2px;
+    }
 
 
-.input__widget[type="password"]:not(:placeholder-shown) {
-    font-family: "Tahoma", sans-serif;
-    letter-spacing: 2px;
+
+    .input__widget:disabled,
+    .input__widget:disabled:hover,
+    .input__widget:disabled:focus {
+        opacity: 1;
+        border-color: var(--input-border);
+        background-color: #F6F6F6;
+        box-shadow: none;
+        color: var(--disabled-color);
+        cursor: default;
+    }
+
+    .input__widget:disabled::placeholder {
+        color: var(--disabled-color);
+    }
+
+
+
+.input--error {
+
 }
+
+    .input--error .input__widget {
+        color: var(--red);
+        border-color: var(--red);
+    }
+
+    .input--error .input__widget:hover {
+        border-color: var(--input-border-hover);
+    }
+
+    .input--error .input__widget::placeholder {
+        color: var(--red);
+    }
 
 
 
@@ -81,51 +115,16 @@ select.input__widget:focus {
         color: var(--placeholder-text-color);
     }
 
+    .input--placeholder-is-chosen .input__widget:disabled {
+        color: var(--disabled-color);
+    }
 
 
-.input__widget:disabled,
-.input__widget:disabled:hover,
-.input__widget:disabled:focus {
-    opacity: 1;
-    border-color: var(--input-border);
-    background-color: #F6F6F6;
-    box-shadow: none;
-    color: var(--disabled-color);
-    cursor: default;
+.input--error select.input__widget {
+    background-image: url("../vectors/select-error.svg");
+    border-color: var(--red);
+    color: var(--red);
 }
-
-.input__widget:disabled::placeholder {
-    color: var(--disabled-color);
+.input--error select.input__widget:hover {
+    border-color: var(--red);
 }
-
-.input--placeholder-is-chosen .input__widget:disabled {
-    color: var(--disabled-color);
-}
-
-
-
-.input--error {
-
-}
-    .input--error .input__widget {
-        color: var(--red);
-        border-color: var(--red);
-    }
-
-    .input--error .input__widget:hover {
-        border-color: var(--input-border-hover);
-    }
-
-    .input--error .input__widget::placeholder {
-        color: var(--red);
-    }
-
-
-    .input--error select.input__widget {
-        background-image: url("../vectors/select-error.svg");
-        border-color: var(--red);
-        color: var(--red);
-    }
-    .input--error select.input__widget:hover {
-        border-color: var(--red);
-    }

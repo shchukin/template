@@ -30,11 +30,102 @@
 
             <br>
 
-            <h2>Password</h2>
-
             <div class="input">
                 <input class="input__widget" type="password" value="0xFoo">
             </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>With <a href="_label.html">.label</a> and <a href="_helper.html">.helper</a></h2>
+            <p>
+                These two are not part of <b><i>.input</i></b> component. However, they often used together,
+                placed before and after. Like so:
+            </p>
+
+            <label class="label" for="bp24napi">
+                First name
+            </label>
+
+            <div class="input">
+                <input class="input__widget" type="text" id="bp24napi">
+            </div>
+
+            <div class="helper">
+                Can’t be changed later
+            </div>
+
+            <p>
+                Also same <b><i>.helper</i></b> component will be used to output messages in cases covering errors.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Disabled</h2>
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="First name" disabled>
+            </div>
+            <div class="helper">
+                Please choose contract type before filling the name
+            </div>
+
+            <br>
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="First name" value="Konstantin Konstantinopolsky" disabled>
+            </div>
+            <div class="helper">
+                Name can’t be changed
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.input--error</h2>
+            <p>
+                Despite the fact that native <b><i>:invalid</i></b> attribute is widely supported,
+                we still expect that validation to be coded manually. So here are the classes
+                and error messages coded manually as well.
+            </p>
+
+            <div class="input input--error">
+                <input class="input__widget" type="text" placeholder="First name">
+            </div>
+            <div class="helper helper--output">
+                This field is required
+            </div>
+
+            <br>
+
+            <div class="input input--error">
+                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
+            </div>
+            <div class="helper helper--output">
+                Email is not valid
+            </div>
+
+            <br>
+            <p>Multi-error case covered as well and errors should be output one after another, like so:</p>
+
+            <div class="input input--error">
+                <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
+            </div>
+            <div class="helper helper--output">
+                Password is too short
+            </div>
+            <div class="helper helper--output">
+                Password must contain a special character
+            </div>
+            <div class="helper helper--output">
+                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+            </div>
+            <div class="helper helper--output">
+                New password is similar to previous password
+            </div>
+
 
             <br>
             <br>
@@ -79,40 +170,12 @@
             </p>
 
 
-            <br>
-            <br>
-            <br>
-            <h2>With <a href="_label.html">.label</a> and <a href="_helper.html">.helper</a></h2>
-            <br>
-
-            <label class="label" for="bp24napi">
-                First name
-            </label>
-
-            <div class="input">
-                <input class="input__widget" type="text" id="bp24napi">
-            </div>
-
-            <div class="helper">
-                Can’t be changed later
-            </div>
 
 
 
 
 
 
-            <br>
-            <br>
-            <br>
-            <h2>:disabled</h2>
-
-            <div class="input">
-                <input class="input__widget" type="text" placeholder="License" disabled>
-            </div>
-            <div class="helper">
-                Please choose contract type first
-            </div>
 
             <br>
 
@@ -123,28 +186,6 @@
             </div>
             <div class="helper">
                 Please select country first
-            </div>
-
-            <br>
-
-            <div class="input">
-                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.org" disabled>
-            </div>
-            <div class="helper">
-                Email can’t be changed
-            </div>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>.input--error</h2>
-
-            <div class="input input--error">
-                <input class="input__widget" type="text" placeholder="First name">
-            </div>
-            <div class="helper helper--output">
-                This field is required
             </div>
 
             <br>
@@ -163,32 +204,6 @@
                 This field is required
             </div>
 
-            <br>
-
-            <div class="input input--error">
-                <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
-            </div>
-            <div class="helper helper--output">
-                Email is not valid
-            </div>
-
-            <br>
-
-            <div class="input input--error">
-                <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
-            </div>
-            <div class="helper helper--output">
-                Password is too short
-            </div>
-            <div class="helper helper--output">
-                Password must contain a special character
-            </div>
-            <div class="helper helper--output">
-                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
-            </div>
-            <div class="helper helper--output">
-                New password is similar to previous password
-            </div>
 
 
             <br>
