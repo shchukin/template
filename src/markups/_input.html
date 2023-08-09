@@ -148,20 +148,49 @@
             <br>
             <h2>Select</h2>
 
-            <div class="input input--placeholder-is-chosen">
+            <div class="input">
                 <select class="input__widget">
-                    <option value="placeholder" selected>Country</option>
-                    <option>Afghanistan</option>
-                    <option>Albania</option>
-                    <option>Algeria</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
                     <option>...</option>
-                    <option>Zimbabwe</option>
+                    <option>Washington</option>
                 </select>
             </div>
 
+            <br>
+
+            <div class="input">
+                <select class="input__widget" disabled>
+                    <option selected>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="input input--error">
+                <select class="input__widget">
+                    <option selected>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+            <h3>Placeholder</h3>
             <p>
                 Notice that there is a problem with the <b><i>&lt;select&gt;</i></b> tag.
-                It doesn’t work with the <b><i>placeholder</i></b> attribute. Let’s fake it.
+                It doesn’t work with the <b><i>placeholder</i></b> attribute.
+                It’s expected that at least one option is always selected.
+            </p>
+            <p>
+                However, it doesn’t match the rest of the inputs, especially when there are a few of them in a row along with a select.
+                So let’s fake it.
             </p>
             <p>
                 Assign first option to be a placeholder: <b><i>&lt;option value="placeholder"&gt;</i></b>. Then
@@ -170,40 +199,39 @@
             </p>
 
 
-
-
-
-
-
-
+            <div class="input input--placeholder-is-chosen">
+                <select class="input__widget">
+                    <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
+                </select>
+            </div>
 
             <br>
 
             <div class="input input--placeholder-is-chosen">
                 <select class="input__widget" disabled>
                     <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
+                    <option>...</option>
+                    <option>Washington</option>
                 </select>
-            </div>
-            <div class="helper">
-                Please select country first
             </div>
 
             <br>
 
             <div class="input input--placeholder-is-chosen input--error">
                 <select class="input__widget">
-                    <option value="placeholder" selected>Country</option>
-                    <option>Afghanistan</option>
-                    <option>Albania</option>
-                    <option>Algeria</option>
+                    <option value="placeholder" selected>City</option>
+                    <option>Bangkok</option>
+                    <option>Moscow</option>
                     <option>...</option>
-                    <option>Zimbabwe</option>
+                    <option>Washington</option>
                 </select>
             </div>
-            <div class="helper helper--output">
-                This field is required
-            </div>
-
 
 
             <br>
