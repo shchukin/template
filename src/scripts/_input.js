@@ -17,7 +17,7 @@
 
     $('.input__widget').on('focus', function () {
         $(this).parents('.input').removeClass('input--error');
-        $(this).parents('.input').nextUntil(':not(.hint--output)').remove();
+        $(this).parents('.input').nextUntil(':not(.helper--output)').remove();
     });
 
 })(jQuery);
