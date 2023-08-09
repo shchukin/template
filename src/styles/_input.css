@@ -121,6 +121,10 @@
         border-color: var(--red);
     }
 
+    .input--error .input__widget:hover {
+        border-color: var(--input-border-hover);
+    }
+
     .input--error .input__widget::placeholder {
         color: var(--red);
     }
