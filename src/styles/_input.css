@@ -129,6 +129,10 @@
         color: var(--red);
     }
 
+
     .input--error.input--select .input__widget {
         background-image: url("../vectors/select-error.svg");
+    }
+    .input--error.input--select .input__widget:hover {
+        border-color: var(--red);
     }
