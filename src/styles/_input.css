@@ -35,7 +35,7 @@
     }
 
 
-/* password */
+
 .input--password {
 
 }
@@ -43,6 +43,7 @@
         font-family: "Tahoma", sans-serif;
         letter-spacing: 3px;
     }
+
 
 
 .input--textarea {
@@ -54,6 +55,7 @@
         max-height: 266px; /* 10 rows */
         resize: vertical;
     }
+
 
 
 .input--select {
@@ -81,7 +83,6 @@
         outline: auto; /* for keyboard navigation take it back */
     }
 
-
 .input--placeholder-is-chosen {
 
 }
@@ -90,25 +91,7 @@
     }
 
 
-.input--error {
 
-}
-    .input--error .input__widget {
-        color: var(--red);
-        border-color: var(--red);
-    }
-
-    .input--error .input__widget::placeholder {
-        color: var(--red);
-    }
-
-    .input--error.input--select .input__widget {
-        background-image: url("../vectors/select-error.svg");
-    }
-
-
-
-/* disabled */
 .input__widget:disabled,
 .input__widget:disabled:hover,
 .input__widget:disabled:focus {
@@ -127,3 +110,21 @@
 .input--placeholder-is-chosen .input__widget:disabled {
     color: var(--disabled-color);
 }
+
+
+
+.input--error {
+
+}
+    .input--error .input__widget {
+        color: var(--red);
+        border-color: var(--red);
+    }
+
+    .input--error .input__widget::placeholder {
+        color: var(--red);
+    }
+
+    .input--error.input--select .input__widget {
+        background-image: url("../vectors/select-error.svg");
+    }
