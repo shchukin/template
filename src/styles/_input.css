@@ -36,57 +36,48 @@
 
 
 
-.input--password {
-
+.input__widget[type="password"]:not(:placeholder-shown) {
+    font-family: "Tahoma", sans-serif;
+    letter-spacing: 2px;
 }
-    .input--password .input__widget:not(:placeholder-shown) {
-        font-family: "Tahoma", sans-serif;
-        letter-spacing: 2px;
-    }
 
 
 
-.input--textarea {
-
+textarea.input__widget {
+    height: auto; /* user rows="" attribute to set a default height */
+    min-height: 50px; /* 1 row */
+    max-height: 266px; /* 10 rows */
+    resize: vertical;
 }
-    .input--textarea .input__widget {
-        height: auto; /* user rows="" attribute to set a default height */
-        min-height: 50px; /* 1 row */
-        max-height: 266px; /* 10 rows */
-        resize: vertical;
-    }
 
 
 
-.input--select {
-
+select.input__widget {
+    appearance: none;
+    padding-right: 48px;
+    background-image: url("../vectors/select.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    cursor: pointer;
 }
-    .input--select .input__widget {
-        appearance: none;
-        padding-right: 48px;
-        background-image: url("../vectors/select.svg");
-        background-size: 16px 16px;
-        background-repeat: no-repeat;
-        background-position: right 16px center;
-        cursor: pointer;
-    }
 
-    .input--select .input__widget:hover {
-        box-shadow: none; /* same as original, not hover input */
-        border-color: var(--input-border); /* same as original, not hover input */
-        background-color: #F6F6F6;
-    }
+select.input__widget:hover {
+    box-shadow: none; /* same as original, not hover input */
+    border-color: var(--input-border); /* same as original, not hover input */
+    background-color: #F6F6F6;
+}
 
-    .input--select .input__widget:focus {
-        box-shadow: none;
-        border-color: var(--input-border); /* same as original, not hover input */
-        outline: auto; /* for keyboard navigation take it back */
-    }
+select.input__widget:focus {
+    box-shadow: none;
+    border-color: var(--input-border); /* same as original, not hover input */
+    outline: auto; /* for keyboard navigation take it back */
+}
 
 .input--placeholder-is-chosen {
 
 }
-    .input--placeholder-is-chosen .input__widget {
+    .input--placeholder-is-chosen select.input__widget {
         color: var(--placeholder-text-color);
     }
 
@@ -130,9 +121,11 @@
     }
 
 
-    .input--error.input--select .input__widget {
+    .input--error select.input__widget {
         background-image: url("../vectors/select-error.svg");
+        border-color: var(--red);
+        color: var(--red);
     }
-    .input--error.input--select .input__widget:hover {
+    .input--error select.input__widget:hover {
         border-color: var(--red);
     }
