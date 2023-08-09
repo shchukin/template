@@ -35,6 +35,13 @@
     }
 
 
+/* password */
+    .input__widget[type="password"]:not(:placeholder-shown) {
+        font-family: "Tahoma", sans-serif;
+        letter-spacing: 3px;
+    }
+
+
 .input--area {
 
 }
