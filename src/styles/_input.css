@@ -101,15 +101,6 @@ select.input__widget:hover {
     background-color: #F6F6F6;
 }
 
-select.input__widget:focus {
-    box-shadow: none;
-    border-color: var(--input-border); /* same as original, not hover input */
-}
-
-
-select.input__widget:focus {
-    outline: 2px solid var(--input-border-hover);
-}
 
 /* Error */
 .input--error select.input__widget {
