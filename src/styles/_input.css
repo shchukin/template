@@ -2,12 +2,12 @@
 
 }
     .input__widget {
-        appearance: none; /* 1) remove angle in <select> at the right , 2) ability to use "box-shadow" on iOS, 3) reset rounded corners of type="search"  */
         vertical-align: top;
         width: 100%;
         height: 50px;
         padding: 11px 22px;
-        background-color: #FFFFFF; /* reset <select> background (appearance: none; doesn’t help here) */
+        background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works */
         border: 2px solid var(--input-border);
         outline: none;
         border-radius: 4px;
@@ -100,6 +100,7 @@ textarea.input__widget {
 
 
 select.input__widget {
+    appearance: none;
     padding-right: 48px;
     background-image: url("../vectors/select.svg");
     background-size: 16px 16px;
