@@ -2,7 +2,7 @@
 
 }
     .input__widget {
-        /*appearance: none; !* not just for <select> appearance, but also for some details like box-shadow on iOS *!*/
+        appearance: none; /* not just for <select> appearance, but also for some details like box-shadow on iOS */
         vertical-align: top;
         width: 100%;
         height: 50px;
