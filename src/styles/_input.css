@@ -46,14 +46,6 @@
         padding: 4px 8px;
     }
 
-    /*.input__widget[type="date"]::placeholder,*/
-    /*.input__widget[type="datetime-local"]::placeholder,*/
-    /*.input__widget[type="week"]::placeholder,*/
-    /*.input__widget[type="month"]::placeholder,*/
-    /*.input__widget[type="time"]::placeholder {*/
-    /*    width: auto;*/
-    /*}*/
-
 
 /* Disabled */
 .input__widget:disabled,
