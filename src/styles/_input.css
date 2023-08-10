@@ -30,7 +30,7 @@
         border-color: var(--input-border-hover);
     }
 
-    .input__widget:focus {
+    .input__widget:focus-visible {
         border-color: var(--input-border-hover);
         box-shadow: 0 0 0 1px var(--input-border-hover);
         transition: none;
@@ -59,7 +59,7 @@
 /* Disabled */
 .input__widget:disabled,
 .input__widget:disabled:hover,
-.input__widget:disabled:focus {
+.input__widget:disabled:focus-visible {
     opacity: 1;
     border-color: var(--input-border);
     background-color: #F6F6F6;
@@ -115,16 +115,6 @@ select.input__widget:hover {
     box-shadow: none; /* same as original, not hover input */
     border-color: var(--input-border); /* same as original, not hover input */
     background-color: #F6F6F6;
-}
-
-select.input__widget:focus {
-    border-color: var(--input-border);
-    box-shadow: none;
-}
-
-select.input__widget:focus-visible {
-    border-color: var(--input-border-hover);
-    box-shadow: 0 0 0 1px var(--input-border-hover);
 }
 
 
