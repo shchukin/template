@@ -117,6 +117,16 @@ select.input__widget:hover {
     background-color: #F6F6F6;
 }
 
+select.input__widget:focus {
+    border-color: var(--input-border);
+    box-shadow: none;
+}
+
+select.input__widget:focus-visible {
+    border-color: var(--input-border-hover);
+    box-shadow: 0 0 0 1px var(--input-border-hover);
+}
+
 
 /* Error */
 .input--error select.input__widget {
