@@ -36,15 +36,18 @@
         transition: none;
     }
 
+
     .input__widget[type="password"]:not(:placeholder-shown) {
         font-family: "Tahoma", sans-serif;
         letter-spacing: 2px;
     }
 
+
     .input__widget[type="color"] {
         width: 100px;
         padding: 4px 8px;
     }
+
 
     /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above"   */
     .input__widget[type="date"],
@@ -103,7 +106,7 @@ textarea.input__widget {
 
 select.input__widget {
     appearance: none;
-    padding-right: 48px;
+    padding-right: 50px;
     background-image: url("../vectors/select.svg");
     background-size: 16px 16px;
     background-repeat: no-repeat;
@@ -117,7 +120,6 @@ select.input__widget:hover {
     background-color: #F6F6F6;
 }
 
-
 /* Error */
 .input--error select.input__widget {
     background-image: url("../vectors/select-error.svg");
@@ -126,8 +128,6 @@ select.input__widget:hover {
 .input--error select.input__widget:hover {
     border-color: var(--red);
 }
-
-
 
 .input--placeholder-is-chosen {
 

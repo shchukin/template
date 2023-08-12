@@ -1,7 +1,7 @@
 .label {
     display: table; /* Make sure a line break happens after the label. This is needed in case it is used with a checkbox or a not-too-long input. */
     vertical-align: top;
-    border-bottom: 10px solid transparent; /* "padding" won't work with table. Use border. */
+    border-bottom: 8px solid transparent; /* "padding" won't work with table. Use border. */
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
