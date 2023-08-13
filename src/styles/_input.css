@@ -7,7 +7,7 @@
         height: 50px;
         padding: 11px 22px;
         background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
-        background-clip: padding-box; /* hack for iOS to make box-shadow works */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
         border: 2px solid var(--input-border);
         outline: none;
         border-radius: 4px;
@@ -21,7 +21,7 @@
     }
 
     .input__widget::placeholder {
-        font-style: normal;
+        /*font-style: normal;*/
         opacity: 1;
         color: var(--placeholder-text-color);
     }
@@ -60,10 +60,8 @@
 
 
 /* Disabled */
-.input__widget:disabled,
-.input__widget:disabled:hover,
-.input__widget:disabled:focus-visible {
-    opacity: 1;
+.input__widget:disabled {
+    opacity: 1; /* reset select:disabled default fade */
     border-color: var(--input-border);
     background-color: #F6F6F6;
     box-shadow: none;
