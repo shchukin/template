@@ -6,7 +6,7 @@
 }
 
 .helper--error {
-    color: var(--red);
+    color: var(--error);
 }
 
 .helper + .helper {

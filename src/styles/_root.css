@@ -7,10 +7,10 @@
     --transition-show: 1.2s var(--ease-out-quint);
     --container-padding: 40px;
     --input-border: #B3B3B3;
-    --input-border-hover: #7E7E7E;
-    --placeholder-text-color: #999999;
+    --input-border-hover-and-focus: #7E7E7E;
+    --placeholder-color: #999999;
     --disabled-color: #999999;
-    --red: #FF0033;
+    --error: #FF0033;
 }
 
 @media (350px <= width < 600px) {
