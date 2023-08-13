@@ -132,8 +132,8 @@ select.input__widget:hover {
     .input--placeholder-is-chosen select.input__widget {
         color: var(--placeholder-color);
     }
-        .input--placeholder-is-chosen option {
-            color: #000000 !important; /* FF, ie? тупит и наследует серый цвет */
+        .input--placeholder-is-chosen select.input__widget option {
+            color: #000000; /* FF, ie? тупит и наследует серый цвет */
         }
 
     .input--placeholder-is-chosen select.input__widget:disabled {
