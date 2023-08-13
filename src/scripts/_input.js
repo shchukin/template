@@ -10,12 +10,16 @@
     });
 
     /* Expanding textarea */
+    function expandTextarea(element) {
+        element.css('height', 'auto');
+        element.css('height', (element[0].scrollHeight + 2 * parseInt(element.css('border-width'), 10)) + 'px');
+    }
+
     $('.input--expandable .input__widget').each(function () {
-        $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
+        expandTextarea($(this));
     }).on('input', function () {
-        $(this).css('height', 'auto');
-        $(this).css('height', ($(this)[0].scrollHeight + 2 * parseInt($(this).css('border-width'), 10)) + 'px');
-    });
+        expandTextarea($(this));
+    })
 
     /* Error field */
     $('.input__widget').on('focus', function () {
