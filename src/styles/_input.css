@@ -21,18 +21,17 @@
     }
 
     .input__widget::placeholder {
-        /*font-style: normal;*/
-        opacity: 1;
-        color: var(--placeholder-text-color);
+        opacity: 1; /* reset opacity drop Firefox */
+        color: var(--placeholder-color);
     }
 
     .input__widget:hover {
-        border-color: var(--input-border-hover);
+        border-color: var(--input-border-hover-and-focus);
     }
 
     .input__widget:focus-visible {
-        border-color: var(--input-border-hover);
-        box-shadow: 0 0 0 1px var(--input-border-hover);
+        border-color: var(--input-border-hover-and-focus);
+        box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
         transition: none;
     }
 
@@ -61,7 +60,7 @@
 
 /* Disabled */
 .input__widget:disabled {
-    opacity: 1; /* reset select:disabled default fade */
+    opacity: 1; /* reset select:disabled default fade in Firefox */
     border-color: var(--input-border);
     background-color: #F6F6F6;
     box-shadow: none;
@@ -79,16 +78,16 @@
 
 }
     .input--error .input__widget {
-        color: var(--red);
-        border-color: var(--red);
+        color: var(--error);
+        border-color: var(--error);
     }
 
     .input--error .input__widget:hover {
-        border-color: var(--input-border-hover);
+        border-color: var(--input-border-hover-and-focus);
     }
 
     .input--error .input__widget::placeholder {
-        color: var(--red);
+        color: var(--error);
     }
 
 
@@ -105,7 +104,7 @@ textarea.input__widget {
 select.input__widget {
     appearance: none;
     padding-right: 50px;
-    background-image: url("../vectors/select.svg");
+    background-image: url("dropdown.svg");
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: right 16px center;
@@ -120,25 +119,28 @@ select.input__widget:hover {
 
 /* Error */
 .input--error select.input__widget {
-    background-image: url("../vectors/select-error.svg");
+    background-image: url("dropdown-error.svg");
 }
 
 .input--error select.input__widget:hover {
-    border-color: var(--red);
+    border-color: var(--error);
 }
 
 .input--placeholder-is-chosen {
 
 }
     .input--placeholder-is-chosen select.input__widget {
-        color: var(--placeholder-text-color);
+        color: var(--placeholder-color);
     }
-
+        .input--placeholder-is-chosen option {
+            color: #000000 !important; /* FF, ie? тупит и наследует серый цвет */
+        }
+        
     .input--placeholder-is-chosen select.input__widget:disabled {
         color: var(--disabled-color);
     }
 
     .input--placeholder-is-chosen.input--error select.input__widget {
-        color: var(--red);
+        color: var(--error);
     }
 
