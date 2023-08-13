@@ -3,16 +3,16 @@
     /* Select placeholder */
     function selectPlaceholder($element) {
         if ($element.val() === 'placeholder') {
-            $element.parent('.input').addClass('input--placeholder-is-chosen')
+            $element.parent('.input').addClass('input--placeholder-is-chosen');
         } else {
-            $element.parent('.input').removeClass('input--placeholder-is-chosen')
+            $element.parent('.input').removeClass('input--placeholder-is-chosen');
         }
     }
 
     $('select.input__widget').each(function () {
-        selectPlaceholder( $(this) );
+        selectPlaceholder($(this));
     }).on('change', function () {
-        selectPlaceholder( $(this) );
+        selectPlaceholder($(this));
     });
 
     /* Expanding textarea */
@@ -25,12 +25,12 @@
         expandTextarea($(this));
     }).on('input', function () {
         expandTextarea($(this));
-    })
+    });
 
     /* Error field */
     $('.input__widget').on('focus', function () {
         $(this).parents('.input').removeClass('input--error');
-        $(this).parents('.input').nextUntil(':not(.helper--output)').remove();
+        $(this).parents('.input').nextUntil(':not(.helper--error)').remove();
     });
 
 })(jQuery);

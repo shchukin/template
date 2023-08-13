@@ -5,7 +5,7 @@
     color: #7E7E7E;
 }
 
-.helper--output {
+.helper--error {
     color: var(--red);
 }
 
