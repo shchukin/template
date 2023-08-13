@@ -29,7 +29,7 @@
         border-color: var(--input-border-hover-and-focus);
     }
 
-    .input__widget:focus-visible {
+    .input__widget:focus {
         border-color: var(--input-border-hover-and-focus);
         box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
         transition: none;
@@ -48,7 +48,7 @@
     }
 
 
-    /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above"   */
+    /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above" */
     .input__widget[type="date"],
     .input__widget[type="datetime-local"],
     .input__widget[type="week"],
@@ -104,7 +104,7 @@ textarea.input__widget {
 select.input__widget {
     appearance: none;
     padding-right: 50px;
-    background-image: url("dropdown.svg");
+    background-image: url("../vectors/dropdown.svg");
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: right 16px center;
@@ -119,7 +119,7 @@ select.input__widget:hover {
 
 /* Error */
 .input--error select.input__widget {
-    background-image: url("dropdown-error.svg");
+    background-image: url("../vectors/dropdown-error.svg");
 }
 
 .input--error select.input__widget:hover {
