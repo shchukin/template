@@ -132,9 +132,6 @@ select.input__widget:hover {
     .input--placeholder-is-chosen select.input__widget {
         color: var(--placeholder-color);
     }
-        .input--placeholder-is-chosen select.input__widget option {
-            color: #000000; /* FF, ie? тупит и наследует серый цвет */
-        }
 
     .input--placeholder-is-chosen select.input__widget:disabled {
         color: var(--disabled-color);
@@ -143,4 +140,7 @@ select.input__widget:hover {
     .input--placeholder-is-chosen.input--error select.input__widget {
         color: var(--error);
     }
+        .input--placeholder-is-chosen select.input__widget option {
+            color: #000000; /* Browsers on Windows inherit grey color from <select> to <option>`s. Reset it. */
+        }
 
