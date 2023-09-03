@@ -15,6 +15,7 @@
         font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
         line-height: 24px;
         color: #000000;
+        opacity: 1; /* reset select:disabled default fade on iOS */
         -webkit-tap-highlight-color: transparent;
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover);
@@ -60,12 +61,9 @@
 
 /* Disabled */
 .input__widget:disabled {
-    opacity: 1; /* reset select:disabled default fade in Firefox */
     border-color: var(--input-border);
-    background-color: #F6F6F6;
-    box-shadow: none;
+    background-color: var(--disabled-background);
     color: var(--disabled-color);
-    cursor: default;
 }
 
 .input__widget:disabled::placeholder {
@@ -116,6 +114,13 @@ select.input__widget:hover {
     border-color: var(--input-border); /* same as original, not hover input */
     background-color: #F6F6F6;
 }
+
+/* Disabled */
+select.input__widget:disabled {
+    cursor: default;
+}
+
+
 
 /* Error */
 .input--error select.input__widget {

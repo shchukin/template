@@ -38,27 +38,6 @@ function addSourcesTimestamp(content) {
     return result;
 }
 
-function uncommentGoogleFonts(content) {
-    var source = content.split('\n');
-    var outputLine = '';
-    var result = '';
-
-    source.forEach(function (line) {
-
-        if (line.indexOf('google') !== -1 && line.indexOf('fonts') !== -1) {
-            outputLine = line;
-            outputLine = outputLine.replace('<!--', '');
-            outputLine = outputLine.replace('-->', '');
-            result += outputLine + '\n';
-        } else {
-            result += line + '\n';
-        }
-
-    });
-
-    return result;
-}
-
 
 function symbolsImgToSpriteSvg(content) {
 
@@ -141,6 +120,30 @@ gulp.task('clean', function () {
 });
 
 
+// Manifest: copy
+
+gulp.task('manifest', function () {
+    return gulp.src([
+        'src/browserconfig.xml',
+        'src/manifest.json',
+        'src/humans.txt',
+        'src/favicon.ico'])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/'))
+        ;
+});
+
+
+// Favicon: copy
+
+gulp.task('favicon', function () {
+    return gulp.src('src/favicon/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('build/favicon/'))
+        ;
+});
+
+
 // Temp: copy
 
 gulp.task('temp', function () {
@@ -177,7 +180,6 @@ gulp.task('markups', function () {
     return gulp.src('src/markups/**/*')
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('build/markups/'))
         ;
@@ -190,7 +192,6 @@ gulp.task('layouts', function () {
     return gulp.src('src/layouts/**/*')
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('build/layouts/'))
         ;
@@ -278,7 +279,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('default', function (fn) {
-    run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+    run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
