@@ -7,6 +7,7 @@ var cleanCSS = require('gulp-clean-css');
 var size = require('gulp-size');
 var postcss = require('gulp-postcss');
 var postcssPresetEnv = require('postcss-preset-env');
+var postcssHoverMediaFeature = require('postcss-hover-media-feature');
 var base64 = require('gulp-base64');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
@@ -238,7 +239,8 @@ gulp.task('symbols', function () {
 gulp.task('styles', function () {
 
     var processors = [
-        postcssPresetEnv()
+        postcssPresetEnv(),
+        postcssHoverMediaFeature()
     ];
 
     return gulp.src([
