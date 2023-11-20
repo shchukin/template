@@ -110,8 +110,8 @@ select.input__widget {
 }
 
 select.input__widget:hover {
-    box-shadow: none; /* same as original, not hover input */
-    border-color: var(--input-border); /* same as original, not hover input */
+    box-shadow: none; /* same as base, not hover input */
+    border-color: var(--input-border); /* same as base, not hover input */
     background-color: #F6F6F6;
 }
 
