@@ -94,24 +94,23 @@
 .choice--disabled {
     cursor: default;
 }
-
     .choice--disabled .choice__icon,
     .choice--disabled:hover .choice__icon {
-        background-color: #C5C5C5;
-        border-color: #C5C5C5;
+        background-color: var(--disabled-background);
+        border-color: var(--disabled-background);
         cursor: default;
     }
 
     .choice--disabled .choice__widget:checked ~ .choice__icon,
     .choice--disabled:hover .choice__widget:checked ~ .choice__icon {
-        background-color: #C5C5C5;
-        border-color: #C5C5C5;
+        background-color: var(--disabled-background);
+        border-color: var(--disabled-background);
         cursor: default;
     }
 
     .choice--disabled .choice__label {
         cursor: default;
-        color: #8B8B8B;
+        color: var(--disabled-color);
     }
 
 
