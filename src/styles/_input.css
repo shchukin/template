@@ -89,14 +89,14 @@
     }
 
 
-
+/* stylelint-disable */
 textarea.input__widget {
     height: auto; /* user rows="" attribute to set a default height */
     min-height: 50px; /* 1 row */
     max-height: calc(10*24px + 2*11px + 2*2px); /* rows + vertical paddings + vertical borders */
     resize: vertical;
 }
-
+/* stylelint-enable */
 
 
 select.input__widget {
