@@ -6,24 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/style.css">
     </head>
-    <body style="background: white;">
+    <body style="background: white">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>.wysiwyg</h1>
             <p>
-                This component sets styles for tags such <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>, etc.
+                Внутри этого компонента задаём стили для тегов вроде <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>.
             </p>
             <p>
-                On one hand, we should never match on tags globally or apply styles to tags for
-                the sake of modularity. We always use classes (or attributes, sometimes).
-                On the other hand, there are cases, such a user generated content or styling long text,
-                where we don’t control the HTML code that will be placed. So we can’t expect the usage of classes there.
+                С одной стороны, мы не матчимся на теги, а всегда используем классы. Ради модульности.
+                Т.е. нельзя задавать стили напрямую тегам.
             </p>
             <p>
-                This is where we wrap text in a <b><i>.wysiwyg</i></b> class, and all the tags inside inherit the defined styles.
-                Mostly, this is about spacing between paragraphs though.
+                С другой стороны, бывают случаи, где мы не контролируем HTML‑код: user generated контент,
+                стилизация лицензионного соглашения и т.д.
+            </p>
+            <p>
+                В таких случаях используем компонент <b><i>.wysiwyg</i></b>, и все теги
+                в контексте этого компонента получат заданные стили.
             </p>
 
 
