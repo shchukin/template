@@ -27,7 +27,7 @@
     .choice__icon {
         position: absolute;
         left: 0;
-        top: 7px;
+        top: 8px;
         width: 18px;
         height: 18px;
         border: 2px solid var(--input-border);
@@ -51,111 +51,70 @@
     }
 
 
-    /* Hovered */
+/* Hovered */
 
-    .choice__label:hover ~ .choice__icon {
-        background-color: transparent;
-        border-color: var(--input-border-hover-and-focus);
-    }
-
-
-    /* Checked */
-
-    .choice__widget:checked ~ .choice__icon {
-        transition: none;
-        background-color: var(--action-color);
-        border-color: transparent;
-    }
+.choice__label:hover ~ .choice__icon {
+    background-color: transparent;
+    border-color: var(--input-border-hover-and-focus);
+}
 
 
-    /* Checked & Hovered */
+/* Checked */
 
-    .choice__widget:checked ~ .choice__label:hover ~ .choice__icon {
-        background-color: var(--action-color-hover);
-        border-color: var(--action-color-hover);
-    }
-
-    .choice__widget[type="radio"]:checked ~ .choice__label {
-        cursor: default; /* checked radio button can’t be hovered */
-    }
-
-    .choice__widget[type="radio"]:checked ~ .choice__label:hover ~ .choice__icon {
-        background-color: var(--action-color); /* checked radio button can’t be hovered, so taket the original color back */
-        border-color: transparent; /* checked radio button can’t be hovered, so taket the original color back */
-    }
+.choice__widget:checked ~ .choice__icon {
+    transition: none;
+    background-color: var(--action-color);
+    border-color: transparent;
+}
 
 
-    /* Focused */
+/* Checked & Hovered */
 
-    .choice__widget:focus-visible ~ .choice__icon {
-        outline: auto;
-    }
+.choice__widget:checked ~ .choice__label:hover ~ .choice__icon {
+    background-color: var(--action-color-hover);
+    border-color: var(--action-color-hover);
+}
+
+.choice__widget[type="radio"]:checked ~ .choice__label {
+    cursor: default; /* checked radio button can’t be hovered */
+}
+
+.choice__widget[type="radio"]:checked ~ .choice__label:hover ~ .choice__icon {
+    background-color: var(--action-color); /* checked radio button can’t be hovered, so taket the original color back */
+    border-color: transparent; /* checked radio button can’t be hovered, so taket the original color back */
+}
 
 
-    /* Disabled */
+/* Focused */
+
+.choice__widget:focus-visible ~ .choice__icon {
+    outline: auto;
+}
 
 
-
+/* Disabled */
 .choice__widget:disabled ~ .choice__label {
     cursor: default;
     color: var(--disabled-color);
 }
-    .choice__widget:disabled ~ .choice__icon,
-    .choice__widget:disabled ~ .choice__label:hover ~ .choice__icon {
-        background-color: transparent;
-        border-color: var(--input-border);
-    }
 
-    .choice__widget:disabled:checked ~ .choice__icon,
-    .choice__widget:disabled:checked ~ .choice__label:hover ~ .choice__icon {
-        background-color: var(--input-border);
-        border-color: transparent;
-    }
-
-
-
-
-
-.choice--full-width {
-    width: 100%;
+.choice__widget:disabled ~ .choice__icon,
+.choice__widget:disabled ~ .choice__label:hover ~ .choice__icon {
+    background-color: transparent;
+    border-color: var(--input-border);
 }
 
-
-.choice--alternate {
-
+.choice__widget:disabled:checked ~ .choice__icon,
+.choice__widget:disabled:checked ~ .choice__label:hover ~ .choice__icon {
+    background-color: var(--input-border);
+    border-color: transparent;
 }
-    .choice--alternate .choice__label {
-        padding-top: 7px;
-        padding-bottom: 7px;
-        font-size: 13px;
-        line-height: 26px;
-        color: #545454;
-    }
 
-
-
-
-.choice--slim {
-
-}
-    .choice--slim .choice__icon {
-        margin-top: 1px;
-    }
-
-    .choice--slim .choice__label {
-        font-size: 13px;
-        line-height: 20px;
-        color: #545454;
-    }
 
 
 .choice--bolder {
 
 }
-    .choice--bolder .choice__icon {
-        margin-top: 1px;
-    }
-
     .choice--bolder .choice__label {
         font-weight: 600;
         font-size: 13px;
@@ -163,18 +122,6 @@
     }
 
 
-.choice--side {
-    min-height: 22px;
+.choice--full-width {
+    width: 100%;
 }
-    .choice--side .choice__icon {
-        top: 2px;
-    }
-
-    .choice--side .choice__label {
-        padding-left: 26px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        font-size: 13px;
-        line-height: 20px;
-        color: #44474A;
-    }
