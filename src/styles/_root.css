@@ -17,7 +17,7 @@
     --error: #FF0033;
 }
 
-@media (350px <= width < 600px) {
+@media (350px <= width < 740px) {
     :root {
         --container-padding: 24px;
     }
