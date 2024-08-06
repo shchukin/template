@@ -128,7 +128,7 @@ gulp.task('manifest', function () {
         'src/browserconfig.xml',
         'src/manifest.json',
         'src/humans.txt',
-        'src/favicon.ico'])
+        'src/favicon.ico'], {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/'))
         ;
@@ -138,7 +138,7 @@ gulp.task('manifest', function () {
 // Favicon: copy
 
 gulp.task('favicon', function () {
-    return gulp.src('src/favicon/**/*')
+    return gulp.src('src/favicon/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/favicon/'))
         ;
@@ -148,7 +148,7 @@ gulp.task('favicon', function () {
 // Temp: copy
 
 gulp.task('temp', function () {
-    return gulp.src('src/temp/**/*')
+    return gulp.src('src/temp/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/temp/'))
         ;
@@ -158,7 +158,7 @@ gulp.task('temp', function () {
 // Content: copy
 
 gulp.task('content', function () {
-    return gulp.src('src/content/**/*')
+    return gulp.src('src/content/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/content/'))
         ;
@@ -168,7 +168,7 @@ gulp.task('content', function () {
 // Images: copy
 
 gulp.task('images', function () {
-    return gulp.src('src/images/**/*')
+    return gulp.src('src/images/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/images/'))
         ;
@@ -178,7 +178,7 @@ gulp.task('images', function () {
 // Markups: copy and change symbols <img> to sprite <svg>
 
 gulp.task('markups', function () {
-    return gulp.src('src/markups/**/*')
+    return gulp.src('src/markups/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(addSourcesTimestamp))
@@ -190,7 +190,7 @@ gulp.task('markups', function () {
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function () {
-    return gulp.src('src/layouts/**/*')
+    return gulp.src('src/layouts/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(addSourcesTimestamp))
@@ -206,7 +206,7 @@ gulp.task('vendors', function () {
         'src/vendors/**/*',
         '!src/vendors/normalize',
         '!src/vendors/normalize/**/*',
-    ])
+    ], {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/vendors/'))
         ;
@@ -216,7 +216,7 @@ gulp.task('vendors', function () {
 // Scripts: copy
 
 gulp.task('scripts', function () {
-    return gulp.src('src/scripts/**/*')
+    return gulp.src('src/scripts/**/*', {encoding: false})
         .pipe(plumber())
         .pipe(gulp.dest('build/scripts/'))
         ;
@@ -226,7 +226,7 @@ gulp.task('scripts', function () {
 // Symbols
 
 gulp.task('symbols', function () {
-    return gulp.src('src/symbols/*.svg')
+    return gulp.src('src/symbols/*.svg', {encoding: false})
         .pipe(plumber())
         .pipe(svgmin())
         .pipe(svgstore())
@@ -243,9 +243,7 @@ gulp.task('styles', function () {
         postcssHoverMediaFeature()
     ];
 
-    return gulp.src([
-        'src/styles/style.css'
-    ])
+    return gulp.src('src/styles/style.css', {encoding: false})
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
@@ -269,7 +267,7 @@ gulp.task('lint', function () {
     return gulp.src([
         '!src/styles/style.css',
         'src/styles/**/*.css'
-    ])
+    ], {encoding: false})
         .pipe(plumber())
         .pipe(stylelint({
             reporters: [
