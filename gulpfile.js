@@ -243,7 +243,7 @@ gulp.task('styles', function () {
         postcssHoverMediaFeature()
     ];
 
-    return gulp.src('src/styles/style.css', {encoding: false})
+    return gulp.src('src/styles/styles.css', {encoding: false})
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
@@ -265,7 +265,7 @@ gulp.task('styles', function () {
 gulp.task('lint', function () {
 
     return gulp.src([
-        '!src/styles/style.css',
+        '!src/styles/styles.css',
         'src/styles/**/*.css'
     ], {encoding: false})
         .pipe(plumber())
