@@ -15,28 +15,17 @@ var change = require('gulp-change');
 
 
 function addSourcesTimestamp(content) {
-    var source = content.split('\n');
-    var outputLine = '';
-    var result = '';
+    const timestamp = Math.round(Date.now() / 1000);
 
-    var timestamp = Math.round(new Date().getTime() / 1000);
-
-
-    source.forEach(function (line) {
-
-        if (line.indexOf('rel="stylesheet"') !== -1) {
-            outputLine = line.replace('.css"', '.css?' + timestamp + '"');
-            result += outputLine + '\n';
-        } else if (line.indexOf('<script') !== -1 && line.indexOf('src="') !== -1 && line.indexOf('vendors/') === -1) {
-            outputLine = line.replace('.js"', '.js?' + timestamp + '"');
-            result += outputLine + '\n';
+    return content.split('\n').map(line => {
+        if (line.includes('rel="stylesheet"')) {
+            return line.replace('.css"', `.css?${timestamp}"`);
+        } else if (line.includes('<script') && line.includes('src="') && !line.includes('vendors/') && !line.includes('http') && !line.includes('https') && !line.includes('cdn')) {
+            return line.replace('.js"', `.js?${timestamp}"`);
         } else {
-            result += line + '\n';
+            return line;
         }
-
-    });
-
-    return result;
+    }).join('\n');
 }
 
 
@@ -251,8 +240,8 @@ gulp.task('styles', function () {
         }))
         .pipe(postcss(processors))
         .pipe(base64({
-            // Allow files from /vectors/ only
-            exclude: ['/sprite/', '/images/', '/symbols/']
+            maxImageSize: 200 * 1024, // 200KB threshold
+            exclude: ['/sprite/', '/images/'] // Allow files from /vectors/ only
         }))
         .pipe(gulp.dest('build/styles/'))
         .pipe(size())
