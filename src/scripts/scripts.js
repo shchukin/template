@@ -1,4 +1,6 @@
-(function ($) {
+(function($) {
+
+    /* Inputs */
 
     /* Select placeholder */
     function selectPlaceholder($element) {
@@ -32,5 +34,33 @@
         $(this).parents('.input').removeClass('input--error');
         $(this).parents('.input').nextUntil(':not(.helper--error)').remove();
     });
+
+
+
+    /* Init magnific popup */
+
+    $('.mfp-handler').magnificPopup({
+        type: 'inline',
+        removalDelay: 200,
+        showCloseBtn: false,
+        callbacks: {
+            open: function() {
+                const $popup = $.magnificPopup.instance.content;
+                const $expandableInputs = $popup.find('.input--expandable .input__widget');
+                $expandableInputs.each(function() {
+                    expandTextarea($(this));
+                });
+            }
+        }
+    });
+
+
+
+    /* Init inputmask */
+
+    $('[type="tel"]').inputmask({
+        alias: 'phoneru',
+    });
+
 
 })(jQuery);
