@@ -46,10 +46,22 @@
         callbacks: {
             open: function() {
                 const $popup = $.magnificPopup.instance.content;
+
+                /* If there is .input--expandable inside, re-run height calculations (meaning height was zero on document ready because modal window contains was hidden) */
                 const $expandableInputs = $popup.find('.input--expandable .input__widget');
-                $expandableInputs.each(function() {
-                    expandTextarea($(this));
-                });
+                if($expandableInputs.length) {
+                    $expandableInputs.each(function() {
+                        expandTextarea($(this));
+                    });
+                }
+
+                /* Focus on the first input, if any  */
+                setTimeout(function () {
+                    const $firstInput = $popup.find('input').first();
+                    if ($firstInput.length) {
+                        $firstInput.focus();
+                    }
+                }, 100);
             }
         }
     });
